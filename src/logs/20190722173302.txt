@@ -1,4 +1,0 @@
-2019-07-22 17:33:02,790	INFO	main	<module>	Line:11	app started
-2019-07-22 17:33:02,795	WARNING	_internal	_log	Line:88	 * Debugger is active!
-2019-07-22 17:33:02,798	INFO	_internal	_log	Line:88	 * Debugger PIN: 331-851-906
-2019-07-22 17:33:03,810	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/src/tools/packtools.py', reloading

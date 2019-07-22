@@ -7,8 +7,7 @@ class Course(gdb.Model):
     course_name = gdb.Column(gdb.String(100), nullable=False)
     course_isgroup = gdb.Column(gdb.Boolean, nullable=False)
     
-    def __init__(self, course_id, course_name, course_isgroup):
-        self.course_id = course_id
+    def __init__(self, course_name, course_isgroup):
         self.course_name = course_name
         self.course_isgroup = course_isgroup
 

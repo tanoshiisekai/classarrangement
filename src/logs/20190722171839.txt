@@ -1,4 +1,0 @@
-2019-07-22 17:18:39,348	INFO	main	<module>	Line:11	app started
-2019-07-22 17:18:39,352	WARNING	_internal	_log	Line:88	 * Debugger is active!
-2019-07-22 17:18:39,356	INFO	_internal	_log	Line:88	 * Debugger PIN: 308-381-116
-2019-07-22 17:18:40,367	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/src/apis/classAPI.py', reloading
