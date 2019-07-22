@@ -1,0 +1,3 @@
+2019-07-21 18:34:53,793	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-07-21 18:34:53,797	INFO	_internal	_log	Line:88	 * Debugger PIN: 109-818-895
+2019-07-21 18:34:54,803	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/src/main.py', reloading

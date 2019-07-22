@@ -1,0 +1,53 @@
+2019-07-21 21:29:21,105	INFO	main	<module>	Line:10	app started
+2019-07-21 21:29:21,110	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-07-21 21:29:21,113	INFO	_internal	_log	Line:88	 * Debugger PIN: 326-853-025
+2019-07-21 21:29:22,622	ERROR	app	log_exception	Line:1761	Exception on /classroom/ [POST]
+Traceback (most recent call last):
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/long/development/classarrangement/src/apis/classroomAPI.py", line 13, in post
+    return classroomDAO.addclassroom(api.payload)
+AttributeError: module 'daos.classroomDAO' has no attribute 'addclassroom'
+2019-07-21 21:29:22,624	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:29:22] "POST /classroom/ HTTP/1.1" 500 -
+2019-07-21 21:29:24,171	ERROR	app	log_exception	Line:1761	Exception on /classroom/ [POST]
+Traceback (most recent call last):
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/long/development/classarrangement/src/apis/classroomAPI.py", line 13, in post
+    return classroomDAO.addclassroom(api.payload)
+AttributeError: module 'daos.classroomDAO' has no attribute 'addclassroom'
+2019-07-21 21:29:24,171	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:29:24] "POST /classroom/ HTTP/1.1" 500 -
+2019-07-21 21:30:16,971	ERROR	app	log_exception	Line:1761	Exception on /classroom/ [POST]
+Traceback (most recent call last):
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/long/development/classarrangement/src/apis/classroomAPI.py", line 13, in post
+    return classroomDAO.addclassroom(api.payload)
+AttributeError: module 'daos.classroomDAO' has no attribute 'addclassroom'
+2019-07-21 21:30:16,971	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:30:16] "POST /classroom/ HTTP/1.1" 500 -
+2019-07-21 21:30:38,425	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:30:38] "GET /swagger.json HTTP/1.1" 200 -
+2019-07-21 21:36:02,213	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/src/apis/classroomAPI.py', reloading

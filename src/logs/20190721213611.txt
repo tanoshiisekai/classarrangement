@@ -1,0 +1,30 @@
+2019-07-21 21:36:11,215	INFO	main	<module>	Line:10	app started
+2019-07-21 21:36:11,220	INFO	_internal	_log	Line:88	 * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2019-07-21 21:36:11,221	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-21 21:36:11,456	INFO	main	<module>	Line:10	app started
+2019-07-21 21:36:11,462	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-07-21 21:36:11,465	INFO	_internal	_log	Line:88	 * Debugger PIN: 475-081-845
+2019-07-21 21:36:19,374	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:36:19] "GET / HTTP/1.1" 200 -
+2019-07-21 21:36:19,489	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:36:19] "GET /swagger.json HTTP/1.1" 200 -
+2019-07-21 21:36:19,491	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:36:19] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2019-07-21 21:36:27,399	ERROR	app	log_exception	Line:1761	Exception on /classroom/ [POST]
+Traceback (most recent call last):
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/long/development/classarrangement/src/apis/classroomAPI.py", line 13, in post
+    return ClassroomDAO.addclassroom(api.payload)
+  File "/home/long/development/classarrangement/src/daos/classroomDAO.py", line 11, in addclassroom
+    classroom = params[0]
+KeyError: 0
+2019-07-21 21:36:27,401	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:36:27] "POST /classroom/ HTTP/1.1" 500 -
+2019-07-21 21:36:52,693	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/src/daos/classroomDAO.py', reloading
+2019-07-21 21:36:52,737	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-21 21:36:54,054	INFO	_internal	_log	Line:88	 * Restarting with stat

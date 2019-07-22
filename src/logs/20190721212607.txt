@@ -1,0 +1,4 @@
+2019-07-21 21:26:07,384	INFO	main	<module>	Line:10	app started
+2019-07-21 21:26:07,389	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-07-21 21:26:07,392	INFO	_internal	_log	Line:88	 * Debugger PIN: 322-282-281
+2019-07-21 21:26:24,490	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/src/daos/classroomDAO.py', reloading

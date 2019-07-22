@@ -1,0 +1,7 @@
+import dbmodels.arrangementDBModel
+import dbmodels.classDBModel
+import dbmodels.classroomDBModel
+import dbmodels.coursegroupDBModel
+import dbmodels.courseDBModel
+import dbmodels.courseplanDBModel
+import dbmodels.teacherDBModel

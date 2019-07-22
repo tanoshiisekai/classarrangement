@@ -1,0 +1,54 @@
+2019-07-21 21:21:19,147	INFO	main	<module>	Line:10	app started
+2019-07-21 21:21:19,153	INFO	_internal	_log	Line:88	 * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2019-07-21 21:21:19,153	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-21 21:21:19,389	INFO	main	<module>	Line:10	app started
+2019-07-21 21:21:19,393	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-07-21 21:21:19,396	INFO	_internal	_log	Line:88	 * Debugger PIN: 326-319-333
+2019-07-21 21:21:23,170	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:21:23] "GET / HTTP/1.1" 200 -
+2019-07-21 21:21:23,289	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:21:23] "GET /swagger.json HTTP/1.1" 200 -
+2019-07-21 21:21:23,291	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:21:23] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2019-07-21 21:21:23,780	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:21:23] "GET / HTTP/1.1" 200 -
+2019-07-21 21:21:23,839	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:21:23] "GET /swagger.json HTTP/1.1" 200 -
+2019-07-21 21:21:23,841	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:21:23] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2019-07-21 21:21:23,948	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:21:23] "GET / HTTP/1.1" 200 -
+2019-07-21 21:21:23,981	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:21:23] "GET /swagger.json HTTP/1.1" 200 -
+2019-07-21 21:21:23,983	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:21:23] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2019-07-21 21:23:03,021	ERROR	app	log_exception	Line:1761	Exception on /classroom/ [POST]
+Traceback (most recent call last):
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/long/development/classarrangement/src/apis/classroomAPI.py", line 13, in post
+    return classroomDAO.addclassroom(api.payload)
+AttributeError: module 'daos.classroomDAO' has no attribute 'addclassroom'
+2019-07-21 21:23:03,022	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:23:03] "POST /classroom/ HTTP/1.1" 500 -
+2019-07-21 21:23:07,787	ERROR	app	log_exception	Line:1761	Exception on /classroom/ [POST]
+Traceback (most recent call last):
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/long/development/classarrangement/src/apis/classroomAPI.py", line 13, in post
+    return classroomDAO.addclassroom(api.payload)
+AttributeError: module 'daos.classroomDAO' has no attribute 'addclassroom'
+2019-07-21 21:23:07,788	INFO	_internal	_log	Line:88	127.0.0.1 - - [21/Jul/2019 21:23:07] "POST /classroom/ HTTP/1.1" 500 -
+2019-07-21 21:23:39,137	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/src/apis/classroomAPI.py', reloading
+2019-07-21 21:23:39,180	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-21 21:24:41,808	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-21 21:24:43,109	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-21 21:26:05,845	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-21 21:26:07,146	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-21 21:26:24,535	INFO	_internal	_log	Line:88	 * Restarting with stat
