@@ -99,3 +99,10 @@ def availabletimetolist(availablestr):
                 resultlist.append((key, ts, False))
     return resultlist
 
+
+def checkavailable(availablestr, week, section):
+    availablelist = availabletimetolist(availablestr)
+    for abl in availablelist:
+        if abl[0] == week and abl[1] == section:
+            return abl[2]
+    return False

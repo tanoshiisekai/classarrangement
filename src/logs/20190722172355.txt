@@ -1,0 +1,26 @@
+2019-07-22 17:23:55,148	INFO	main	<module>	Line:11	app started
+2019-07-22 17:23:55,153	INFO	_internal	_log	Line:88	 * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2019-07-22 17:23:55,154	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:23:55,393	INFO	main	<module>	Line:11	app started
+2019-07-22 17:23:55,399	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-07-22 17:23:55,401	INFO	_internal	_log	Line:88	 * Debugger PIN: 179-118-674
+2019-07-22 17:23:58,946	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:58] "GET / HTTP/1.1" 200 -
+2019-07-22 17:23:59,063	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:59] "GET /swagger.json HTTP/1.1" 200 -
+2019-07-22 17:23:59,065	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:59] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2019-07-22 17:23:59,314	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:59] "GET / HTTP/1.1" 200 -
+2019-07-22 17:23:59,371	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:59] "GET /swagger.json HTTP/1.1" 200 -
+2019-07-22 17:23:59,373	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:59] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2019-07-22 17:23:59,491	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:59] "GET / HTTP/1.1" 200 -
+2019-07-22 17:23:59,523	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:59] "GET /swagger.json HTTP/1.1" 200 -
+2019-07-22 17:23:59,525	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:59] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2019-07-22 17:23:59,635	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:59] "GET / HTTP/1.1" 200 -
+2019-07-22 17:23:59,664	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:59] "GET /swagger.json HTTP/1.1" 200 -
+2019-07-22 17:23:59,666	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:59] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2019-07-22 17:23:59,764	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:59] "GET / HTTP/1.1" 200 -
+2019-07-22 17:23:59,795	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:59] "GET /swagger.json HTTP/1.1" 200 -
+2019-07-22 17:23:59,798	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:23:59] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2019-07-22 17:24:05,395	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:24:05] "GET /class/details/ HTTP/1.1" 200 -
+2019-07-22 17:24:33,611	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/src/daos/classDAO.py', reloading
+2019-07-22 17:24:33,652	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:24:43,000	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:24:44,311	INFO	_internal	_log	Line:88	 * Restarting with stat

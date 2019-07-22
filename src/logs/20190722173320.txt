@@ -1,0 +1,41 @@
+2019-07-22 17:33:20,642	INFO	main	<module>	Line:11	app started
+2019-07-22 17:33:20,647	INFO	_internal	_log	Line:88	 * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2019-07-22 17:33:20,648	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:33:20,888	INFO	main	<module>	Line:11	app started
+2019-07-22 17:33:20,893	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-07-22 17:33:20,896	INFO	_internal	_log	Line:88	 * Debugger PIN: 116-567-922
+2019-07-22 17:33:22,955	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:33:22] "GET /class/details/ HTTP/1.1" 200 -
+2019-07-22 17:34:23,235	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/src/daos/classDAO.py', reloading
+2019-07-22 17:34:23,277	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:34:25,591	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:34:26,903	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:34:34,266	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:34:38,597	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:34:39,911	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:34:43,258	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:34:47,586	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:34:48,903	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:34:57,256	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:35:31,759	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:35:35,069	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:35:39,398	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:35:41,717	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:35:44,034	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:35:55,387	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:35:56,704	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:36:08,080	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:36:10,410	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:36:11,729	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:36:13,057	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:36:14,383	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:36:33,799	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:36:38,151	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:36:40,489	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:36:46,826	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:36:50,142	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:36:56,486	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:36:58,801	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:37:09,165	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:37:11,475	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:37:12,785	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:37:16,122	INFO	_internal	_log	Line:88	 * Restarting with stat

@@ -8,8 +8,7 @@ class Class1(gdb.Model):
     teacher_id = gdb.Column(gdb.Integer, nullable=False)
     classroom_id = gdb.Column(gdb.Integer, nullable=False)
     
-    def __init__(self, class_id, class_name, teacher_id, classroom_id):
-        self.class_id = class_id
+    def __init__(self, class_name, teacher_id, classroom_id):
         self.class_name = class_name
         self.teacher_id = teacher_id
         self.classroom_id = classroom_id

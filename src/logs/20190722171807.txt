@@ -1,0 +1,11 @@
+2019-07-22 17:18:07,881	INFO	main	<module>	Line:11	app started
+2019-07-22 17:18:07,885	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-07-22 17:18:07,889	INFO	_internal	_log	Line:88	 * Debugger PIN: 477-839-435
+2019-07-22 17:18:08,956	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:18:08] "POST /classroom/ HTTP/1.1" 200 -
+2019-07-22 17:18:09,031	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:18:09] "POST /classroom/ HTTP/1.1" 200 -
+2019-07-22 17:18:09,114	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:18:09] "POST /teacher/ HTTP/1.1" 200 -
+2019-07-22 17:18:09,215	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:18:09] "POST /teacher/ HTTP/1.1" 200 -
+2019-07-22 17:18:09,289	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:18:09] "POST /class/ HTTP/1.1" 200 -
+2019-07-22 17:18:09,364	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:18:09] "POST /class/ HTTP/1.1" 200 -
+2019-07-22 17:18:16,007	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:18:16] "GET /class/ HTTP/1.1" 200 -
+2019-07-22 17:18:39,057	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/src/apis/classAPI.py', reloading

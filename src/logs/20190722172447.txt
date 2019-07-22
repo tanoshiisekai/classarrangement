@@ -1,0 +1,9 @@
+2019-07-22 17:24:47,205	INFO	main	<module>	Line:11	app started
+2019-07-22 17:24:47,210	INFO	_internal	_log	Line:88	 * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2019-07-22 17:24:47,210	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-22 17:24:47,452	INFO	main	<module>	Line:11	app started
+2019-07-22 17:24:47,456	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-07-22 17:24:47,459	INFO	_internal	_log	Line:88	 * Debugger PIN: 321-962-477
+2019-07-22 17:24:48,574	INFO	_internal	_log	Line:88	127.0.0.1 - - [22/Jul/2019 17:24:48] "GET /class/details/ HTTP/1.1" 200 -
+2019-07-22 17:25:22,647	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/src/daos/classDAO.py', reloading
+2019-07-22 17:25:22,691	INFO	_internal	_log	Line:88	 * Restarting with stat
