@@ -1,15 +1,42 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Navigator from '@/components/Navigator'
+import Classroom from '@/components/Classroom'
+import Teacher from '@/components/Teacher'
+import Class1 from '@/components/Class1'
+import Course from '@/components/Course'
+import Courseplan from '@/components/Courseplan'
+import Arrangement from '@/components/Arrangement'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: "history",
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'classroom',
+      component: Classroom
+    }, {
+      path: '/teacher',
+      name: 'teacher',
+      component: Teacher
+    }, {
+      path: '/class1',
+      name: 'class1',
+      component: Class1
+    }, {
+      path: '/course',
+      name: 'course',
+      component: Course
+    }, {
+      path: '/courseplan',
+      name: 'courseplan',
+      component: Courseplan
+    }, {
+      path: '/arrangement',
+      name: 'arrangement',
+      component: Arrangement
     }
   ]
 })

@@ -7,7 +7,8 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import Element from 'element-ui'
 import VueCookie from 'vue-cookie'
-import {backendhost, backendport} from "./conf";
+import { backendhost, backendport } from "./conf"
+import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.use(Element);
 Vue.use(VueAxios, axios);
