@@ -61,3 +61,14 @@ class ClassRemove(Resource):
         根据班级编号删除班级
         """
         return ClassDAO.removeclass(classid)
+
+
+@ns_class.route("/update/<int:classid>")
+class ClassUpdate(Resource):
+
+    @ns_class.expect(classmodel)
+    def post(self, classid):
+        """
+        根据班级编号更新班级
+        """
+        return ClassDAO.updateclass(classid, api.payload)

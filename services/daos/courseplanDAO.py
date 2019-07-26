@@ -77,3 +77,29 @@ class CoursePlanDAO:
                 return packinfo(infostatus=True, infomsg="分课时删除成功！")
         else:
             return packinfo(infostatus=False, infomsg="分课时编号不存在！分课时删除失败！")
+
+
+    @staticmethod
+    def updatecourseplan(courseplanid, params):
+        """
+        更新分课时
+        """
+        courseplan = params
+        class_id = courseplan["class_id"]
+        course_id = courseplan["course_id"]
+        teacher_id = courseplan["teacher_id"]
+        courseplan_count = courseplan["courseplan_count"]
+        cp = gdb.session.query(CoursePlan).filter(CoursePlan.courseplan_id==courseplanid).first()
+        if cp:
+            try:
+                cp.class_id = class_id
+                cp.course_id = course_id
+                cp.teacher_id = teacher_id
+                cp.courseplan_count = courseplan_count
+                gdb.session.commit()
+            except Exception as e:
+                return packinfo(infostatus=False, infomsg="数据库错误！分课时更新失败！")
+            else:
+                return packinfo(infostatus=True, infomsg="分课时更新成功！")
+        else:
+            return packinfo(infostatus=False, infomsg="分课时编号不存在！分课时更新失败！")

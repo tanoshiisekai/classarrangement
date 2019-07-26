@@ -7,7 +7,7 @@ class Teacher(gdb.Model):
     teacher_name = gdb.Column(gdb.String(30), nullable=False)
     teacher_mobile = gdb.Column(gdb.String(30))
     teacher_request = gdb.Column(gdb.String(200))
-
+    
     def __init__(self, teacher_name, teacher_mobile, teacher_request):
         self.teacher_name = teacher_name
         self.teacher_mobile = teacher_mobile

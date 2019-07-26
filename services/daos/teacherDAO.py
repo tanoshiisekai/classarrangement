@@ -1,4 +1,6 @@
 from dbmodels.teacherDBModel import Teacher
+from dbmodels.classDBModel import Class1
+from dbmodels.courseplanDBModel import CoursePlan
 from appbase import global_db as gdb
 from tools.packtools import packinfo
 from tools.businesstools import checkavailable
@@ -11,7 +13,8 @@ class TeacherDAO:
         根据教师编号查询教师
         """
         try:
-            tea = gdb.session.query(Teacher).filter(Teacher.teacher_id==teacherid).first()
+            tea = gdb.session.query(Teacher).filter(
+                Teacher.teacher_id == teacherid).first()
             tea = tea.todict()
         except Exception as e:
             return packinfo(infostatus=False, infomsg="数据库无数据或发生错误！查询失败！")
@@ -58,6 +61,14 @@ class TeacherDAO:
         tea = gdb.session.query(Teacher).filter(
             Teacher.teacher_id == teacherid).first()
         if tea:
+            foreigns = gdb.session.query(Class1).filter(
+                Class1.teacher_id == teacherid).first()
+            if foreigns:
+                return packinfo(infostatus=False, infomsg="该教师信息正在被班级管理使用，为保证数据一致性，不可删除！")
+            foreigns = gdb.session.query(CoursePlan).filter(
+                CoursePlan.teacher_id == teacherid).first()
+            if foreigns:
+                return packinfo(infostatus=False, infomsg="该教师信息正在被分课时管理使用，为保证数据一致性，不可删除！")
             try:
                 gdb.session.delete(tea)
                 gdb.session.commit()
@@ -82,3 +93,27 @@ class TeacherDAO:
                 return packinfo(infostatus=False, infomsg="教师该时间段不可上课！")
         else:
             return packinfo(infostatus=False, infomsg="教师编号不存在！")
+
+    @staticmethod
+    def updateteacher(teacherid, params):
+        """
+        更新教师
+        """
+        teacher = params
+        teacher_name = teacher["teacher_name"]
+        teacher_mobile = teacher["teacher_mobile"]
+        teacher_request = teacher["teacher_request"]
+        tea = gdb.session.query(Teacher).filter(
+            Teacher.teacher_id == teacherid).first()
+        if tea:
+            try:
+                tea.teacher_name = teacher_name
+                tea.teacher_mobile = teacher_mobile
+                tea.teacher_request = teacher_request
+                gdb.session.commit()
+            except Exception as e:
+                return packinfo(infostatus=False, infomsg="数据库错误！教师更新失败！")
+            else:
+                return packinfo(infostatus=True, infomsg="教师更新成功！")
+        else:
+            return packinfo(infostatus=False, infomsg="教师编号不存在！教师更新失败！")

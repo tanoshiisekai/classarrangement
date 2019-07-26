@@ -60,3 +60,14 @@ class CourseRemove(Resource):
         根据课程编号删除课程
         """
         return CourseDAO.removecourse(courseid)
+
+
+@ns_course.route("/update/<int:courseid>")
+class CourseUpdate(Resource):
+
+    @ns_course.expect(coursemodel)
+    def post(self, courseid):
+        """
+        根据课程编号更新课程
+        """
+        return CourseDAO.updatecourse(courseid, api.payload)

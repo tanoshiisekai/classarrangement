@@ -38,3 +38,13 @@ class CoursePlanRemove(Resource):
         根据分课时编号删除分课时
         """
         return CoursePlanDAO.removecourseplan(courseplanid)
+
+@ns_courseplan.route("/update/<int:courseplanid>")
+class CoursePlanUpdate(Resource):
+
+    @ns_courseplan.expect(courseplanmodel)
+    def post(self, courseplanid):
+        """
+        根据分课时编号更新分课时
+        """
+        return CoursePlanDAO.updatecourseplan(courseplanid, api.payload)

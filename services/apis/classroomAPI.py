@@ -50,3 +50,14 @@ class ClassroomCheck(Resource):
         查询教室是否可用
         """
         return ClassroomDAO.checkavailabletime(classroomid, week, section)
+
+
+@ns_classroom.route("/update/<int:classroomid>")
+class ClassroomUpdate(Resource):
+
+    @ns_classroom.expect(classroommodel)
+    def post(self, classroomid):
+        """
+        根据教室编号更新教室
+        """
+        return ClassroomDAO.updateclassroom(classroomid, api.payload)

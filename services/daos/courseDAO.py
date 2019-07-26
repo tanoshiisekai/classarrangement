@@ -1,6 +1,8 @@
 from dbmodels.courseDBModel import Course
 from dbmodels.coursegroupDBModel import CourseGroup
 from dbmodels.classDBModel import Class1
+from dbmodels.courseplanDBModel import CoursePlan
+from dbmodels.arrangementDBModel import Arrangement
 from appbase import global_db as gdb
 from tools.packtools import packinfo, packjoinquery
 from sqlalchemy import and_, or_
@@ -86,14 +88,21 @@ class CourseDAO:
     def addcourse(params):
         cou = params
         course_name = cou["course_name"]
-        course_isgroup = cou["course_isgroup"]
+        cour = gdb.session.query(Course).filter(Course.course_name==course_name).first()
+        if cour:
+            return packinfo(infostatus=False, infomsg="该课程名称已存在！")
+        course_isgroup = int(cou["course_isgroup"])
         if course_isgroup:
             course_list = cou["course_classlist"].split(",")
+            course_list = [x for x in course_list if x != ""]
+            course_list = list(set(course_list))
+            course_list.sort()
             cour = Course(course_name, course_isgroup)
             try:
                 gdb.session.add(cour)
                 gdb.session.commit()
             except Exception as e:
+                print(e)
                 return packinfo(infostatus=False, infomsg="数据库错误1！数据添加失败！")
             else:
                 coid = gdb.session.query(Course).filter(
@@ -111,7 +120,6 @@ class CourseDAO:
                         return packinfo(infostatus=True, infomsg="合班课程添加成功！")
                 else:
                     return packinfo(infostatus=False, infomsg="数据库错误3！数据添加失败！")
-
         else:
             course_list = ""
             cour = Course(course_name, course_isgroup)
@@ -125,7 +133,15 @@ class CourseDAO:
 
     @staticmethod
     def removecourse(courseid):
-        cou = gdb.session.query(Course).filter(Course.course_id==courseid).first()
+        cou = gdb.session.query(Course).filter(Course.course_id == courseid).first()
+        foreigns = gdb.session.query(CoursePlan).filter(
+            CoursePlan.course_id == courseid).first()
+        if foreigns:
+            return packinfo(infostatus=False, infomsg="该课程信息正在被分课时管理使用，为保证数据一致性，不可删除！")
+        foreigns = gdb.session.query(Arrangement).filter(
+            Arrangement.course_id == courseid).first()
+        if foreigns:
+            return packinfo(infostatus=False, infomsg="该课程信息正在被排课管理使用，为保证数据一致性，不可删除！")
         if cou.course_isgroup:
             subcoulist = gdb.session.query(CourseGroup).filter(CourseGroup.course_id==courseid).all()
             for sc in subcoulist:
@@ -142,3 +158,49 @@ class CourseDAO:
         else:
             return packinfo(infostatus=True, infomsg="课程删除成功！")
 
+    @staticmethod
+    def updatecourse(courseid, params):
+        """
+        更新课程
+        """
+        cou = params
+        course_name = cou["course_name"]
+        course_isgroup = cou["course_isgroup"]
+        if course_isgroup:
+            course_list = cou["course_classlist"].split(",")
+            cou = gdb.session.query(Course).filter(Course.course_id == courseid).first()
+            cou.course_name = course_name
+            cou.course_isgroup = course_isgroup
+            subcoulist = gdb.session.query(CourseGroup).filter(CourseGroup.course_id == courseid).all()
+            for sc in subcoulist:
+                try:
+                    gdb.session.delete(sc)
+                    gdb.session.commit()
+                except Exception as e:
+                    return packinfo(infostatus=False, infomsg="课程删除失败！不存在的数据或数据库错误！")
+            for cl in course_list:
+                cg = CourseGroup(courseid, int(cl))
+                gdb.session.add(cg)
+            try:
+                gdb.session.commit()
+            except Exception as e:
+                return packinfo(infostatus=False, infomsg="数据库错误2！数据添加失败！")
+            else:
+                return packinfo(infostatus=True, infomsg="合班课程更新成功！")
+        else:
+            cou = gdb.session.query(Course).filter(Course.course_id == courseid).first()
+            cou.course_name = course_name
+            cou.course_isgroup = course_isgroup
+            subcoulist = gdb.session.query(CourseGroup).filter(CourseGroup.course_id == courseid).all()
+            for sc in subcoulist:
+                try:
+                    gdb.session.delete(sc)
+                    gdb.session.commit()
+                except Exception as e:
+                    return packinfo(infostatus=False, infomsg="课程删除失败！不存在的数据或数据库错误！")
+            try:
+                gdb.session.commit()
+            except Exception as e:
+                return packinfo(infostatus=False, infomsg="数据库错误3！数据添加失败！")
+            else:
+                return packinfo(infostatus=True, infomsg="非合班课程更新成功！")

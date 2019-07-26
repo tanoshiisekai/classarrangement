@@ -50,3 +50,15 @@ class TeacherCheck(Resource):
         查询教师能否上课
         """
         return TeacherDAO.checkavailabletime(teacherid, week, section)
+
+
+@ns_teacher.route("/update/<int:teacherid>")
+class TeacherUpdate(Resource):
+
+    @ns_teacher.expect(teachermodel)
+    def post(self, teacherid):
+        """
+        根据教师编号更新教师
+        """
+        return TeacherDAO.updateteacher(teacherid, api.payload)
+

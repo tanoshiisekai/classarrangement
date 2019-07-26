@@ -1,6 +1,9 @@
 from dbmodels.classDBModel import Class1
 from dbmodels.teacherDBModel import Teacher
 from dbmodels.classroomDBModel import Classroom
+from dbmodels.coursegroupDBModel import CourseGroup
+from dbmodels.courseplanDBModel import CoursePlan
+from dbmodels.arrangementDBModel import Arrangement
 from appbase import global_db as gdb
 from tools.packtools import packinfo, packjoinquery
 from sqlalchemy import and_
@@ -88,6 +91,30 @@ class ClassDAO:
             return packinfo(infostatus=True, infomsg="班级添加成功！")
 
     @staticmethod
+    def updateclass(classid, params):
+        """
+        更新班级
+        """
+        class1 = params
+        class_name = class1["class_name"]
+        teacher_id = class1["teacher_id"]
+        classroom_id = class1["classroom_id"]
+        cla = gdb.session.query(Class1).filter(
+            Class1.class_id == classid).first()
+        if cla:
+            try:
+                cla.class_name = class_name
+                cla.teacher_id = teacher_id
+                cla.classroom_id = classroom_id
+                gdb.session.commit()
+            except Exception as e:
+                return packinfo(infostatus=False, infomsg="数据库错误！班级更新失败！")
+            else:
+                return packinfo(infostatus=True, infomsg="班级更新成功！")
+        else:
+            return packinfo(infostatus=False, infomsg="班级编号不存在！班级更新失败！")
+
+    @staticmethod
     def removeclass(classid):
         """
         删除班级
@@ -95,6 +122,18 @@ class ClassDAO:
         cla = gdb.session.query(Class1).filter(
             Class1.class_id == classid).first()
         if cla:
+            foreigns = gdb.session.query(CourseGroup).filter(
+                CourseGroup.class_id == classid).first()
+            if foreigns:
+                return packinfo(infostatus=False, infomsg="该班级信息正在被合班课程使用，为保证数据一致性，不可删除！")
+            foreigns = gdb.session.query(CoursePlan).filter(
+                CoursePlan.class_id == classid).first()
+            if foreigns:
+                return packinfo(infostatus=False, infomsg="该班级信息正在被分课时管理使用，为保证数据一致性，不可删除！")
+            foreigns = gdb.session.query(Arrangement).filter(
+                Arrangement.class_id == classid).first()
+            if foreigns:
+                return packinfo(infostatus=False, infomsg="该班级信息正在被排课管理使用，为保证数据一致性，不可删除！")
             try:
                 gdb.session.delete(cla)
                 gdb.session.commit()

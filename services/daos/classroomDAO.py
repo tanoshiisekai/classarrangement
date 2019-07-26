@@ -1,4 +1,6 @@
 from dbmodels.classroomDBModel import Classroom
+from dbmodels.classDBModel import Class1
+from dbmodels.arrangementDBModel import Arrangement
 from appbase import global_db as gdb
 from tools.packtools import packinfo
 from tools.businesstools import checkavailable
@@ -58,6 +60,14 @@ class ClassroomDAO:
         """
         cr = gdb.session.query(Classroom).filter(Classroom.classroom_id==classroomid).first()
         if cr:
+            foreigns = gdb.session.query(Class1).filter(
+                Class1.classroom_id == classroomid).first()
+            if foreigns:
+                return packinfo(infostatus=False, infomsg="该教室信息正在被班级管理使用，为保证数据一致性，不可删除！")
+            foreigns = gdb.session.query(Arrangement).filter(
+                Arrangement.classroom_id == classroomid).first()
+            if foreigns:
+                return packinfo(infostatus=False, infomsg="该教室信息正在被排课管理使用，为保证数据一致性，不可删除！")
             try:
                 gdb.session.delete(cr)
                 gdb.session.commit()
@@ -82,3 +92,25 @@ class ClassroomDAO:
         else:
             return packinfo(infostatus=False, infomsg="教室编号不存在！")
 
+    @staticmethod
+    def updateclassroom(classroomid, params):
+        """
+        更新教室
+        """
+        classroom = params
+        classroom_name = classroom["classroom_name"]
+        classroom_position = classroom["classroom_position"]
+        classroom_available = classroom["classroom_available"]
+        cr = gdb.session.query(Classroom).filter(Classroom.classroom_id==classroomid).first()
+        if cr:
+            try:
+                cr.classroom_name = classroom_name
+                cr.classroom_position = classroom_position
+                cr.classroom_available = classroom_available
+                gdb.session.commit()
+            except Exception as e:
+                return packinfo(infostatus=False, infomsg="数据库错误！教室更新失败！")
+            else:
+                return packinfo(infostatus=True, infomsg="教室更新成功！")
+        else:
+            return packinfo(infostatus=False, infomsg="教室编号不存在！教室更新失败！")

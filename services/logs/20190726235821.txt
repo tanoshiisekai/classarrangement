@@ -1,0 +1,6 @@
+2019-07-27 00:03:40,189	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-27 00:05:07,983	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-27 00:05:10,305	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-27 00:05:24,689	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-27 00:05:26,005	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-27 00:05:36,365	INFO	_internal	_log	Line:88	 * Restarting with stat

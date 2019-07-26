@@ -4,9 +4,9 @@ from appbase import global_db as gdb
 class Arrangement(gdb.Model):
     __tablename__ = 'arrangement'
     arrangement_id = gdb.Column(gdb.Integer, primary_key=True)
-    class_id = gdb.Column(gdb.Integer, nullable=False)
-    course_id = gdb.Column(gdb.Integer, nullable=False)
-    classroom_id = gdb.Column(gdb.Integer, nullable=False)
+    class_id = gdb.Column(gdb.Integer, gdb.ForeignKey("class1.class_id"))
+    course_id = gdb.Column(gdb.Integer, gdb.ForeignKey("course.course_id"))
+    classroom_id = gdb.Column(gdb.Integer, gdb.ForeignKey("classroom.classroom_id"))
     arrangement_week = gdb.Column(gdb.String(5), nullable=False)
     arrangement_section = gdb.Column(gdb.String(5), nullable=False)
     
