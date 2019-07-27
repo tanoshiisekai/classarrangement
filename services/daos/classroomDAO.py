@@ -4,6 +4,7 @@ from dbmodels.arrangementDBModel import Arrangement
 from appbase import global_db as gdb
 from tools.packtools import packinfo
 from tools.businesstools import checkavailable
+from tools.businesstools import checknullvalue
 
 
 class ClassroomDAO:
@@ -43,6 +44,12 @@ class ClassroomDAO:
         classroom_name = classroom["classroom_name"]
         classroom_position = classroom["classroom_position"]
         classroom_available = classroom["classroom_available"]
+        if checknullvalue(classroom_name, classroom_position, classroom_available):
+            return packinfo(infostatus=False, infomsg="提交的参数不全！")
+        if gdb.session.query(Classroom).filter(
+            Classroom.classroom_name == classroom_name
+        ).first():
+            return packinfo(infostatus=False, infomsg="已存在的教室！")
         cr = Classroom(classroom_name=classroom_name, classroom_position=classroom_position,
                        classroom_available=classroom_available)
         try:
@@ -101,6 +108,15 @@ class ClassroomDAO:
         classroom_name = classroom["classroom_name"]
         classroom_position = classroom["classroom_position"]
         classroom_available = classroom["classroom_available"]
+        if checknullvalue(classroom_name, classroom_position, classroom_available):
+            return packinfo(infostatus=False, infomsg="提交的参数不全！")
+        cl = gdb.session.query(Classroom).filter(
+            Classroom.classroom_name == classroom_name
+        ).first()
+        if cl:
+            cid = cl.classroom_id
+            if cid != classroomid:
+                return packinfo(infostatus=False, infomsg="已存在的教室！")
         cr = gdb.session.query(Classroom).filter(Classroom.classroom_id==classroomid).first()
         if cr:
             try:

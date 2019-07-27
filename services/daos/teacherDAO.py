@@ -4,6 +4,7 @@ from dbmodels.courseplanDBModel import CoursePlan
 from appbase import global_db as gdb
 from tools.packtools import packinfo
 from tools.businesstools import checkavailable
+from tools.businesstools import checknullvalue
 
 
 class TeacherDAO:
@@ -43,6 +44,12 @@ class TeacherDAO:
         teacher_name = teacher["teacher_name"]
         teacher_mobile = teacher["teacher_mobile"]
         teacher_request = teacher["teacher_request"]
+        if checknullvalue(teacher_name, teacher_request):
+            return packinfo(infostatus=False, infomsg="提交的参数不全！")
+        if gdb.session.query(Teacher).filter(
+            Teacher.teacher_name == teacher_name
+        ).first():
+            return packinfo(infostatus=False, infomsg="已存在的教师！请人为区分同名教师！")
         tea = Teacher(teacher_name=teacher_name, teacher_mobile=teacher_mobile,
                       teacher_request=teacher_request)
         try:
@@ -103,6 +110,15 @@ class TeacherDAO:
         teacher_name = teacher["teacher_name"]
         teacher_mobile = teacher["teacher_mobile"]
         teacher_request = teacher["teacher_request"]
+        if checknullvalue(teacher_name, teacher_request):
+            return packinfo(infostatus=False, infomsg="提交的参数不全！")
+        cl = gdb.session.query(Teacher).filter(
+            Teacher.teacher_name == teacher_name
+        ).first()
+        if cl:
+            cid = cl.teacher_id
+            if cid != teacherid:
+                return packinfo(infostatus=False, infomsg="已存在的教师！请人为区分同名教师！")
         tea = gdb.session.query(Teacher).filter(
             Teacher.teacher_id == teacherid).first()
         if tea:

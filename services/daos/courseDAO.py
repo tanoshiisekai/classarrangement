@@ -24,7 +24,8 @@ class CourseDAO:
 
     @staticmethod
     def getcoursedetailsbyid(courseid):
-        cou = gdb.session.query(Course).filter(Course.course_id==courseid).first()
+        cou = gdb.session.query(Course).filter(
+            Course.course_id == courseid).first()
         try:
             cou = cou.todict()
             cou = CourseDAO.addcourseclasslistdetails(cou)
@@ -75,7 +76,8 @@ class CourseDAO:
 
     @staticmethod
     def getcoursebyid(courseid):
-        cou = gdb.session.query(Course).filter(Course.course_id==courseid).first()
+        cou = gdb.session.query(Course).filter(
+            Course.course_id == courseid).first()
         try:
             cou = cou.todict()
             cou = CourseDAO.addcourseclasslist(cou)
@@ -88,10 +90,13 @@ class CourseDAO:
     def addcourse(params):
         cou = params
         course_name = cou["course_name"]
-        cour = gdb.session.query(Course).filter(Course.course_name==course_name).first()
-        if cour:
-            return packinfo(infostatus=False, infomsg="该课程名称已存在！")
+        if gdb.session.query(Course).filter(
+            Course.course_name == course_name
+        ).first():
+            return packinfo(infostatus=False, infomsg="已存在的课程！")
         course_isgroup = int(cou["course_isgroup"])
+        if checknullvalue(course_name, course_isgroup):
+            return packinfo(infostatus=False, infomsg="提交的参数不全！")
         if course_isgroup:
             course_list = cou["course_classlist"].split(",")
             course_list = [x for x in course_list if x != ""]
@@ -133,7 +138,8 @@ class CourseDAO:
 
     @staticmethod
     def removecourse(courseid):
-        cou = gdb.session.query(Course).filter(Course.course_id == courseid).first()
+        cou = gdb.session.query(Course).filter(
+            Course.course_id == courseid).first()
         foreigns = gdb.session.query(CoursePlan).filter(
             CoursePlan.course_id == courseid).first()
         if foreigns:
@@ -143,7 +149,8 @@ class CourseDAO:
         if foreigns:
             return packinfo(infostatus=False, infomsg="该课程信息正在被排课管理使用，为保证数据一致性，不可删除！")
         if cou.course_isgroup:
-            subcoulist = gdb.session.query(CourseGroup).filter(CourseGroup.course_id==courseid).all()
+            subcoulist = gdb.session.query(CourseGroup).filter(
+                CourseGroup.course_id == courseid).all()
             for sc in subcoulist:
                 try:
                     gdb.session.delete(sc)
@@ -166,12 +173,26 @@ class CourseDAO:
         cou = params
         course_name = cou["course_name"]
         course_isgroup = cou["course_isgroup"]
+        cl = gdb.session.query(Course).filter(
+            Course.course_name == course_name
+        ).first()
+        if cl:
+            cid = cl.course_id
+            if cid != courseid:
+                return packinfo(infostatus=False, infomsg="已存在的课程！")
+        if checknullvalue(course_name, course_isgroup):
+            return packinfo(infostatus=False, infomsg="提交的参数不全！")
         if course_isgroup:
             course_list = cou["course_classlist"].split(",")
-            cou = gdb.session.query(Course).filter(Course.course_id == courseid).first()
+            course_list = [x for x in course_list if x != ""]
+            course_list = list(set(course_list))
+            course_list.sort()
+            cou = gdb.session.query(Course).filter(
+                Course.course_id == courseid).first()
             cou.course_name = course_name
             cou.course_isgroup = course_isgroup
-            subcoulist = gdb.session.query(CourseGroup).filter(CourseGroup.course_id == courseid).all()
+            subcoulist = gdb.session.query(CourseGroup).filter(
+                CourseGroup.course_id == courseid).all()
             for sc in subcoulist:
                 try:
                     gdb.session.delete(sc)
@@ -188,10 +209,12 @@ class CourseDAO:
             else:
                 return packinfo(infostatus=True, infomsg="合班课程更新成功！")
         else:
-            cou = gdb.session.query(Course).filter(Course.course_id == courseid).first()
+            cou = gdb.session.query(Course).filter(
+                Course.course_id == courseid).first()
             cou.course_name = course_name
             cou.course_isgroup = course_isgroup
-            subcoulist = gdb.session.query(CourseGroup).filter(CourseGroup.course_id == courseid).all()
+            subcoulist = gdb.session.query(CourseGroup).filter(
+                CourseGroup.course_id == courseid).all()
             for sc in subcoulist:
                 try:
                     gdb.session.delete(sc)

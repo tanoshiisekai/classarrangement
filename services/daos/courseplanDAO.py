@@ -50,6 +50,8 @@ class CoursePlanDAO:
         course_id = param["course_id"]
         teacher_id = param["teacher_id"]
         courseplan_count = param["courseplan_count"]
+        if checknullvalue(class_id, course_id, teacher_id, courseplan_count):
+            return packinfo(infostatus=False, infomsg="提交的参数不全！")
         cpl = CoursePlan(class_id=class_id, course_id=course_id,
                          teacher_id=teacher_id, courseplan_count=courseplan_count)
         try:
@@ -89,6 +91,8 @@ class CoursePlanDAO:
         course_id = courseplan["course_id"]
         teacher_id = courseplan["teacher_id"]
         courseplan_count = courseplan["courseplan_count"]
+        if checknullvalue(class_id, course_id, teacher_id, courseplan_count):
+            return packinfo(infostatus=False, infomsg="提交的参数不全！")
         cp = gdb.session.query(CoursePlan).filter(CoursePlan.courseplan_id==courseplanid).first()
         if cp:
             try:

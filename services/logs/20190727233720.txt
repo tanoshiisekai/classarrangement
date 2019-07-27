@@ -1,0 +1,23 @@
+2019-07-27 23:37:20,543	INFO	main	<module>	Line:11	app started
+2019-07-27 23:37:20,548	INFO	_internal	_log	Line:88	 * Running on http://127.0.0.1:9001/ (Press CTRL+C to quit)
+2019-07-27 23:37:20,549	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-27 23:37:20,807	INFO	main	<module>	Line:11	app started
+2019-07-27 23:37:20,812	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-07-27 23:37:20,816	INFO	_internal	_log	Line:88	 * Debugger PIN: 136-371-511
+2019-07-27 23:37:26,886	INFO	_internal	_log	Line:88	127.0.0.1 - - [27/Jul/2019 23:37:26] "OPTIONS /classroom/ HTTP/1.1" 200 -
+2019-07-27 23:37:26,888	INFO	_internal	_log	Line:88	127.0.0.1 - - [27/Jul/2019 23:37:26] "POST /classroom/ HTTP/1.1" 200 -
+2019-07-27 23:37:26,894	INFO	_internal	_log	Line:88	127.0.0.1 - - [27/Jul/2019 23:37:26] "GET /classroom/ HTTP/1.1" 200 -
+2019-07-27 23:37:30,030	INFO	_internal	_log	Line:88	127.0.0.1 - - [27/Jul/2019 23:37:30] "GET /teacher/ HTTP/1.1" 200 -
+2019-07-27 23:37:30,031	INFO	_internal	_log	Line:88	127.0.0.1 - - [27/Jul/2019 23:37:30] "GET /class/details/ HTTP/1.1" 200 -
+2019-07-27 23:37:30,032	INFO	_internal	_log	Line:88	127.0.0.1 - - [27/Jul/2019 23:37:30] "GET /classroom/ HTTP/1.1" 200 -
+2019-07-27 23:37:30,308	INFO	_internal	_log	Line:88	127.0.0.1 - - [27/Jul/2019 23:37:30] "GET /teacher/ HTTP/1.1" 200 -
+2019-07-27 23:37:33,074	INFO	_internal	_log	Line:88	127.0.0.1 - - [27/Jul/2019 23:37:33] "OPTIONS /classroom/ HTTP/1.1" 200 -
+2019-07-27 23:37:33,076	INFO	_internal	_log	Line:88	127.0.0.1 - - [27/Jul/2019 23:37:33] "POST /classroom/ HTTP/1.1" 200 -
+2019-07-27 23:37:33,081	INFO	_internal	_log	Line:88	127.0.0.1 - - [27/Jul/2019 23:37:33] "GET /classroom/ HTTP/1.1" 200 -
+2019-07-27 23:37:37,915	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/services/daos/teacherDAO.py', reloading
+2019-07-27 23:37:37,960	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-27 23:39:59,047	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-27 23:40:04,390	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-27 23:40:07,726	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-27 23:40:29,179	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-07-27 23:40:41,571	INFO	_internal	_log	Line:88	 * Restarting with stat

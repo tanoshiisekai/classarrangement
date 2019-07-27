@@ -21,7 +21,7 @@ body {
   text-align: center;
 }
 .mybutton {
-  width: 160px;
+  width: 120px;
 }
 .mylabel {
   font-size: 20px;

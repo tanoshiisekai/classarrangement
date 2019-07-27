@@ -7,6 +7,7 @@ from dbmodels.arrangementDBModel import Arrangement
 from appbase import global_db as gdb
 from tools.packtools import packinfo, packjoinquery
 from sqlalchemy import and_
+from tools.businesstools import checknullvalue
 
 
 class ClassDAO:
@@ -80,6 +81,12 @@ class ClassDAO:
         class_name = class1["class_name"]
         teacher_id = class1["teacher_id"]
         classroom_id = class1["classroom_id"]
+        if checknullvalue(class_name, teacher_id, classroom_id):
+            return packinfo(infostatus=False, infomsg="提交的参数不全！")
+        if gdb.session.query(Class1).filter(
+            Class1.class_name == class_name
+        ).first():
+            return packinfo(infostatus=False, infomsg="已存在的班级！")
         cla = Class1(class_name=class_name, teacher_id=teacher_id,
                      classroom_id=classroom_id)
         try:
@@ -99,6 +106,15 @@ class ClassDAO:
         class_name = class1["class_name"]
         teacher_id = class1["teacher_id"]
         classroom_id = class1["classroom_id"]
+        if checknullvalue(class_name, teacher_id, classroom_id):
+            return packinfo(infostatus=False, infomsg="提交的参数不全！")
+        cl = gdb.session.query(Class1).filter(
+            Class1.class_name == class_name
+        ).first()
+        if cl:
+            cid = cl.class_id
+            if cid != classid:
+                return packinfo(infostatus=False, infomsg="已存在的班级！")
         cla = gdb.session.query(Class1).filter(
             Class1.class_id == classid).first()
         if cla:

@@ -3,7 +3,7 @@
     <Navigator defaultActive="teacher"></Navigator>
     <el-row :gutter="20" style="margin:10px;">
       <el-col :span="6">
-        <el-input v-model="teacher_name" placeholder>
+        <el-input v-model="teacher_name" placeholder id="tname">
           <template slot="prepend">教师姓名</template>
         </el-input>
       </el-col>
@@ -94,7 +94,7 @@ export default {
     return {
       teacher_name: "",
       teacher_mobile: "",
-      teacher_request: "",
+      teacher_request: "*@*",
       teacherlist: [],
       updatedialog: false,
       teacher_name_new: "",
@@ -104,19 +104,25 @@ export default {
     };
   },
   created() {
+    var lett = this;
+    document.onkeydown = function(e){
+      var key = window.event.keyCode;
+      if(key==13){
+        lett.handleAdd();
+      }
+    }
     this.getData();
+  },
+  mounted() {
+    document.getElementById("tname").focus();
   },
   methods: {
     getData() {
-      this.teacherlist = [];
-      this.teacher_name = "";
-      this.teacher_mobile = "";
-      this.teacher_request = "";
       this.axios.get("/teacher/").then(response => {
         var resp = response.data;
         if (resp["infostatus"]) {
           this.teacherlist = resp["inforesult"];
-          this.teacherlist.sort((a, b)=>{return a['teacher_name']>b['teacher_name']});
+          this.teacherlist.sort((a, b)=>{return b['teacher_id']-a['teacher_id']});
         } else {
           this.$message({
             message: resp["infomsg"]
@@ -137,6 +143,8 @@ export default {
             message: resp["infomsg"]
           });
           this.getData();
+          this.teacher_name = "";
+          this.teacher_mobile = "";
         })
         .catch(error => {
           console.log(error);
@@ -173,6 +181,9 @@ export default {
           });
           this.updatedialog = false;
           this.getData();
+          this.teacher_name_new = "";
+          this.teacher_mobile_new = "";
+          this.teacher_request_new = "";
         })
         .catch(error => {
           console.log(error);

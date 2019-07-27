@@ -141,7 +141,7 @@ export default {
         var resp = response.data;
         if (resp["infostatus"]) {
           this.classlist = resp["inforesult"];
-          this.classlist.sort((a, b)=>{return a['class_name']>b['class_name']});
+          this.classlist.sort((a, b)=>{return b['class_id']-a['class_id']});
         } else {
           this.$message({
             message: resp["infomsg"]
@@ -167,7 +167,7 @@ export default {
         var resp = response.data;
         if (resp["infostatus"]) {
           this.classroomlist = resp["inforesult"];
-          this.classroomlist.sort((a, b)=>{return a['classroom_name']>b['classroom_name']});
+          this.classroomlist.sort((a, b)=>{return a['classroom_name']-b['classroom_name']});
         } else {
           this.$message({
             message: resp["infomsg"]

@@ -3,7 +3,7 @@
     <Navigator defaultActive="classroom"></Navigator>
     <el-row :gutter="20" style="margin:10px;">
       <el-col :span="6">
-        <el-input v-model="classroom_name" placeholder>
+        <el-input v-model="classroom_name" placeholder id="cname">
           <template slot="prepend">教室名称</template>
         </el-input>
       </el-col>
@@ -95,7 +95,7 @@ export default {
     return {
       classroom_name: "",
       classroom_position: "",
-      classroom_available: "",
+      classroom_available: "*@*",
       classroom_name_new: "",
       classroom_position_new: "",
       classroom_available_new: "",
@@ -105,19 +105,26 @@ export default {
     };
   },
   created() {
+    var lett = this;
+    document.onkeydown = function(e){
+      var key = window.event.keyCode;
+      if(key==13){
+        lett.handleAdd();
+      }
+    }
     this.getData();
+  },
+  mounted() {
+    document.getElementById("cname").focus();
   },
   methods: {
     getData() {
-      this.classroomlist = [];
-      this.classroom_name = "";
-      this.classroom_position = "";
-      this.classroom_available = "";
       this.axios.get("/classroom/").then(response => {
         var resp = response.data;
         if (resp["infostatus"]) {
           this.classroomlist = resp["inforesult"];
-          this.classroomlist.sort((a, b)=>{return a['classroom_name']>b['classroom_name']});
+          console.log(this.classroomlist);
+          this.classroomlist.sort((a, b)=>{return b['classroom_id']-a['classroom_id']});
         } else {
           this.$message({
             message: resp["infomsg"]
@@ -138,6 +145,9 @@ export default {
             message: resp["infomsg"]
           });
           this.getData();
+          this.classroom_name = "";
+          this.classroom_position = "";
+          document.getElementById("cname").focus();
         })
         .catch(error => {
           console.log(error);
@@ -174,6 +184,9 @@ export default {
           });
           this.updatedialog = false;
           this.getData();
+          this.classroom_name_new = "";
+          this.classroom_position_new = "";
+          this.classroom_available_new = "";
         })
         .catch(error => {
           console.log(error);
