@@ -3,7 +3,7 @@
     <Navigator defaultActive="class1"></Navigator>
     <el-row :gutter="20" style="margin:10px;">
       <el-col :span="6">
-        <el-input v-model="class_name" placeholder>
+        <el-input v-model="class_name" placeholder id="clname">
           <template slot="prepend">班级名称</template>
         </el-input>
       </el-col>
@@ -66,8 +66,7 @@
           <el-tag class="mylabel">班级名称</el-tag>
         </el-col>
         <el-col :span="14">
-          <el-input v-model="class_name_new" class="samelengthwithselect">
-          </el-input>
+          <el-input v-model="class_name_new" class="samelengthwithselect"></el-input>
         </el-col>
       </el-row>
       <el-row style="margin:10px;">
@@ -75,7 +74,12 @@
           <el-tag class="mylabel">班主任</el-tag>
         </el-col>
         <el-col :span="14">
-          <el-select v-model="teacher_id_new" filterable placeholder="请选择班主任"  class="samelengthwithselect">
+          <el-select
+            v-model="teacher_id_new"
+            filterable
+            placeholder="请选择班主任"
+            class="samelengthwithselect"
+          >
             <el-option
               v-for="item in teacherlist"
               :key="item.teacher_id"
@@ -90,14 +94,19 @@
           <el-tag class="mylabel">默认教室</el-tag>
         </el-col>
         <el-col :span="14">
-          <el-select v-model="classroom_id_new" filterable placeholder="请选择教室" class="samelengthwithselect">
-          <el-option
-            v-for="item in classroomlist"
-            :key="item.classroom_id"
-            :label="item.classroom_name"
-            :value="item.classroom_id"
-          ></el-option>
-        </el-select>
+          <el-select
+            v-model="classroom_id_new"
+            filterable
+            placeholder="请选择教室"
+            class="samelengthwithselect"
+          >
+            <el-option
+              v-for="item in classroomlist"
+              :key="item.classroom_id"
+              :label="item.classroom_name"
+              :value="item.classroom_id"
+            ></el-option>
+          </el-select>
         </el-col>
       </el-row>
       <div slot="footer" class="dialog-footer">
@@ -131,9 +140,19 @@ export default {
     };
   },
   created() {
+    var lett = this;
+    document.onkeydown = function(e) {
+      var key = window.event.keyCode;
+      if (key == 13) {
+        lett.handleAdd();
+      }
+    };
     this.getTeacherList();
     this.getClassroomList();
     this.getData();
+  },
+  mounted() {
+    document.getElementById("clname").focus();
   },
   methods: {
     getData() {
@@ -141,7 +160,9 @@ export default {
         var resp = response.data;
         if (resp["infostatus"]) {
           this.classlist = resp["inforesult"];
-          this.classlist.sort((a, b)=>{return b['class_id']-a['class_id']});
+          this.classlist.sort((a, b) => {
+            return b["class_id"] - a["class_id"];
+          });
         } else {
           this.$message({
             message: resp["infomsg"]
@@ -154,7 +175,9 @@ export default {
         var resp = response.data;
         if (resp["infostatus"]) {
           this.teacherlist = resp["inforesult"];
-          this.teacherlist.sort((a, b)=>{return a['teacher_name']>b['teacher_name']});
+          this.teacherlist.sort((a, b) => {
+            return a["teacher_name"] > b["teacher_name"];
+          });
         } else {
           this.$message({
             message: resp["infomsg"]
@@ -167,7 +190,9 @@ export default {
         var resp = response.data;
         if (resp["infostatus"]) {
           this.classroomlist = resp["inforesult"];
-          this.classroomlist.sort((a, b)=>{return a['classroom_name']-b['classroom_name']});
+          this.classroomlist.sort((a, b) => {
+            return a["classroom_name"] - b["classroom_name"];
+          });
         } else {
           this.$message({
             message: resp["infomsg"]
@@ -184,10 +209,16 @@ export default {
         })
         .then(response => {
           var resp = response.data;
+          if (resp["infostatus"]) {
+            this.getData();
+            this.class_name = "";
+            this.teacherselected = "";
+            this.classroomselected = "";
+            document.getElementById("clname").focus();
+          }
           this.$message({
             message: resp["infomsg"]
           });
-          this.getData();
         })
         .catch(error => {
           console.log(error);
@@ -201,7 +232,7 @@ export default {
           var redata = resp["inforesult"];
           this.class_name_new = redata["class_name"];
           this.teacher_id_new = redata["teacher_id"];
-          this.classroom_id_new= redata["classroom_id"];
+          this.classroom_id_new = redata["classroom_id"];
           this.classid_updated = row.class_id;
         } else {
           this.$message({

@@ -1,7 +1,14 @@
 from tools.info import Info
 
 def checknullvalue(*itemlist):
-    return not all(itemlist)
+    for item in itemlist:
+        if len(item.strip()) == 0:
+            return True
+        if item is None:
+            return True
+        if item == False:
+            return True
+    return False
 
 def analysetimestr(astr):
     totalsectionlist = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']

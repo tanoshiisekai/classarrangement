@@ -3,7 +3,7 @@
     <Navigator defaultActive="course"></Navigator>
     <el-row :gutter="20" style="margin:10px;">
       <el-col :span="12">
-        <el-input v-model="course_name" placeholder>
+        <el-input v-model="course_name" placeholder id="crname">
           <template slot="prepend">课程名称</template>
         </el-input>
       </el-col>
@@ -315,7 +315,17 @@ export default {
       courseid_updated: ""
     };
   },
+  mounted() {
+    document.getElementById("crname").focus();
+  },
   created() {
+    var lett = this;
+    document.onkeydown = function(e) {
+      var key = window.event.keyCode;
+      if (key == 13) {
+        lett.handleAdd();
+      }
+    };
     this.getClassList();
     this.getData();
   },
@@ -326,7 +336,7 @@ export default {
         if (resp["infostatus"]) {
           this.courselist = resp["inforesult"];
           this.courselist.sort((a, b) => {
-            return b["course_id"]-a["course_id"];
+            return b["course_id"] - a["course_id"];
           });
         } else {
           this.$message({
@@ -504,7 +514,17 @@ export default {
           });
           this.getData();
           this.course_name = "";
-          this.course_isgroup = "";
+          this.course_isgroup = "0";
+          this.class_name_1 = "";
+          this.class_name_2 = "";
+          this.class_name_3 = "";
+          this.class_name_4 = "";
+          this.class_name_5 = "";
+          this.class_name_6 = "";
+          this.class_name_7 = "";
+          this.class_name_8 = "";
+          this.class_name_9 = "";
+          document.getElementById("crname").focus();
         })
         .catch(error => {
           console.log(error);

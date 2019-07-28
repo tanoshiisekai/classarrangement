@@ -145,6 +145,7 @@ export default {
           this.getData();
           this.teacher_name = "";
           this.teacher_mobile = "";
+          document.getElementById("tname").focus();
         })
         .catch(error => {
           console.log(error);

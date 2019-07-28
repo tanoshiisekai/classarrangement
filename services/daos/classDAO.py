@@ -87,6 +87,10 @@ class ClassDAO:
             Class1.class_name == class_name
         ).first():
             return packinfo(infostatus=False, infomsg="已存在的班级！")
+        if gdb.session.query(Class1).filter(
+            Class1.classroom_id == classroom_id
+        ).first():
+            return packinfo(infostatus=False, infomsg="教室已被占用！")
         cla = Class1(class_name=class_name, teacher_id=teacher_id,
                      classroom_id=classroom_id)
         try:
@@ -115,6 +119,13 @@ class ClassDAO:
             cid = cl.class_id
             if cid != classid:
                 return packinfo(infostatus=False, infomsg="已存在的班级！")
+        cl = gdb.session.query(Class1).filter(
+            Class1.classroom_id == classroom_id
+        ).first()
+        if cl:
+            cid = cl.class_id
+            if cid != classid:
+                return packinfo(infostatus=False, infomsg="教室已被占用！")
         cla = gdb.session.query(Class1).filter(
             Class1.class_id == classid).first()
         if cla:

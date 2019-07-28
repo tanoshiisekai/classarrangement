@@ -7,6 +7,7 @@ from appbase import global_db as gdb
 from tools.packtools import packinfo, packjoinquery
 from sqlalchemy import and_, or_
 from tools.log import logger
+from tools.businesstools import checknullvalue
 
 
 class CourseDAO:
@@ -90,13 +91,14 @@ class CourseDAO:
     def addcourse(params):
         cou = params
         course_name = cou["course_name"]
+        course_isgroup = cou["course_isgroup"]
+        if checknullvalue(course_name, course_isgroup):
+            return packinfo(infostatus=False, infomsg="提交的参数不全！")
+        course_isgroup = int(course_isgroup)
         if gdb.session.query(Course).filter(
             Course.course_name == course_name
         ).first():
             return packinfo(infostatus=False, infomsg="已存在的课程！")
-        course_isgroup = int(cou["course_isgroup"])
-        if checknullvalue(course_name, course_isgroup):
-            return packinfo(infostatus=False, infomsg="提交的参数不全！")
         if course_isgroup:
             course_list = cou["course_classlist"].split(",")
             course_list = [x for x in course_list if x != ""]

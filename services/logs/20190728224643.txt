@@ -1,0 +1,23 @@
+2019-07-28 22:46:43,354	INFO	main	<module>	Line:11	app started
+2019-07-28 22:46:43,359	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-07-28 22:46:43,362	INFO	_internal	_log	Line:88	 * Debugger PIN: 837-184-359
+2019-07-28 22:46:43,923	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 22:46:43] "OPTIONS /course/ HTTP/1.1" 200 -
+2019-07-28 22:46:43,929	ERROR	app	log_exception	Line:1761	Exception on /course/ [POST]
+Traceback (most recent call last):
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/long/development/classarrangement/services/apis/courseAPI.py", line 22, in post
+    return CourseDAO.addcourse(api.payload)
+  File "/home/long/development/classarrangement/services/daos/courseDAO.py", line 98, in addcourse
+    course_isgroup = int(cou["course_isgroup"])
+ValueError: invalid literal for int() with base 10: ''
+2019-07-28 22:46:43,930	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 22:46:43] "POST /course/ HTTP/1.1" 500 -
+2019-07-28 22:46:54,426	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/services/tools/businesstools.py', reloading

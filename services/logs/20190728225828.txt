@@ -1,0 +1,22 @@
+2019-07-28 22:58:28,644	INFO	main	<module>	Line:11	app started
+2019-07-28 22:58:28,650	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-07-28 22:58:28,653	INFO	_internal	_log	Line:88	 * Debugger PIN: 963-712-603
+2019-07-28 22:59:02,867	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 22:59:02] "OPTIONS /course/ HTTP/1.1" 200 -
+2019-07-28 22:59:02,992	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 22:59:02] "POST /course/ HTTP/1.1" 200 -
+2019-07-28 22:59:03,029	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 22:59:03] "GET /course/details/ HTTP/1.1" 200 -
+2019-07-28 22:59:34,235	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 22:59:34] "OPTIONS /course/ HTTP/1.1" 200 -
+2019-07-28 22:59:34,346	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 22:59:34] "POST /course/ HTTP/1.1" 200 -
+2019-07-28 22:59:34,377	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 22:59:34] "GET /course/details/ HTTP/1.1" 200 -
+2019-07-28 22:59:53,185	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 22:59:53] "OPTIONS /course/ HTTP/1.1" 200 -
+2019-07-28 22:59:53,291	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 22:59:53] "POST /course/ HTTP/1.1" 200 -
+2019-07-28 22:59:53,324	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 22:59:53] "GET /course/details/ HTTP/1.1" 200 -
+2019-07-28 23:00:25,569	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 23:00:25] "OPTIONS /course/ HTTP/1.1" 200 -
+2019-07-28 23:00:25,687	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 23:00:25] "POST /course/ HTTP/1.1" 200 -
+2019-07-28 23:00:25,723	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 23:00:25] "GET /course/details/ HTTP/1.1" 200 -
+2019-07-28 23:00:57,753	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 23:00:57] "OPTIONS /course/ HTTP/1.1" 200 -
+2019-07-28 23:00:57,859	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 23:00:57] "POST /course/ HTTP/1.1" 200 -
+2019-07-28 23:00:57,896	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 23:00:57] "GET /course/details/ HTTP/1.1" 200 -
+2019-07-28 23:02:23,722	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 23:02:23] "OPTIONS /course/ HTTP/1.1" 200 -
+2019-07-28 23:02:23,831	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 23:02:23] "POST /course/ HTTP/1.1" 200 -
+2019-07-28 23:02:23,868	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 23:02:23] "GET /course/details/ HTTP/1.1" 200 -
+2019-07-28 23:04:06,529	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/services/daos/courseplanDAO.py', reloading
