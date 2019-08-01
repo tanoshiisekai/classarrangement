@@ -1,0 +1,15 @@
+2019-08-02 01:36:37,222	INFO	main	<module>	Line:11	app started
+2019-08-02 01:36:37,228	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-08-02 01:36:37,231	INFO	_internal	_log	Line:88	 * Debugger PIN: 377-015-413
+2019-08-02 01:36:38,170	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:36:38] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-02 01:36:38,175	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:36:38] "GET /courseplan/details/ HTTP/1.1" 200 -
+2019-08-02 01:36:38,179	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:36:38] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-02 01:36:38,185	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:36:38] "GET /course/ HTTP/1.1" 200 -
+2019-08-02 01:37:14,713	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:37:14] "OPTIONS /courseplan/ HTTP/1.1" 200 -
+2019-08-02 01:37:14,717	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:37:14] "POST /courseplan/ HTTP/1.1" 200 -
+2019-08-02 01:37:14,868	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:37:14] "GET /courseplan/details/ HTTP/1.1" 200 -
+2019-08-02 01:37:50,280	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:37:50] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-02 01:37:50,284	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:37:50] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-02 01:37:50,293	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:37:50] "GET /courseplan/details/ HTTP/1.1" 200 -
+2019-08-02 01:37:50,304	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:37:50] "GET /course/ HTTP/1.1" 200 -
+2019-08-02 01:38:54,981	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/services/daos/courseplanDAO.py', reloading

@@ -2,7 +2,7 @@ from tools.info import Info
 
 def checknullvalue(*itemlist):
     for item in itemlist:
-        if len(item.strip()) == 0:
+        if type(item) == str and len(item.strip()) == 0:
             return True
         if item is None:
             return True

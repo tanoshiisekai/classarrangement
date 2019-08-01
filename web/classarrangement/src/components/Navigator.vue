@@ -1,5 +1,5 @@
 <template>
-  <div class="navigator">
+  <div class="menu">
     <el-menu
       :default-active="defaultActive"
       class="el-menu-demo"
@@ -8,6 +8,7 @@
       background-color="#545c64"
       text-color="#fff"
       active-text-color="#ffd04b"
+      id="menu"
     >
       <el-menu-item index="classroom">教室管理</el-menu-item>
       <el-menu-item index="teacher">教师管理</el-menu-item>
@@ -46,4 +47,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#menu{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
 </style>

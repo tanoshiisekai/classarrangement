@@ -1,0 +1,11 @@
+2019-08-02 01:28:06,694	INFO	main	<module>	Line:11	app started
+2019-08-02 01:28:06,699	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-08-02 01:28:06,703	INFO	_internal	_log	Line:88	 * Debugger PIN: 392-702-588
+2019-08-02 01:28:13,331	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:28:13] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-02 01:28:13,339	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:28:13] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-02 01:28:13,339	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:28:13] "GET /courseplan/details/ HTTP/1.1" 200 -
+2019-08-02 01:28:13,349	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:28:13] "GET /course/ HTTP/1.1" 200 -
+2019-08-02 01:28:50,891	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:28:50] "OPTIONS /courseplan/ HTTP/1.1" 200 -
+2019-08-02 01:28:50,962	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:28:50] "POST /courseplan/ HTTP/1.1" 200 -
+2019-08-02 01:28:51,136	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:28:51] "GET /courseplan/details/ HTTP/1.1" 200 -
+2019-08-02 01:31:08,693	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/services/daos/courseplanDAO.py', reloading

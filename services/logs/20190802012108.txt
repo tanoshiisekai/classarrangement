@@ -1,0 +1,34 @@
+2019-08-02 01:21:08,358	INFO	main	<module>	Line:11	app started
+2019-08-02 01:21:08,363	INFO	_internal	_log	Line:88	 * Running on http://127.0.0.1:9001/ (Press CTRL+C to quit)
+2019-08-02 01:21:08,364	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-08-02 01:21:08,629	INFO	main	<module>	Line:11	app started
+2019-08-02 01:21:08,634	WARNING	_internal	_log	Line:88	 * Debugger is active!
+2019-08-02 01:21:08,638	INFO	_internal	_log	Line:88	 * Debugger PIN: 471-315-297
+2019-08-02 01:21:10,459	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:21:10] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-02 01:21:10,463	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:21:10] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-02 01:21:10,466	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:21:10] "GET /courseplan/details/ HTTP/1.1" 200 -
+2019-08-02 01:21:10,478	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:21:10] "GET /course/ HTTP/1.1" 200 -
+2019-08-02 01:21:37,945	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:21:37] "OPTIONS /courseplan/ HTTP/1.1" 200 -
+2019-08-02 01:21:37,948	ERROR	app	log_exception	Line:1761	Exception on /courseplan/ [POST]
+Traceback (most recent call last):
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/bin/anaconda3/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/long/development/classarrangement/services/apis/courseplanAPI.py", line 22, in post
+    return CoursePlanDAO.addcourseplan(api.payload)
+  File "/home/long/development/classarrangement/services/daos/courseplanDAO.py", line 66, in addcourseplan
+    groupclasses = [x[0] for x in groupclasses]
+  File "/home/long/development/classarrangement/services/daos/courseplanDAO.py", line 66, in <listcomp>
+    groupclasses = [x[0] for x in groupclasses]
+TypeError: 'CourseGroup' object is not subscriptable
+2019-08-02 01:21:37,949	INFO	_internal	_log	Line:88	127.0.0.1 - - [02/Aug/2019 01:21:37] "POST /courseplan/ HTTP/1.1" 500 -
+2019-08-02 01:22:34,094	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/services/daos/courseplanDAO.py', reloading
+2019-08-02 01:22:34,143	INFO	_internal	_log	Line:88	 * Restarting with stat
+2019-08-02 01:23:02,625	INFO	_internal	_log	Line:88	 * Restarting with stat

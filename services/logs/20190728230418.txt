@@ -172,3 +172,4 @@
 2019-07-28 23:25:05,123	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 23:25:05] "GET /course/details/ HTTP/1.1" 200 -
 2019-07-28 23:25:12,931	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 23:25:12] "GET /class/ HTTP/1.1" 200 -
 2019-07-28 23:25:12,949	INFO	_internal	_log	Line:88	127.0.0.1 - - [28/Jul/2019 23:25:12] "GET /course/details/ HTTP/1.1" 200 -
+2019-07-28 23:27:07,590	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/services/daos/courseplanDAO.py', reloading
