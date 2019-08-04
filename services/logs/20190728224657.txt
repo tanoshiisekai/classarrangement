@@ -1,5 +1,0 @@
-2019-07-28 22:46:57,922	INFO	main	<module>	Line:11	app started
-2019-07-28 22:46:57,928	INFO	_internal	_log	Line:88	 * Running on http://127.0.0.1:9001/ (Press CTRL+C to quit)
-2019-07-28 22:46:57,928	INFO	_internal	_log	Line:88	 * Restarting with stat
-2019-07-28 22:47:13,323	INFO	_internal	_log	Line:88	 * Restarting with stat
-2019-07-28 22:47:29,716	INFO	_internal	_log	Line:88	 * Restarting with stat

@@ -22,7 +22,11 @@
               ></span>
             </span>
             <span style="float:right;text-align:right;">
-              <span style="display: inline-block;margin-right: 30px;" class="cardoperation3" @click="foldallcard">折叠所有</span>
+              <span
+                style="display: inline-block;margin-right: 30px;"
+                class="cardoperation3"
+                @click="foldallcard"
+              >折叠所有</span>
               <span
                 style="margin-right: 30px;"
                 class="cardoperation1"
@@ -35,7 +39,6 @@
                 @click="showcard(index)"
                 :id="'showcard'+index"
               >打开卡片</span>
-              
             </span>
           </div>
           <div class="cla_content" :id="'content'+index">
@@ -101,6 +104,61 @@
           </div>
         </el-card>
       </el-col>
+      <el-dialog title="编辑分课时信息" :visible.sync="updatedialog">
+        <el-row style="margin:10px;">
+          <el-col :span="6">
+            <el-tag class="mylabel">课程名称</el-tag>
+          </el-col>
+          <el-col :span="14">
+            <el-select
+              v-model="tempcourselistnew"
+              filterable
+              placeholder="请选择课程"
+              class="samelengthwithselect"
+            >
+              <el-option
+                v-for="item in courselist"
+                :key="item.course_id"
+                :label="item.course_name"
+                :value="item.course_id"
+              ></el-option>
+            </el-select>
+          </el-col>
+        </el-row>
+        <el-row style="margin:10px;">
+          <el-col :span="6">
+            <el-tag class="mylabel">任课教师</el-tag>
+          </el-col>
+          <el-col :span="14">
+            <el-select
+              v-model="tempteacherlistnew"
+              filterable
+              placeholder="请选择任课老师"
+              class="samelengthwithselect"
+            >
+              <el-option
+                v-for="item in teacherlist"
+                :key="item.teacher_id"
+                :label="item.teacher_name"
+                :value="item.teacher_id"
+              ></el-option>
+            </el-select>
+          </el-col>
+        </el-row>
+        <el-row style="margin:10px;">
+          <el-col :span="6">
+            <el-tag class="mylabel">课时数</el-tag>
+          </el-col>
+          <el-col :span="14">
+            <el-input v-model="tempcountlistnew" placeholder class="samelengthwithselect"></el-input>
+            <el-input v-model="classid_updated" type="hidden" placeholder class="samelengthwithselect"></el-input>
+          </el-col>
+        </el-row>
+        <div slot="footer" class="dialog-footer">
+          <el-button @click="updatedialog=false">取消</el-button>
+          <el-button type="primary" @click="handleSubUpdate()">确定</el-button>
+        </div>
+      </el-dialog>
     </el-row>
   </div>
 </template>
@@ -117,11 +175,17 @@ export default {
       classlist: [],
       courselist: [],
       tempcourselist: [],
+      tempcourselistnew: "",
       teacherlist: [],
       tempteacherlist: [],
+      tempteacherlistnew: "",
       tempcountlist: [],
+      tempcountlistnew: "",
       tempcourseplanlist: [],
-      courseplanlist: []
+      courseplanlist: [],
+      updatedialog: false,
+      courseplanid_updated: 0,
+      classid_updated: 0,
     };
   },
   created() {
@@ -139,7 +203,8 @@ export default {
         "display:none;margin-right:30px;";
     },
     showcard(index) {
-      document.getElementById("content" + index).style = "display:inline-block;";
+      document.getElementById("content" + index).style =
+        "display:inline-block;";
       document.getElementById("foldcard" + index).style =
         "display:inline-block;;margin-right:30px;";
       document.getElementById("showcard" + index).style =
@@ -152,7 +217,6 @@ export default {
           "display:inline-block;;margin-right:30px;";
         document.getElementById("foldcard" + i).style =
           "display:none;margin-right:30px;";
-        
       }
     },
     getData() {
@@ -259,6 +323,67 @@ export default {
         .catch(error => {
           console.log(error);
         });
+    },
+    handleDelete(index, row) {
+      this.$confirm("确定要删除这条班级数据吗？", "提示", {
+        confirmButtonText: "确定",
+        cancelButtonText: "取消",
+        type: "warning"
+      })
+        .then(() => {
+          this.axios
+            .get("/courseplan/remove/" + row.courseplan_id)
+            .then(response => {
+              var resp = response.data;
+              this.$message({
+                message: resp["infomsg"]
+              });
+              this.getData();
+            });
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    },
+    handleUpdate(index, row) {
+      this.updatedialog = true;
+      this.axios
+        .get("/courseplan/details/" + row.courseplan_id)
+        .then(response => {
+          var resp = response.data;
+          if (resp["infostatus"]) {
+            var redata = resp["inforesult"];
+            this.tempcourselistnew = redata[0]["course_id"];
+            this.tempteacherlistnew = redata[0]["teacher_id"];
+            this.tempcountlistnew = redata[0]["courseplan_count"];
+            this.courseplanid_updated = row.courseplan_id;
+            this.classid_updated = redata[0]["class_id"];
+          } else {
+            this.$message({
+              message: resp["infomsg"]
+            });
+          }
+        });
+    },
+    handleSubUpdate() {
+      this.axios
+        .post("/courseplan/update/" + this.courseplanid_updated, {
+          class_id: this.classid_updated,
+          course_id: this.tempcourselistnew,
+          teacher_id: this.tempteacherlistnew,
+          courseplan_count: this.tempcountlistnew
+        })
+        .then(response => {
+          var resp = response.data;
+          this.$message({
+            message: resp["infomsg"]
+          });
+          this.updatedialog = false;
+          this.getData();
+        })
+        .catch(error => {
+          console.log(error);
+        });
     }
   }
 };
@@ -289,7 +414,7 @@ export default {
   cursor: pointer;
   font-weight: bold;
 }
-.container{
-    margin-top: 100px;
+.container {
+  margin-top: 100px;
 }
 </style>

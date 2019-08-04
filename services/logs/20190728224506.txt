@@ -1,4 +1,0 @@
-2019-07-28 22:45:07,005	INFO	main	<module>	Line:11	app started
-2019-07-28 22:45:07,010	WARNING	_internal	_log	Line:88	 * Debugger is active!
-2019-07-28 22:45:07,013	INFO	_internal	_log	Line:88	 * Debugger PIN: 161-764-382
-2019-07-28 22:45:08,025	INFO	_internal	_log	Line:88	 * Detected change in '/home/long/development/classarrangement/services/tools/businesstools.py', reloading
