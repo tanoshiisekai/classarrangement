@@ -1,5 +1,6 @@
 from dbmodels.courseplanDBModel import CoursePlan
 from dbmodels.courseDBModel import Course
+from dbmodels.arrangementDBModel import Arrangement
 from dbmodels.coursegroupDBModel import CourseGroup
 from dbmodels.classDBModel import Class1
 from dbmodels.teacherDBModel import Teacher
@@ -12,6 +13,41 @@ import operator
 
 
 class CoursePlanDAO:
+
+    @staticmethod
+    def addbearranged(xdict):
+        temp = gdb.session.query(Arrangement).filter(and_(
+            Arrangement.class_id == xdict["class_id"],
+            Arrangement.course_id == xdict["course_id"]
+        )).first()
+        if temp:
+            xdict.update({"arrangement_week": temp.arrangement_week,
+                          "arrangement_section": temp.arrangement_section,
+                          "bearranged": 1})
+        else:
+            xdict.update({"arrangement_week": "",
+                          "arrangement_section": "",
+                          "bearranged": 0})
+        return xdict
+
+    @staticmethod
+    def getallcoursearrangement():
+        """
+        返回包含是否已排课的分课时详情
+        """
+        try:
+            coulist = gdb.session.query(CoursePlan, Course, Class1, Teacher).filter(
+                CoursePlan.class_id == Class1.class_id).filter(
+                    CoursePlan.course_id == Course.course_id).filter(
+                        CoursePlan.teacher_id == Teacher.teacher_id
+            ).all()
+            coulist = [packjoinquery(x) for x in coulist]
+            coulist = [CourseDAO.addcourseclasslistdetails(x) for x in coulist]
+            coulist = [CoursePlanDAO.addbearranged(x) for x in coulist]
+        except Exception as e:
+            return packinfo(infostatus=False, infomsg="数据库无数据或发生错误！查询失败！")
+        else:
+            return packinfo(infostatus=True, inforesult=coulist, infomsg="查询成功！")
 
     @staticmethod
     def getallcourseplandetails():
@@ -41,7 +77,7 @@ class CoursePlanDAO:
                 CoursePlan.class_id == Class1.class_id).filter(
                     CoursePlan.course_id == Course.course_id).filter(
                         CoursePlan.teacher_id == Teacher.teacher_id
-            ).filter(CoursePlan.courseplan_id==courseplanid).all()
+            ).filter(CoursePlan.courseplan_id == courseplanid).all()
             coulist = [packjoinquery(x) for x in coulist]
             coulist = [CourseDAO.addcourseclasslistdetails(x) for x in coulist]
         except Exception as e:
@@ -68,7 +104,8 @@ class CoursePlanDAO:
         根据分课时编号查询分课时
         """
         try:
-            cou = gdb.session.query(CoursePlan).filter(CoursePlan.courseplan_id==courseplanid).first()
+            cou = gdb.session.query(CoursePlan).filter(
+                CoursePlan.courseplan_id == courseplanid).first()
             cou = cou.todict()
         except Exception as e:
             print(e)

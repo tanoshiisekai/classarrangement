@@ -7,6 +7,7 @@ import Class1 from '@/components/Class1'
 import Course from '@/components/Course'
 import Courseplan from '@/components/Courseplan'
 import Arrangement from '@/components/Arrangement'
+import Info from '@/components/Info'
 
 Vue.use(Router)
 
@@ -37,6 +38,10 @@ export default new Router({
       path: '/arrangement',
       name: 'arrangement',
       component: Arrangement
+    }, {
+      path: '/info',
+      name: 'info',
+      component: Info
     }
   ]
 })

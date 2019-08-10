@@ -1,0 +1,11 @@
+2019-08-07 15:54:43,396	INFO	main	<module>	Line:11	app started
+2019-08-07 15:54:43,402	WARNING	_internal	_log	Line:122	 * Debugger is active!
+2019-08-07 15:54:43,402	INFO	_internal	_log	Line:122	 * Debugger PIN: 163-876-169
+2019-08-07 15:54:47,521	INFO	_internal	_log	Line:122	127.0.0.1 - - [07/Aug/2019 15:54:47] "GET / HTTP/1.1" 200 -
+2019-08-07 15:54:54,135	INFO	_internal	_log	Line:122	127.0.0.1 - - [07/Aug/2019 15:54:54] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+2019-08-07 15:54:54,137	INFO	_internal	_log	Line:122	127.0.0.1 - - [07/Aug/2019 15:54:54] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+2019-08-07 15:54:54,143	INFO	_internal	_log	Line:122	127.0.0.1 - - [07/Aug/2019 15:54:54] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2019-08-07 15:54:54,143	INFO	_internal	_log	Line:122	127.0.0.1 - - [07/Aug/2019 15:54:54] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+2019-08-07 15:54:54,349	INFO	_internal	_log	Line:122	127.0.0.1 - - [07/Aug/2019 15:54:54] "GET /swagger.json HTTP/1.1" 200 -
+2019-08-07 15:54:54,753	INFO	_internal	_log	Line:122	127.0.0.1 - - [07/Aug/2019 15:54:54] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2019-08-07 15:55:02,999	INFO	_internal	_log	Line:122	127.0.0.1 - - [07/Aug/2019 15:55:02] "GET /classroom/ HTTP/1.1" 200 -

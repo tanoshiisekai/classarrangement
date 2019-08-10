@@ -5,6 +5,7 @@ from flask_restplus import Resource
 
 ns_courseplan = api.namespace("courseplan", description="分课时管理")
 
+
 @ns_courseplan.route("/")
 class CoursePlan(Resource):
 
@@ -20,7 +21,7 @@ class CoursePlan(Resource):
         添加分课时
         """
         return CoursePlanDAO.addcourseplan(api.payload)
-    
+
 
 @ns_courseplan.route("/<int:courseplanid>")
 class CoursePlanGet(Resource):
@@ -61,6 +62,7 @@ class CoursePlanRemove(Resource):
         """
         return CoursePlanDAO.removecourseplan(courseplanid)
 
+
 @ns_courseplan.route("/update/<int:courseplanid>")
 class CoursePlanUpdate(Resource):
 
@@ -70,3 +72,13 @@ class CoursePlanUpdate(Resource):
         根据分课时编号更新分课时
         """
         return CoursePlanDAO.updatecourseplan(courseplanid, api.payload)
+
+
+@ns_courseplan.route("/details/arrangement/")
+class CoursePlanArrangement(Resource):
+
+    def get(self):
+        """
+        返回所有带有是否排课的分课时详情
+        """
+        return CoursePlanDAO.getallcoursearrangement()
