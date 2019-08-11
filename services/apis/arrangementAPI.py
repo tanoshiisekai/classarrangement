@@ -15,3 +15,13 @@ class Arrangement(Resource):
         添加排课
         """
         return ArrangementDAO.addarrangement(api.payload)
+
+
+@ns_arrangement.route("/remove/<int:classid>/<int:courseid>")
+class RemoveArrangement(Resource):
+
+    def get(self, classid, courseid):
+        """
+        移除排课
+        """
+        return ArrangementDAO.removearrangement(classid, courseid)

@@ -3,7 +3,7 @@
     <Navigator defaultActive="arrangement"></Navigator>
     <el-row v-for="(cla, index) in classlist" :key="cla.class_id" style="margin:20px;">
       <el-col :span="20" :offset="2">
-        <el-card class="box-card" shadow="always">
+        <el-card class="box-card" shadow="always" style="width: 1570px;">
           <div slot="header" class="cla_title">
             <span style="display:inline-block;width:300px;">
               <span style="font-weight: bold;">{{cla.class_name}}</span>
@@ -13,6 +13,11 @@
               <span
                 style="font-weight: bold; display:inline-block;width:220px;"
               >{{cla.teacher_name}}</span>
+            </span>
+            <span>
+              <span style="font-weight: bold; display:inline-block;width:220px;">
+                <span @click="getdetail(index)" style="cursor:pointer;color:blue;">点此查看详细课表</span>
+              </span>
             </span>
             <span style="float:right;text-align:right;">
               <span
@@ -34,34 +39,40 @@
               >打开卡片</span>
             </span>
           </div>
-          <div class="cla_content" :id="'content'+index">
-            <div class="datatable" style="float: left;width: 665px;">
-              <vxe-table :data.sync="tableData">
-                <vxe-table-column type="index" width="30"></vxe-table-column>
+          <div class="cla_content" :id="'content'+index" style="width: 1570px;">
+            <div class="datatable" style="float: left; width:682px;">
+              <vxe-table
+                :data.sync="tabledatalist[index]"
+                border
+                resizable
+                stripe
+                style="white-space:pre;"
+              >
+                <vxe-table-column type="index" width="50"></vxe-table-column>
                 <vxe-table-column field="monday" title="一" width="90"></vxe-table-column>
                 <vxe-table-column field="tuesday" title="二" width="90"></vxe-table-column>
-                <vxe-table-column field="wedensday" title="三" width="90"></vxe-table-column>
+                <vxe-table-column field="wednesday" title="三" width="90"></vxe-table-column>
                 <vxe-table-column field="thirsday" title="四" width="90"></vxe-table-column>
                 <vxe-table-column field="friday" title="五" width="90"></vxe-table-column>
                 <vxe-table-column field="saturday" title="六" width="90"></vxe-table-column>
                 <vxe-table-column field="sunday" title="日" width="90"></vxe-table-column>
               </vxe-table>
             </div>
-            <div class="operationpad" style="float: left;width: 530px;text-align:left;">
+            <div class="operationpad" style="float: left;width: 845px;text-align:left;">
               <el-tag
                 class="mylabel"
-                style="margin-left: 30px;margin-top: 20px;margin-bottom:20px;width:450px;"
+                style="margin-left: 30px;margin-top: 20px;margin-bottom:20px;width:800px;"
               >待排课程</el-tag>
               <div :id="'unarranged'+index" class="mytextbox"></div>
               <el-tag
                 class="mylabel"
-                style="margin-left: 30px;margin-top: 20px;margin-bottom:20px;width:450px;"
+                style="margin-left: 30px;margin-top: 20px;margin-bottom:20px;width:800px;"
               >排课</el-tag>
               <el-select
                 v-model="tempcourselist[index]"
                 filterable
                 placeholder="请选择课程"
-                style="margin-left: 50px;width:400px;"
+                style="float:left;margin-left: 50px;width:500px;"
               >
                 <el-option
                   v-for="item in courselist[index]"
@@ -70,10 +81,16 @@
                   :value="item.course_id"
                 ></el-option>
               </el-select>
+              <el-button
+                type="danger"
+                class="mybutton"
+                @click="handleRemove(index)"
+                style="float:left;width:150px;margin-left:20px;"
+              >删除已排课程</el-button>
               <el-input
                 v-model="coursetime[index]"
                 placeholder
-                style="margin-left: 50px;margin-top: 20px;margin-bottom: 20px;width: 400px;"
+                style="margin-left: 50px;margin-top: 20px;margin-bottom: 20px;width: 680px;"
               >
                 <template slot="prepend">上课时间</template>
               </el-input>
@@ -81,7 +98,7 @@
                 v-model="tempclassroomlist[index]"
                 filterable
                 placeholder="请选择教室"
-                style="margin-left: 50px;width:400px;"
+                style="margin-left: 50px;width:680px;"
               >
                 <el-option
                   v-for="item in classroomlist"
@@ -102,11 +119,12 @@
                 v-model="ignorecoursetimelist[index]"
                 style="float: left;margin-left: 50px;margin-top: 20px; width:400px;"
               >忽略上课时间冲突</el-checkbox>
+
               <el-button
                 type="primary"
                 class="mybutton"
                 @click="handleAdd(index)"
-                style="margin-left: 300px;margin-top: 20px;margin-bottom: 20px;width: 150px;"
+                style="float:right;width:150px;margin-right: 120px;margin-top:20px;margin-bottom:20px;"
               >排入课表</el-button>
             </div>
           </div>
@@ -137,7 +155,8 @@ export default {
       ignoreclassroomlist: [],
       ignoreteacherlist: [],
       ignorecoursetimelist: [],
-      tableData: [{ monday: "", tuesday: "" }, { monday: "", tuesday: "" }]
+      tabledatalist: [],
+      classidlist: []
     };
   },
   created() {
@@ -209,6 +228,103 @@ export default {
           for (var i = 0; i < this.classlist.length; i++) {
             this.ignorecoursetimelist.push(false);
           }
+          for (var i = 0; i < this.classlist.length; i++) {
+            this.classidlist.push(this.classlist[i]["class_id"]);
+          }
+          for (var i = 0; i < this.classlist.length; i++) {
+            this.tabledatalist.push([
+              {
+                monday: "",
+                tuesday: "",
+                wednesday: "",
+                thirsday: "",
+                friday: "",
+                saturday: "",
+                sunday: ""
+              },
+              {
+                monday: "",
+                tuesday: "",
+                wednesday: "",
+                thirsday: "",
+                friday: "",
+                saturday: "",
+                sunday: ""
+              },
+              {
+                monday: "",
+                tuesday: "",
+                wednesday: "",
+                thirsday: "",
+                friday: "",
+                saturday: "",
+                sunday: ""
+              },
+              {
+                monday: "",
+                tuesday: "",
+                wednesday: "",
+                thirsday: "",
+                friday: "",
+                saturday: "",
+                sunday: ""
+              },
+              {
+                monday: "",
+                tuesday: "",
+                wednesday: "",
+                thirsday: "",
+                friday: "",
+                saturday: "",
+                sunday: ""
+              },
+              {
+                monday: "",
+                tuesday: "",
+                wednesday: "",
+                thirsday: "",
+                friday: "",
+                saturday: "",
+                sunday: ""
+              },
+              {
+                monday: "",
+                tuesday: "",
+                wednesday: "",
+                thirsday: "",
+                friday: "",
+                saturday: "",
+                sunday: ""
+              },
+              {
+                monday: "",
+                tuesday: "",
+                wednesday: "",
+                thirsday: "",
+                friday: "",
+                saturday: "",
+                sunday: ""
+              },
+              {
+                monday: "",
+                tuesday: "",
+                wednesday: "",
+                thirsday: "",
+                friday: "",
+                saturday: "",
+                sunday: ""
+              },
+              {
+                monday: "",
+                tuesday: "",
+                wednesday: "",
+                thirsday: "",
+                friday: "",
+                saturday: "",
+                sunday: ""
+              }
+            ]);
+          }
         } else {
           this.$message({
             message: resp["infomsg"]
@@ -232,6 +348,42 @@ export default {
                 this.courseplanlist[n]["class_id"] ==
                 this.classlist[m]["class_id"]
               ) {
+                if (this.courseplanlist[n]["bearranged"] == 1) {
+                  var dataposi = this.classidlist.indexOf(
+                    this.courseplanlist[n]["class_id"]
+                  );
+                  var wlist = this.courseplanlist[n]["arrangement_week"];
+                  var slist = this.courseplanlist[n]["arrangement_section"];
+                  console.log("wlist", wlist);
+                  console.log("slist", slist);
+                  for (var i = 0; i < wlist.length; i = i + 1) {
+                    var weekname = "";
+                    var wname = wlist[i];
+                    if (wname == "一") {
+                      weekname = "monday";
+                    } else if (wname == "二") {
+                      weekname = "tuesday";
+                    } else if (wname == "三") {
+                      weekname = "wednesday";
+                    } else if (wname == "四") {
+                      weekname = "thirsday";
+                    } else if (wname == "五") {
+                      weekname = "friday";
+                    } else if (wname == "六") {
+                      weekname = "saturday";
+                    } else if (wname == "日") {
+                      weekname = "sunday";
+                    }
+                    var sectionname = parseInt(slist[i]) - 1;
+                    var coursename = this.courseplanlist[n]["course_name"];
+                    if (coursename.indexOf("(") != -1) {
+                      coursename = coursename.split("(")[0] + "(合)";
+                    }
+                    this.tabledatalist[dataposi][sectionname][
+                      weekname
+                    ] = coursename;
+                  }
+                }
                 templist.push(this.courseplanlist[n]);
                 unarranged =
                   unarranged +
@@ -248,8 +400,8 @@ export default {
             this.courseplanbyclasslist.push(templist);
             this.courselist.push(tempcourselist);
           }
-          console.log(this.courseplanbyclasslist);
-          console.log(this.courselist);
+          // console.log(this.courseplanbyclasslist);
+          // console.log(this.courselist);
         } else {
           this.$message({
             message: resp["infomsg"]
@@ -274,6 +426,22 @@ export default {
           });
         }
       });
+    },
+    handleRemove(classindex) {
+      var removecourse = this.tempcourselist[classindex];
+      var removeclass = this.classlist[classindex]["class_id"];
+      this.axios
+        .get("/arrangement/remove/" + removeclass + "/" + removecourse)
+        .then(response => {
+          var resp = response.data;
+          if (resp["infostatus"]) {
+            this.$router.go(0);
+          } else {
+            this.$message({
+              message: resp["infomsg"]
+            });
+          }
+        });
     },
     handleAdd(classindex) {
       var newcourse = this.tempcourselist[classindex];
@@ -312,7 +480,7 @@ export default {
           classroom_id: newclassroom,
           coursetime: newcoursetime,
           ignoreclassroom: ignoreclassroom,
-          ignoreteacher : ignoreteacher,
+          ignoreteacher: ignoreteacher,
           ignorecoursetime: ignorecoursetime
         })
         .then(response => {
@@ -324,14 +492,23 @@ export default {
             this.ignoreclassroomlist[classindex] = false;
             this.ignoreteacherlist[classindex] = false;
             this.ignorecoursetimelist[classindex] = false;
+          } else {
+            this.$message({
+              message: resp["infomsg"],
+              duration: 0,
+              showClose: true,
+              type: "error"
+            });
           }
-          this.$message({
-            message: resp["infomsg"]
-          });
+          this.getCoursePlanList();
         })
         .catch(error => {
           console.log(error);
         });
+    },
+    getdetail(index) {
+      this.$cookie.set("showclassid", this.classlist[index]["class_id"]);
+      window.open("/showdetailtable", "_blank");
     }
   }
 };
@@ -349,6 +526,33 @@ export default {
   line-height: 25px;
   margin-bottom: 10px;
   background-color: #eeeeee;
+  font-weight: bold;
+}
+.container {
+  margin-top: 100px;
+}
+.cla_title {
+  text-align: left;
+}
+.cardoperation1 {
+  color: hotpink;
+}
+.cardoperation1:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+.cardoperation2 {
+  color: blueviolet;
+}
+.cardoperation2:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+.cardoperation3 {
+  color: black;
+}
+.cardoperation3:hover {
+  cursor: pointer;
   font-weight: bold;
 }
 </style>

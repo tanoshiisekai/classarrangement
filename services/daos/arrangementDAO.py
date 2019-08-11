@@ -3,6 +3,7 @@ from dbmodels.classDBModel import Class1
 from dbmodels.courseDBModel import Course
 from dbmodels.classroomDBModel import Classroom
 from dbmodels.courseplanDBModel import CoursePlan
+from dbmodels.coursegroupDBModel import CourseGroup
 from appbase import global_db as gdb
 from tools.packtools import packinfo, packjoinquery
 from sqlalchemy import and_
@@ -29,7 +30,6 @@ class ArrangementDAO:
         else:
             return False
 
-
     @staticmethod
     def checkteacher(teacherid, week, section):
         temp = gdb.session.query(Arrangement).filter(and_(
@@ -46,8 +46,7 @@ class ArrangementDAO:
             ).first().course_name
             return (otherclass, othercourse)
         else:
-            return False   
-
+            return False
 
     @staticmethod
     def checkclassroom(classroomid, week, section):
@@ -66,7 +65,41 @@ class ArrangementDAO:
             return (otherclass, othercourse)
         else:
             return False
-            
+
+    @staticmethod
+    def removearrangement(classid, courseid):
+        """
+        删除排课
+        """
+        isgroup = gdb.session.query(Course.course_isgroup).filter(
+            Course.course_id == courseid).first()
+        removelist = []
+        if isgroup:
+            if isgroup[0] == 1:
+                # 处理合班课
+                classidlist = gdb.session.query(CoursePlan.class_id).filter(
+                    CoursePlan.course_id == courseid).all()
+                classidlist = [x[0] for x in classidlist]
+                for cid in classidlist:
+                    removelist.append({"class_id": cid, "course_id": courseid})
+            else:
+                # 处理非合班课
+                removelist.append({"class_id": classid, "course_id": courseid})
+            for rl in removelist:
+                arrlist = gdb.session.query(Arrangement).filter(and_(
+                    Arrangement.class_id == rl["class_id"],
+                    Arrangement.course_id == rl["course_id"]
+                )).all()
+                for ar in arrlist:
+                    gdb.session.delete(ar)
+            try:
+                gdb.session.commit()
+            except Exception as e:
+                return packinfo(infostatus=False, infomsg="数据库错误！排课删除失败！")
+            else:
+                return packinfo(infostatus=True, infomsg="排课删除成功！")
+        else:
+            return packinfo(infostatus=False, infomsg="课程编号有误！排课删除失败！")
 
     @staticmethod
     def addarrangement(params):
@@ -87,32 +120,53 @@ class ArrangementDAO:
         )).first().teacher_id
         newcousetime = availabletimetodict(coursetime)
         insertlist = []
-        for k, v in newcousetime.items():
-            for iv in v:
-                insertlist.append({"classid": classid, "courseid": courseid, "classroomid": classroomid,
-                "teacherid": teacherid,
-                "arrangement_week": k, "arrangement_section": iv})
-        if int(ignorecoursetime) == 0:
+        # 处理合班课
+        isgroup = gdb.session.query(Course.course_isgroup).filter(
+            Course.course_id == courseid).first()
+        if isgroup:
+            if isgroup[0] == 1:
+                classidlist = gdb.session.query(CourseGroup.class_id).filter(
+                    CourseGroup.course_id == courseid).all()
+                classidlist = [x[0] for x in classidlist]
+                for cid in classidlist:
+                    for k, v in newcousetime.items():
+                        for iv in v:
+                            insertlist.append({"classid": cid, "courseid": courseid, "classroomid": classroomid,
+                                               "teacherid": teacherid,
+                                               "arrangement_week": k, "arrangement_section": iv})
+            else:
+                for k, v in newcousetime.items():
+                    for iv in v:
+                        insertlist.append({"classid": classid, "courseid": courseid, "classroomid": classroomid,
+                                           "teacherid": teacherid,
+                                           "arrangement_week": k, "arrangement_section": iv})
+            if int(ignorecoursetime) == 0:
+                for il in insertlist:
+                    temp = ArrangementDAO.checkcoursetime(
+                        il["classid"], il["arrangement_week"], il["arrangement_section"])
+                    if temp != False:
+                        return packinfo(infostatus=False, infomsg="添加失败！当前添加的课程与　" + temp[0] + "　的　" + temp[1] + "　课在时间上发生冲突！")
+            if int(ignoreclassroom) == 0:
+                for il in insertlist:
+                    temp = ArrangementDAO.checkclassroom(
+                        il["classroomid"], il["arrangement_week"], il["arrangement_section"])
+                    if temp != False:
+                        return packinfo(infostatus=False, infomsg="添加失败！当前添加的课程与　" + temp[0] + "　的　" + temp[1] + "　课在教室上发生冲突！")
+            if int(ignoreteacher) == 0:
+                for il in insertlist:
+                    temp = ArrangementDAO.checkteacher(
+                        il["teacherid"], il["arrangement_week"], il["arrangement_section"])
+                    if temp != False:
+                        return packinfo(infostatus=False, infomsg="添加失败！当前添加的课程与　" + temp[0] + "　的　" + temp[1] + "　课在任课教师上发生冲突！")
             for il in insertlist:
-                temp = ArrangementDAO.checkcoursetime(il["classid"], il["arrangement_week"], il["arrangement_section"])
-                if temp != False:
-                    return packinfo(infostatus=False, infomsg="添加失败！当前添加的课程与　" + temp[0] + "　的　" + temp[1] + "　课在时间上发生冲突！")
-        if int(ignoreclassroom) == 0:
-            for il in insertlist:
-                temp = ArrangementDAO.checkclassroom(il["classroomid"], il["arrangement_week"], il["arrangement_section"])
-                if temp != False:
-                    return packinfo(infostatus=False, infomsg="添加失败！当前添加的课程与　" + temp[0] + "　的　" + temp[1] + "　课在教室上发生冲突！")
-        if int(ignoreteacher) == 0:
-            for il in insertlist:
-                temp = ArrangementDAO.checkteacher(il["teacherid"], il["arrangement_week"], il["arrangement_section"])
-                if temp != False:
-                    return packinfo(infostatus=False, infomsg="添加失败！当前添加的课程与　" + temp[0] + "　的　" + temp[1] + "　课在任课教师上发生冲突！")
-        for il in insertlist:
-            ar = Arrangement(il["classid"], il["courseid"], il["classroomid"], il["teacherid"], il["arrangement_week"], il["arrangement_section"])
-            gdb.session.add(ar)
-        try:
-            gdb.session.commit()
-        except Exception as e:
-            return packinfo(infostatus=False, infomsg="数据库错误！排课失败！")
+                ar = Arrangement(il["classid"], il["courseid"], il["classroomid"],
+                                 il["teacherid"], il["arrangement_week"], il["arrangement_section"])
+                gdb.session.add(ar)
+            try:
+                gdb.session.commit()
+            except Exception as e:
+                return packinfo(infostatus=False, infomsg="数据库错误！排课失败！")
+            else:
+                return packinfo(infostatus=True, infomsg="排课成功！")
         else:
-            return packinfo(infostatus=True, infomsg="排课成功！")
+            return packinfo(infostatus=False, infomsg="课程编号有误！排课失败！")

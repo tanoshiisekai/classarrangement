@@ -1,0 +1,15 @@
+2019-08-11 16:16:06,882	INFO	main	<module>	Line:11	app started
+2019-08-11 16:16:06,890	INFO	_internal	_log	Line:122	 * Running on http://127.0.0.1:9001/ (Press CTRL+C to quit)
+2019-08-11 16:16:06,890	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 16:18:47,913	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 16:18:49,289	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 16:18:54,677	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 16:20:18,881	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 16:20:20,264	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 16:20:54,937	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 16:20:59,348	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 16:21:01,738	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 16:21:03,103	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 16:21:18,643	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 16:25:11,572	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 16:25:22,095	INFO	_internal	_log	Line:122	 * Restarting with stat

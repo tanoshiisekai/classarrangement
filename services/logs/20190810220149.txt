@@ -1,0 +1,17 @@
+2019-08-10 22:01:49,494	INFO	main	<module>	Line:11	app started
+2019-08-10 22:01:49,502	INFO	_internal	_log	Line:122	 * Running on http://127.0.0.1:9001/ (Press CTRL+C to quit)
+2019-08-10 22:01:49,502	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-10 22:01:49,777	INFO	main	<module>	Line:11	app started
+2019-08-10 22:01:49,784	WARNING	_internal	_log	Line:122	 * Debugger is active!
+2019-08-10 22:01:49,784	INFO	_internal	_log	Line:122	 * Debugger PIN: 163-876-169
+2019-08-10 22:02:03,075	INFO	_internal	_log	Line:122	127.0.0.1 - - [10/Aug/2019 22:02:03] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-10 22:02:03,094	INFO	_internal	_log	Line:122	127.0.0.1 - - [10/Aug/2019 22:02:03] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-10 22:02:03,265	INFO	_internal	_log	Line:122	127.0.0.1 - - [10/Aug/2019 22:02:03] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-10 22:02:18,060	INFO	_internal	_log	Line:122	 * Detected change in '/home/long/newdevelopment/classarrangement/services/daos/arrangementDAO.py', reloading
+2019-08-10 22:02:18,111	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-10 22:02:20,479	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-10 22:02:29,906	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-10 22:09:05,010	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-10 22:10:46,370	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-10 22:10:48,764	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-10 22:10:58,210	INFO	_internal	_log	Line:122	 * Restarting with stat

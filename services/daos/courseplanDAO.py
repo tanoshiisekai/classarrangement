@@ -4,6 +4,7 @@ from dbmodels.arrangementDBModel import Arrangement
 from dbmodels.coursegroupDBModel import CourseGroup
 from dbmodels.classDBModel import Class1
 from dbmodels.teacherDBModel import Teacher
+from dbmodels.classroomDBModel import Classroom
 from daos.courseDAO import CourseDAO
 from appbase import global_db as gdb
 from tools.packtools import packinfo, packjoinquery
@@ -19,15 +20,26 @@ class CoursePlanDAO:
         temp = gdb.session.query(Arrangement).filter(and_(
             Arrangement.class_id == xdict["class_id"],
             Arrangement.course_id == xdict["course_id"]
-        )).first()
+        )).all()
+        aweeklist = []
+        asectionlist = []
+        aclassroomlist = []
+        for tp in temp:
+            aweeklist.append(tp.arrangement_week)
+            asectionlist.append(tp.arrangement_section)
+            aclassroomlist.append(tp.classroom_id)
+        classnamelist = [gdb.session.query(Classroom.classroom_name).filter(
+            Classroom.classroom_id == x).first()[0] for x in aclassroomlist]
         if temp:
-            xdict.update({"arrangement_week": temp.arrangement_week,
-                          "arrangement_section": temp.arrangement_section,
-                          "bearranged": 1})
+            xdict.update({"arrangement_week": aweeklist,
+                          "arrangement_section": asectionlist,
+                          "bearranged": 1,
+                          "classnamelist": classnamelist})
         else:
             xdict.update({"arrangement_week": "",
                           "arrangement_section": "",
-                          "bearranged": 0})
+                          "bearranged": 0,
+                          "classnamelist": []})
         return xdict
 
     @staticmethod
@@ -45,6 +57,7 @@ class CoursePlanDAO:
             coulist = [CourseDAO.addcourseclasslistdetails(x) for x in coulist]
             coulist = [CoursePlanDAO.addbearranged(x) for x in coulist]
         except Exception as e:
+            print(e)
             return packinfo(infostatus=False, infomsg="数据库无数据或发生错误！查询失败！")
         else:
             return packinfo(infostatus=True, inforesult=coulist, infomsg="查询成功！")

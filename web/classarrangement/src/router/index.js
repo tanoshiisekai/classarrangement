@@ -8,6 +8,7 @@ import Course from '@/components/Course'
 import Courseplan from '@/components/Courseplan'
 import Arrangement from '@/components/Arrangement'
 import Info from '@/components/Info'
+import Showdetailtable from '@/components/Showdetailtable'
 
 Vue.use(Router)
 
@@ -42,6 +43,10 @@ export default new Router({
       path: '/info',
       name: 'info',
       component: Info
+    }, {
+      path: '/showdetailtable',
+      name: 'showdetailtable',
+      component: Showdetailtable
     }
   ]
 })

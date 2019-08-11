@@ -1,0 +1,7 @@
+2019-08-10 21:56:49,652	INFO	main	<module>	Line:11	app started
+2019-08-10 21:56:49,659	WARNING	_internal	_log	Line:122	 * Debugger is active!
+2019-08-10 21:56:49,660	INFO	_internal	_log	Line:122	 * Debugger PIN: 163-876-169
+2019-08-10 21:56:52,684	INFO	_internal	_log	Line:122	127.0.0.1 - - [10/Aug/2019 21:56:52] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-10 21:56:52,945	INFO	_internal	_log	Line:122	127.0.0.1 - - [10/Aug/2019 21:56:52] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-10 21:56:53,132	INFO	_internal	_log	Line:122	127.0.0.1 - - [10/Aug/2019 21:56:53] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-10 21:57:17,982	INFO	_internal	_log	Line:122	 * Detected change in '/home/long/newdevelopment/classarrangement/services/daos/arrangementDAO.py', reloading

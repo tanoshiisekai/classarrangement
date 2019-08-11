@@ -1,0 +1,21 @@
+2019-08-11 11:47:08,386	INFO	main	<module>	Line:11	app started
+2019-08-11 11:47:08,513	INFO	_internal	_log	Line:122	 * Running on http://127.0.0.1:9001/ (Press CTRL+C to quit)
+2019-08-11 11:47:08,515	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 11:47:08,833	INFO	main	<module>	Line:11	app started
+2019-08-11 11:47:08,839	WARNING	_internal	_log	Line:122	 * Debugger is active!
+2019-08-11 11:47:08,840	INFO	_internal	_log	Line:122	 * Debugger PIN: 163-876-169
+2019-08-11 11:47:25,256	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 11:47:25] "GET / HTTP/1.1" 200 -
+2019-08-11 11:47:25,269	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 11:47:25] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+2019-08-11 11:47:25,271	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 11:47:25] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2019-08-11 11:47:25,305	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 11:47:25] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+2019-08-11 11:47:25,400	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 11:47:25] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+2019-08-11 11:47:25,554	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 11:47:25] "GET /swagger.json HTTP/1.1" 200 -
+2019-08-11 11:47:48,323	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 11:47:48] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-11 11:47:50,812	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 11:47:50] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-11 11:47:50,814	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 11:47:50] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-11 11:47:50,817	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 11:47:50] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-11 11:47:50,980	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 11:47:50] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-11 11:49:13,198	INFO	_internal	_log	Line:122	 * Detected change in '/home/long/newdevelopment/classarrangement/services/daos/arrangementDAO.py', reloading
+2019-08-11 11:49:13,254	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 11:49:14,595	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-11 11:49:34,217	INFO	_internal	_log	Line:122	 * Restarting with stat

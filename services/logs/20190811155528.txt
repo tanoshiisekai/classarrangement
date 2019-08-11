@@ -1,0 +1,32 @@
+2019-08-11 15:55:28,490	INFO	main	<module>	Line:11	app started
+2019-08-11 15:55:28,497	WARNING	_internal	_log	Line:122	 * Debugger is active!
+2019-08-11 15:55:28,498	INFO	_internal	_log	Line:122	 * Debugger PIN: 163-876-169
+2019-08-11 15:57:12,922	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 15:57:12] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-11 15:57:12,925	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 15:57:12] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-11 15:57:12,927	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 15:57:12] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-11 15:57:13,100	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 15:57:13] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-11 15:57:46,874	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 15:57:46] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-11 15:57:46,880	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 15:57:46] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-11 15:57:46,882	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 15:57:46] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-11 15:57:47,045	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 15:57:47] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-11 16:00:05,732	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:00:05] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-11 16:00:05,734	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:00:05] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-11 16:00:05,738	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:00:05] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-11 16:00:05,925	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:00:05] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-11 16:00:18,585	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:00:18] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-11 16:00:18,587	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:00:18] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-11 16:00:18,592	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:00:18] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-11 16:00:18,774	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:00:18] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-11 16:01:17,308	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:01:17] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-11 16:01:17,317	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:01:17] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-11 16:01:17,320	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:01:17] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-11 16:01:17,489	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:01:17] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-11 16:01:32,815	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:01:32] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-11 16:01:32,817	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:01:32] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-11 16:01:32,820	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:01:32] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-11 16:01:33,015	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:01:33] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-11 16:01:40,506	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:01:40] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-11 16:01:40,510	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:01:40] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-11 16:01:40,512	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:01:40] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-11 16:01:40,690	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:01:40] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-11 16:01:45,684	INFO	_internal	_log	Line:122	127.0.0.1 - - [11/Aug/2019 16:01:45] "GET /remove/22/56 HTTP/1.1" 404 -
