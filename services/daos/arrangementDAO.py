@@ -102,6 +102,49 @@ class ArrangementDAO:
             return packinfo(infostatus=False, infomsg="课程编号有误！排课删除失败！")
 
     @staticmethod
+    def changearrangement(class1id, week1, section1, class2id, week2, section2):
+        """
+        调课
+        """
+        print(class1id)
+        print(class2id)
+        print(week1)
+        print(week2)
+        print(section1)
+        print(section2)
+        arr1 = gdb.session.query(Arrangement).filter(and_(
+            Arrangement.class_id == class1id,
+            Arrangement.arrangement_week == week1,
+            Arrangement.arrangement_section == section1
+        )).first()
+        arr2 = gdb.session.query(Arrangement).filter(and_(
+            Arrangement.class_id == class2id,
+            Arrangement.arrangement_week == week2,
+            Arrangement.arrangement_section == section2
+        )).first()
+        if gdb.session.query(Course.course_isgroup).filter(
+            Course.course_id == arr1.course_id
+        ).first()[0] == 1:
+            return packinfo(infostatus=False, infomsg="合班课涉及变动的幅度较大，为保证数据安全，暂不支持调整合班课。")
+        if gdb.session.query(Course.course_isgroup).filter(
+            Course.course_id == arr2.course_id
+        ).first()[0] == 1:
+            return packinfo(infostatus=False, infomsg="合班课涉及变动的幅度较大，为保证数据安全，暂不支持调整合班课。")
+        # 非合班课
+        try:
+            arr1.class_id = class2id
+            arr1.arrangement_week = week2
+            arr1.arrangement_section = section2
+            arr2.class_id = class1id
+            arr2.arrangement_week = week1
+            arr2.arrangement_section = section1
+            gdb.session.commit()
+        except Exception as e:
+            return packinfo(infostatus=False, infomsg="数据库错误！调课失败！")
+        return packinfo(infostatus=True, infomsg="调课成功")
+
+
+    @staticmethod
     def addarrangement(params):
         """
         添加排课

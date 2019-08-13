@@ -1,0 +1,28 @@
+2019-08-13 16:33:11,685	INFO	main	<module>	Line:11	app started
+2019-08-13 16:33:11,692	WARNING	_internal	_log	Line:122	 * Debugger is active!
+2019-08-13 16:33:11,692	INFO	_internal	_log	Line:122	 * Debugger PIN: 163-876-169
+2019-08-13 16:33:29,874	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:33:29] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-13 16:33:39,182	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:33:39] "GET /arrangement/22/一/1/22/二/1/ HTTP/1.1" 200 -
+2019-08-13 16:33:46,751	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:33:46] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-13 16:33:46,753	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:33:46] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-13 16:33:46,755	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:33:46] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-13 16:33:46,934	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:33:46] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-13 16:34:05,638	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:05] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-13 16:34:05,948	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:05] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-13 16:34:06,137	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:06] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-13 16:34:09,328	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:09] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-13 16:34:17,124	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:17] "GET /arrangement/22/二/1/22/三/1 HTTP/1.1" 308 -
+2019-08-13 16:34:17,188	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:17] "GET /arrangement/22/二/1/22/三/1/ HTTP/1.1" 200 -
+2019-08-13 16:34:24,272	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:24] "GET /arrangement/22/三/1/22/二/1 HTTP/1.1" 308 -
+2019-08-13 16:34:24,302	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:24] "GET /arrangement/22/三/1/22/二/1/ HTTP/1.1" 200 -
+2019-08-13 16:34:27,471	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:27] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-13 16:34:27,474	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:27] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-13 16:34:27,478	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:27] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-13 16:34:27,647	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:27] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-13 16:34:36,141	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:36] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-13 16:34:36,329	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:36] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-13 16:34:36,525	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:36] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-13 16:34:37,503	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:37] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-13 16:34:46,560	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:46] "GET /arrangement/22/四/1/22/三/1 HTTP/1.1" 308 -
+2019-08-13 16:34:46,584	INFO	_internal	_log	Line:122	127.0.0.1 - - [13/Aug/2019 16:34:46] "GET /arrangement/22/四/1/22/三/1/ HTTP/1.1" 200 -
+2019-08-13 16:34:49,907	INFO	_internal	_log	Line:122	 * Detected change in '/home/long/newdevelopment/classarrangement/services/daos/arrangementDAO.py', reloading

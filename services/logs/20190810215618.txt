@@ -1,8 +1,0 @@
-2019-08-10 21:56:18,182	INFO	main	<module>	Line:11	app started
-2019-08-10 21:56:18,190	INFO	_internal	_log	Line:122	 * Running on http://127.0.0.1:9001/ (Press CTRL+C to quit)
-2019-08-10 21:56:18,190	INFO	_internal	_log	Line:122	 * Restarting with stat
-2019-08-10 21:56:18,473	INFO	main	<module>	Line:11	app started
-2019-08-10 21:56:18,480	WARNING	_internal	_log	Line:122	 * Debugger is active!
-2019-08-10 21:56:18,480	INFO	_internal	_log	Line:122	 * Debugger PIN: 163-876-169
-2019-08-10 21:56:20,460	INFO	_internal	_log	Line:122	127.0.0.1 - - [10/Aug/2019 21:56:20] "OPTIONS /arrangement/ HTTP/1.1" 200 -
-2019-08-10 21:56:20,506	INFO	_internal	_log	Line:122	127.0.0.1 - - [10/Aug/2019 21:56:20] "POST /arrangement/ HTTP/1.1" 500 -

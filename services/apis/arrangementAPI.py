@@ -25,3 +25,13 @@ class RemoveArrangement(Resource):
         移除排课
         """
         return ArrangementDAO.removearrangement(classid, courseid)
+
+
+@ns_arrangement.route("/<int:class1id>/<string:week1>/<string:section1>/<int:class2id>/<string:week2>/<string:section2>/")
+class Change(Resource):
+
+    def get(self, class1id, week1, section1, class2id, week2, section2):
+        """
+        调课
+        """
+        return ArrangementDAO.changearrangement(class1id, week1, section1, class2id, week2, section2)

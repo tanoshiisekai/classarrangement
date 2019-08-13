@@ -1,3 +1,0 @@
-2019-08-10 21:59:08,348	INFO	main	<module>	Line:11	app started
-2019-08-10 21:59:08,355	WARNING	_internal	_log	Line:122	 * Debugger is active!
-2019-08-10 21:59:08,355	INFO	_internal	_log	Line:122	 * Debugger PIN: 163-876-169

@@ -348,6 +348,7 @@ export default {
                 this.courseplanlist[n]["class_id"] ==
                 this.classlist[m]["class_id"]
               ) {
+                this.tempclassroomlist[m] = this.courseplanlist[n]["classroom_id"]
                 if (this.courseplanlist[n]["bearranged"] == 1) {
                   var dataposi = this.classidlist.indexOf(
                     this.courseplanlist[n]["class_id"]

@@ -16,6 +16,7 @@
       <el-menu-item index="course">课程管理</el-menu-item>
       <el-menu-item index="courseplan">分课时管理</el-menu-item>
       <el-menu-item index="arrangement">排课管理</el-menu-item>
+      <el-menu-item index="change">调课管理</el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -39,6 +40,8 @@ export default {
         this.$router.push({ name: "courseplan" });
       } else if (key === "arrangement") {
         this.$router.push({ name: "arrangement" });
+      } else if (key === "change") {
+        this.$router.push({ name: "change"} );
       }
     }
   }
