@@ -1,0 +1,824 @@
+2019-08-31 19:57:10,480	INFO	main	<module>	Line:11	app started
+2019-08-31 19:57:10,668	INFO	_internal	_log	Line:122	 * Running on http://127.0.0.1:9001/ (Press CTRL+C to quit)
+2019-08-31 19:57:10,670	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 19:57:10,967	INFO	main	<module>	Line:11	app started
+2019-08-31 19:57:10,973	WARNING	_internal	_log	Line:122	 * Debugger is active!
+2019-08-31 19:57:10,973	INFO	_internal	_log	Line:122	 * Debugger PIN: 163-876-169
+2019-08-31 19:57:45,882	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:57:45] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 19:58:19,399	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:58:19] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 19:58:20,920	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:58:20] "GET /course/ HTTP/1.1" 200 -
+2019-08-31 19:58:20,923	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:58:20] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 19:58:20,925	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:58:20] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 19:58:20,940	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:58:20] "GET /courseplan/details/ HTTP/1.1" 200 -
+2019-08-31 19:58:24,492	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:58:24] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 19:58:24,495	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:58:24] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 19:58:24,499	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:58:24] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 19:58:24,604	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:58:24] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 19:59:33,506	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:59:33] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 19:59:33,721	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:59:33] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 19:59:33,872	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:59:33] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 19:59:51,015	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:59:51] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 19:59:51,205	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:59:51] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 19:59:51,357	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 19:59:51] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:00:05,548	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:00:05] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:00:05,741	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:00:05] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:00:05,885	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:00:05] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:00:26,837	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:00:26] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:00:27,002	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:00:27] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:00:27,123	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:00:27] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:00:50,081	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:00:50] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:00:50,282	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:00:50] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:00:50,436	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:00:50] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:01:07,845	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:01:07] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:01:08,036	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:01:08] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:01:08,191	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:01:08] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:01:20,632	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:01:20] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:01:20,812	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:01:20] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:01:20,967	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:01:20] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:01:38,630	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:01:38] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:01:39,095	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:01:39] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:01:39,248	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:01:39] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:01:50,489	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:01:50] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:01:50,659	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:01:50] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:01:50,826	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:01:50] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:02:02,148	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:02] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:02:02,395	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:02] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:02:02,548	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:02] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:02:13,006	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:13] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:02:13,181	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:13] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:02:13,337	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:13] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:02:31,669	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:31] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:02:31,858	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:31] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:02:32,017	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:32] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:02:39,793	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:39] "GET /arrangement/remove/26/49 HTTP/1.1" 200 -
+2019-08-31 20:02:40,283	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:40] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 20:02:40,285	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:40] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 20:02:40,288	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:40] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 20:02:40,408	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:40] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:02:54,155	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:54] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:02:54,304	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:54] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:02:54,464	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:02:54] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:03:05,823	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:03:05] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:23:54,318	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:23:54] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:23:55,382	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:23:55] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:23:55,511	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:23:55] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:24:11,451	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:24:11] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:24:11,945	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:24:11] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:24:12,106	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:24:12] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:24:20,800	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:24:20] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:24:21,263	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:24:21] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:24:21,429	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:24:21] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:24:35,634	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:24:35] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:24:36,124	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:24:36] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:24:36,297	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:24:36] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:24:55,431	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:24:55] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:24:55,611	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:24:55] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:24:55,773	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:24:55] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:13,053	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:13] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:13,231	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:13] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:13,400	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:13] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:26,451	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:26] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:26,649	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:26] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:26,845	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:26] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:36,587	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:36] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:36,901	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:36] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:37,068	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:37] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:45,047	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:45] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:45,211	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:45] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:45,370	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:45] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:54,137	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:54] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:54,305	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:54] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:25:54,480	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:25:54] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:26:00,637	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:26:00] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:26:01,035	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:26:01] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:26:01,199	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:26:01] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:26:20,440	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:26:20] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:26:20,642	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:26:20] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:26:20,812	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:26:20] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:26:34,639	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:26:34] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:26:34,837	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:26:34] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:26:34,999	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:26:34] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:26:46,616	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:26:46] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:26:46,804	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:26:46] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:26:46,964	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:26:46] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:27:12,456	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:27:12] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:27:12,652	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:27:12] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:27:12,821	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:27:12] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:27:29,307	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:27:29] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:27:29,496	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:27:29] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:27:29,671	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:27:29] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:27:43,206	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:27:43] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:27:43,382	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:27:43] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:27:43,572	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:27:43] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:28:01,547	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:28:01] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:28:01,897	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:28:01] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:28:02,083	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:28:02] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:28:12,006	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:28:12] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:28:12,204	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:28:12] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:28:12,385	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:28:12] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:28:20,223	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:28:20] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:28:20,234	ERROR	app	log_exception	Line:1891	Exception on /arrangement/ [POST]
+Traceback (most recent call last):
+  File "/usr/lib64/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib64/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/lib64/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/long/newdevelopment/classarrangement/services/apis/arrangementAPI.py", line 17, in post
+    return ArrangementDAO.addarrangement(api.payload)
+  File "/home/long/newdevelopment/classarrangement/services/daos/arrangementDAO.py", line 164, in addarrangement
+    newcousetime = availabletimetodict(coursetime)
+  File "/home/long/newdevelopment/classarrangement/services/tools/businesstools.py", line 92, in availabletimetodict
+    resultdict.update(analysetimestr(astr))
+TypeError: 'NoneType' object is not iterable
+2019-08-31 20:28:20,288	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:28:20] "POST /arrangement/ HTTP/1.1" 500 -
+2019-08-31 20:28:25,982	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:28:25] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:28:25,988	ERROR	app	log_exception	Line:1891	Exception on /arrangement/ [POST]
+Traceback (most recent call last):
+  File "/usr/lib64/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib64/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/lib64/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/long/newdevelopment/classarrangement/services/apis/arrangementAPI.py", line 17, in post
+    return ArrangementDAO.addarrangement(api.payload)
+  File "/home/long/newdevelopment/classarrangement/services/daos/arrangementDAO.py", line 164, in addarrangement
+    newcousetime = availabletimetodict(coursetime)
+  File "/home/long/newdevelopment/classarrangement/services/tools/businesstools.py", line 92, in availabletimetodict
+    resultdict.update(analysetimestr(astr))
+TypeError: 'NoneType' object is not iterable
+2019-08-31 20:28:25,989	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:28:25] "POST /arrangement/ HTTP/1.1" 500 -
+2019-08-31 20:28:34,933	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:28:34] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:28:51,205	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:28:51] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:28:51,411	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:28:51] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:28:51,597	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:28:51] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:29:02,312	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:29:02] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:29:02,488	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:29:02] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:29:02,667	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:29:02] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:29:24,238	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:29:24] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:29:24,450	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:29:24] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:29:24,629	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:29:24] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:29:33,513	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:29:33] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:29:33,843	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:29:33] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:29:34,024	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:29:34] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:34:57,951	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:34:57] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:35:00,833	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:35:00] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:35:00,987	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:35:00] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:35:14,872	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:35:14] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:35:15,161	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:35:15] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:35:15,355	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:35:15] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:35:32,188	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:35:32] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:35:32,481	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:35:32] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:35:32,656	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:35:32] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:35:49,662	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:35:49] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:35:49,834	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:35:49] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:35:50,015	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:35:50] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:36:06,312	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:36:06] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:36:06,496	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:36:06] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:36:06,676	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:36:06] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:36:35,944	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:36:35] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:36:36,109	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:36:36] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:36:36,297	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:36:36] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:36:52,309	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:36:52] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:36:52,520	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:36:52] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:36:52,703	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:36:52] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:38:28,238	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:38:28] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:38:28,537	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:38:28] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:38:28,725	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:38:28] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:38:36,070	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:38:36] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:38:36,272	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:38:36] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:38:36,467	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:38:36] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:38:45,537	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:38:45] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:38:45,682	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:38:45] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:38:45,872	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:38:45] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:39:06,784	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:39:06] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:39:06,992	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:39:06] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:39:07,150	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:39:07] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:39:16,211	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:39:16] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:39:16,387	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:39:16] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:39:16,579	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:39:16] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:39:28,270	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:39:28] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:40:03,608	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:40:03] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:40:03,962	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:40:03] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:40:04,166	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:40:04] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:40:15,184	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:40:15] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:40:15,339	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:40:15] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:40:15,535	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:40:15] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:40:28,073	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:40:28] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:40:28,250	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:40:28] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:40:28,438	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:40:28] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:40:56,373	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:40:56] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:40:56,703	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:40:56] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:40:56,905	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:40:56] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:06,233	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:06] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:06,431	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:06] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:06,623	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:06] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:22,343	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:22] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:22,535	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:22] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:22,738	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:22] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:31,996	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:31] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:32,170	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:32] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:32,380	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:32] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:39,447	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:39] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:39,629	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:39] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:39,838	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:39] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:55,449	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:55] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:55,649	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:55] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:41:55,850	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:41:55] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:42:07,639	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:42:07] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:42:07,809	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:42:07] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:42:08,017	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:42:08] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:42:15,632	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:42:15] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:42:15,802	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:42:15] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:42:16,008	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:42:16] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:42:57,949	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:42:57] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:42:58,341	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:42:58] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:42:58,526	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:42:58] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:43:11,850	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:43:11] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:43:12,037	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:43:12] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:43:12,241	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:43:12] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:43:24,032	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:43:24] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:43:24,214	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:43:24] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:43:24,410	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:43:24] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:43:40,002	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:43:40] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:43:40,208	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:43:40] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:43:40,411	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:43:40] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:43:49,901	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:43:49] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:43:50,077	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:43:50] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:43:50,275	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:43:50] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:44:00,303	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:44:00] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:44:00,479	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:44:00] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:44:00,684	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:44:00] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:44:15,888	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:44:15] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:44:16,082	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:44:16] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:44:16,289	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:44:16] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:44:32,386	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:44:32] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:44:32,551	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:44:32] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:44:32,763	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:44:32] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:44:42,601	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:44:42] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:44:42,627	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:44:42] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:44:42,850	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:44:42] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:10,037	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:10] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:10,198	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:10] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:10,369	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:10] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:19,845	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:19] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:19,863	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:19] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:20,098	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:20] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:23,373	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:23] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:23,535	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:23] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:23,750	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:23] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:31,857	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:31] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:31,885	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:31] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:32,125	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:32] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:33,857	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:33] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:34,087	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:34] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:45:34,298	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:45:34] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:46:05,025	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:46:05] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:46:05,201	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:46:05] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:46:05,403	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:46:05] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:46:18,730	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:46:18] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:46:18,895	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:46:18] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:46:19,114	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:46:19] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:51:35,949	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:51:35] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:51:36,311	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:51:36] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:51:36,490	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:51:36] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:52:48,681	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:52:48] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:52:50,372	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:52:50] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:52:50,602	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:52:50] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:53:43,385	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:53:43] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:53:43,514	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:53:43] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:53:43,714	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:53:43] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:56:56,693	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:56:56] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:56:56,990	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:56:56] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:56:57,176	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:56:57] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:08,444	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:08] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:08,617	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:08] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:08,805	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:08] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:20,785	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:20] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:20,970	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:20] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:21,206	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:21] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:37,762	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:37] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:37,905	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:37] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:38,100	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:38] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:44,746	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:44] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:44,890	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:44] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:45,088	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:45] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:51,613	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:51] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:51,774	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:51] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:57:51,981	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:57:51] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:58:14,464	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:58:14] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:58:14,645	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:58:14] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:58:14,859	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:58:14] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:58:25,615	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:58:25] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:58:25,880	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:58:25] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:58:26,067	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:58:26] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:58:40,319	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:58:40] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:58:40,501	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:58:40] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:58:40,725	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:58:40] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:58:55,132	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:58:55] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:58:55,319	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:58:55] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:58:55,520	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:58:55] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:59:07,916	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:59:07] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:59:08,474	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:59:08] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:59:08,673	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:59:08] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:59:23,219	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:59:23] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:59:23,251	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:59:23] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 20:59:23,484	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 20:59:23] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:01:41,307	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:01:41] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:01:41,465	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:01:41] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:01:41,668	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:01:41] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:01:49,920	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:01:49] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:01:50,084	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:01:50] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:01:50,319	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:01:50] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:01:59,052	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:01:59] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:01:59,211	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:01:59] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:01:59,445	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:01:59] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:02:08,558	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:02:08] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:02:08,728	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:02:08] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:02:08,937	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:02:08] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:02:15,560	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:02:15] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:02:15,729	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:02:15] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:02:15,932	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:02:15] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:03:14,496	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:03:14] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:03:14,640	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:03:14] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:03:14,843	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:03:14] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:03:26,896	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:03:26] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:03:27,083	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:03:27] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:03:27,292	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:03:27] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:03:44,205	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:03:44] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:03:44,378	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:03:44] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:03:44,594	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:03:44] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:03:58,273	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:03:58] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:03:58,439	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:03:58] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:03:58,670	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:03:58] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:04:07,407	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:04:07] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:04:07,582	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:04:07] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:04:07,803	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:04:07] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:04:37,096	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:04:37] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:04:37,272	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:04:37] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:04:37,519	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:04:37] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:04:47,433	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:04:47] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:04:47,599	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:04:47] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:04:47,842	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:04:47] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:00,293	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:00] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:00,643	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:00] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:00,900	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:00] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:08,128	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:08] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:08,368	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:08] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:08,591	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:08] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:16,656	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:16] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:16,788	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:16] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:17,025	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:17] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:43,294	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:43] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:43,467	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:43] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:43,744	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:43] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:52,208	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:52] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:52,526	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:52] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:05:52,771	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:05:52] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:32:06,494	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:32:06] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:32:06,795	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:32:06] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:32:07,016	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:32:07] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:32:19,595	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:32:19] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:32:19,764	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:32:19] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:32:19,989	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:32:19] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:32:28,378	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:32:28] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:32:28,541	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:32:28] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:32:28,768	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:32:28] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:32:44,051	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:32:44] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:32:44,227	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:32:44] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:32:44,454	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:32:44] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:32:59,596	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:32:59] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:32:59,788	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:32:59] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:33:00,005	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:33:00] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:33:10,114	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:33:10] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:33:10,265	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:33:10] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:33:10,512	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:33:10] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:33:19,565	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:33:19] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:33:19,568	ERROR	app	log_exception	Line:1891	Exception on /arrangement/ [POST]
+Traceback (most recent call last):
+  File "/usr/lib64/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib64/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/lib64/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/long/newdevelopment/classarrangement/services/apis/arrangementAPI.py", line 17, in post
+    return ArrangementDAO.addarrangement(api.payload)
+  File "/home/long/newdevelopment/classarrangement/services/daos/arrangementDAO.py", line 164, in addarrangement
+    newcousetime = availabletimetodict(coursetime)
+  File "/home/long/newdevelopment/classarrangement/services/tools/businesstools.py", line 92, in availabletimetodict
+    resultdict.update(analysetimestr(astr))
+TypeError: 'NoneType' object is not iterable
+2019-08-31 21:33:19,569	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:33:19] "POST /arrangement/ HTTP/1.1" 500 -
+2019-08-31 21:33:19,955	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:33:19] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:33:19,958	ERROR	app	log_exception	Line:1891	Exception on /arrangement/ [POST]
+Traceback (most recent call last):
+  File "/usr/lib64/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib64/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/lib64/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/long/newdevelopment/classarrangement/services/apis/arrangementAPI.py", line 17, in post
+    return ArrangementDAO.addarrangement(api.payload)
+  File "/home/long/newdevelopment/classarrangement/services/daos/arrangementDAO.py", line 164, in addarrangement
+    newcousetime = availabletimetodict(coursetime)
+  File "/home/long/newdevelopment/classarrangement/services/tools/businesstools.py", line 92, in availabletimetodict
+    resultdict.update(analysetimestr(astr))
+TypeError: 'NoneType' object is not iterable
+2019-08-31 21:33:19,959	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:33:19] "POST /arrangement/ HTTP/1.1" 500 -
+2019-08-31 21:33:24,084	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:33:24] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:33:24,087	ERROR	app	log_exception	Line:1891	Exception on /arrangement/ [POST]
+Traceback (most recent call last):
+  File "/usr/lib64/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib64/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/lib64/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/long/newdevelopment/classarrangement/services/apis/arrangementAPI.py", line 17, in post
+    return ArrangementDAO.addarrangement(api.payload)
+  File "/home/long/newdevelopment/classarrangement/services/daos/arrangementDAO.py", line 164, in addarrangement
+    newcousetime = availabletimetodict(coursetime)
+  File "/home/long/newdevelopment/classarrangement/services/tools/businesstools.py", line 92, in availabletimetodict
+    resultdict.update(analysetimestr(astr))
+TypeError: 'NoneType' object is not iterable
+2019-08-31 21:33:24,087	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:33:24] "POST /arrangement/ HTTP/1.1" 500 -
+2019-08-31 21:33:28,531	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:33:28] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:33:28,760	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:33:28] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:33:28,975	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:33:28] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:36:23,783	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:36:23] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:36:24,369	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:36:24] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:36:24,626	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:36:24] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:36:45,207	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:36:45] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:36:45,378	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:36:45] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:36:45,621	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:36:45] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:36:58,025	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:36:58] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:36:58,180	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:36:58] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:36:58,413	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:36:58] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:37:06,291	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:37:06] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:37:06,473	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:37:06] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:37:06,720	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:37:06] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:37:14,558	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:37:14] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:37:14,733	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:37:14] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:37:14,964	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:37:14] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:37:38,887	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:37:38] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:37:39,080	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:37:39] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:37:39,344	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:37:39] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:37:51,959	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:37:51] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:37:52,131	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:37:52] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:37:52,368	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:37:52] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:38:10,784	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:38:10] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:38:10,968	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:38:10] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:38:11,202	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:38:11] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:38:19,378	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:38:19] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:38:19,544	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:38:19] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:38:19,775	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:38:19] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:38:43,592	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:38:43] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:38:43,963	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:38:43] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:38:44,230	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:38:44] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:39:14,998	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:39:14] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:39:15,154	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:39:15] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:39:15,392	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:39:15] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:39:23,564	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:39:23] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:39:23,722	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:39:23] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:39:23,971	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:39:23] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:42:35,624	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:42:35] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:42:35,900	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:42:35] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:42:36,145	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:42:36] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:47:20,209	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:47:20] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:47:20,490	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:47:20] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:47:20,738	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:47:20] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:47:29,488	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:47:29] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:47:29,659	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:47:29] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:47:29,927	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:47:29] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:47:39,439	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:47:39] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:47:39,578	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:47:39] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:47:39,846	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:47:39] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:48:04,650	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:48:04] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:48:04,824	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:48:04] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:48:05,096	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:48:05] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:48:29,625	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:48:29] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:48:29,653	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:48:29] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:48:29,958	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:48:29] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:49:22,287	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:49:22] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:49:22,592	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:49:22] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:49:22,873	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:49:22] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:49:35,014	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:49:35] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:49:35,190	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:49:35] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:49:35,462	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:49:35] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:49:48,456	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:49:48] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:49:48,702	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:49:48] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:49:49,006	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:49:49] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:49:59,666	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:49:59] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:49:59,861	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:49:59] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:50:00,149	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:50:00] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:50:10,064	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:50:10] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:50:10,236	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:50:10] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:50:10,504	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:50:10] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:50:21,251	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:50:21] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:50:21,423	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:50:21] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:50:21,714	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:50:21] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:50:32,712	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:50:32] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:50:32,875	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:50:32] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:50:33,152	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:50:33] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:50:50,110	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:50:50] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:50:50,312	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:50:50] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:50:50,599	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:50:50] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:51:04,842	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:51:04] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:51:05,048	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:51:05] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:51:05,340	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:51:05] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:51:19,094	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:51:19] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:51:19,259	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:51:19] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:51:19,544	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:51:19] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:51:30,313	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:51:30] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:51:30,670	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:51:30] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:51:30,961	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:51:30] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:51:51,759	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:51:51] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:51:51,940	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:51:51] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:51:52,249	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:51:52] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:02,993	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:02] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:03,191	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:03] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:03,482	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:03] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:19,142	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:19] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:19,319	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:19] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:19,619	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:19] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:27,993	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:27] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:28,178	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:28] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:28,446	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:28] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:43,920	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:43] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:43,936	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:43] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:44,255	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:44] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:56,583	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:56] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:56,776	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:56] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:52:57,077	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:52:57] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:53:10,679	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:53:10] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:53:10,886	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:53:10] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:53:11,187	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:53:11] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:53:19,881	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:53:19] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:53:20,054	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:53:20] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:53:20,360	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:53:20] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:53:32,671	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:53:32] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:53:33,028	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:53:33] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:53:33,327	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:53:33] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:53:51,231	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:53:51] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:53:51,256	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:53:51] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:53:51,566	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:53:51] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:06,505	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:06] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:06,698	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:06] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:07,005	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:07] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:14,942	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:14] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:15,100	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:15] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:15,399	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:15] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:26,741	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:26] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:26,892	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:26] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:27,193	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:27] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:35,673	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:35] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:35,934	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:35] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:36,243	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:36] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:43,633	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:43] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:43,830	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:43] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:55:44,127	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:55:44] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:56:26,073	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:56:26] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:56:26,296	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:56:26] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:56:26,584	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:56:26] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:56:36,568	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:56:36] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:56:36,756	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:56:36] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:56:37,066	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:56:37] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:56:50,909	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:56:50] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:56:51,083	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:56:51] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:56:51,393	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:56:51] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:57:51,671	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:57:51] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:57:51,835	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:57:51] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:57:52,121	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:57:52] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:04,808	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:04] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:04,955	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:04] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:05,253	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:05] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:26,344	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:26] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:26,526	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:26] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:26,838	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:26] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:36,282	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:36] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:36,477	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:36] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:36,809	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:36] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:43,805	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:43] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:43,962	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:43] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:44,264	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:44] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:50,377	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:50] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:50,572	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:50] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:58:50,884	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:58:50] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:59:01,163	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:59:01] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:59:01,349	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:59:01] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:59:01,682	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:59:01] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:59:10,828	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:59:10] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:59:11,008	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:59:11] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:59:11,330	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:59:11] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:59:44,517	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:59:44] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:59:44,705	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:59:44] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:59:45,009	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:59:45] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 21:59:59,996	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 21:59:59] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:00:00,634	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:00:00] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:00:00,940	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:00:00] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:00:18,363	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:00:18] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:00:18,554	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:00:18] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:00:18,860	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:00:18] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:00:41,583	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:00:41] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:00:41,782	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:00:41] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:00:42,088	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:00:42] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:01:00,093	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:01:00] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:01:00,269	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:01:00] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:01:00,611	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:01:00] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:01:20,306	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:01:20] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:01:20,331	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:01:20] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:01:20,684	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:01:20] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:01:50,837	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:01:50] "GET /arrangement/remove/13/11 HTTP/1.1" 200 -
+2019-08-31 22:01:51,316	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:01:51] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 22:01:51,318	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:01:51] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:01:51,321	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:01:51] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 22:01:51,639	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:01:51] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:01:56,325	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:01:56] "GET /class/ HTTP/1.1" 200 -
+2019-08-31 22:01:56,330	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:01:56] "GET /course/details/ HTTP/1.1" 200 -
+2019-08-31 22:02:24,195	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:02:24] "OPTIONS /course/ HTTP/1.1" 200 -
+2019-08-31 22:02:24,884	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:02:24] "POST /course/ HTTP/1.1" 200 -
+2019-08-31 22:02:24,928	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:02:24] "GET /course/details/ HTTP/1.1" 200 -
+2019-08-31 22:02:25,662	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:02:25] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:02:25,664	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:02:25] "GET /course/ HTTP/1.1" 200 -
+2019-08-31 22:02:25,666	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:02:25] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 22:02:25,681	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:02:25] "GET /courseplan/details/ HTTP/1.1" 200 -
+2019-08-31 22:03:40,688	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:03:40] "GET /courseplan/details/148 HTTP/1.1" 200 -
+2019-08-31 22:03:47,288	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:03:47] "OPTIONS /courseplan/update/148 HTTP/1.1" 200 -
+2019-08-31 22:03:47,431	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:03:47] "POST /courseplan/update/148 HTTP/1.1" 200 -
+2019-08-31 22:03:47,479	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:03:47] "GET /courseplan/details/ HTTP/1.1" 200 -
+2019-08-31 22:03:54,650	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:03:54] "GET /courseplan/details/160 HTTP/1.1" 200 -
+2019-08-31 22:03:58,838	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:03:58] "OPTIONS /courseplan/update/160 HTTP/1.1" 200 -
+2019-08-31 22:03:59,008	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:03:59] "POST /courseplan/update/160 HTTP/1.1" 200 -
+2019-08-31 22:03:59,051	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:03:59] "GET /courseplan/details/ HTTP/1.1" 200 -
+2019-08-31 22:04:00,876	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:04:00] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 22:04:00,876	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:04:00] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:04:00,880	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:04:00] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 22:04:01,198	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:04:01] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:04:40,450	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:04:40] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:04:40,607	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:04:40] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:04:40,902	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:04:40] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:12:21,055	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:12:21] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:12:21,080	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:12:21] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:12:21,417	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:12:21] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:12:43,138	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:12:43] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:12:43,275	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:12:43] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:12:43,552	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:12:43] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:13:00,495	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:13:00] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:13:00,654	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:13:00] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:13:00,976	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:13:00] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:13:42,530	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:13:42] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:13:42,686	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:13:42] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:13:42,986	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:13:42] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:13:49,213	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:13:49] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:13:49,363	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:13:49] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:13:49,714	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:13:49] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:14:50,648	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:14:50] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:14:50,996	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:14:50] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:14:51,330	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:14:51] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:15:43,254	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:15:43] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:15:43,525	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:15:43] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:15:43,883	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:15:43] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:02,349	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:02] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:02,734	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:02] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:03,047	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:03] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:20,669	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:20] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:20,859	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:20] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:21,214	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:21] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:30,782	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:30] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:30,806	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:30] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:31,175	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:31] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:43,503	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:43] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:43,704	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:43] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:44,051	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:44] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:56,319	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:56] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:56,565	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:56] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:17:56,927	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:17:56] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:18:26,344	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:18:26] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:18:26,359	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:18:26] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:18:26,742	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:18:26] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:18:28,836	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:18:28] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:18:29,012	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:18:29] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:18:29,356	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:18:29] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:19:33,396	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:19:33] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:19:43,412	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:19:43] "GET /arrangement/16/四/1/16/一/3 HTTP/1.1" 308 -
+2019-08-31 22:19:43,736	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:19:43] "GET /arrangement/16/四/1/16/一/3/ HTTP/1.1" 200 -
+2019-08-31 22:19:47,938	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:19:47] "GET /arrangement/16/四/2/16/一/4 HTTP/1.1" 308 -
+2019-08-31 22:19:48,101	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:19:48] "GET /arrangement/16/四/2/16/一/4/ HTTP/1.1" 200 -
+2019-08-31 22:19:48,742	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:19:48] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:19:48,744	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:19:48] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 22:19:48,748	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:19:48] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 22:19:49,076	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:19:49] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:20:36,825	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:20:36] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:20:37,002	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:20:37] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:20:37,352	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:20:37] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:21:14,306	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:21:14] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:21:25,094	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:21:25] "GET /arrangement/22/四/5/22/五/5 HTTP/1.1" 308 -
+2019-08-31 22:21:25,268	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:21:25] "GET /arrangement/22/四/5/22/五/5/ HTTP/1.1" 200 -
+2019-08-31 22:21:29,757	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:21:29] "GET /arrangement/22/四/6/22/五/6 HTTP/1.1" 308 -
+2019-08-31 22:21:29,911	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:21:29] "GET /arrangement/22/四/6/22/五/6/ HTTP/1.1" 200 -
+2019-08-31 22:21:30,478	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:21:30] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 22:21:30,479	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:21:30] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:21:30,483	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:21:30] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 22:21:30,841	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:21:30] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:21:50,561	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:21:50] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:21:50,936	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:21:50] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:21:51,289	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:21:51] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:25:27,318	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:25:27] "GET /arrangement/remove/12/4 HTTP/1.1" 200 -
+2019-08-31 22:25:27,793	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:25:27] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:25:27,795	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:25:27] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 22:25:27,799	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:25:27] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 22:25:28,170	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:25:28] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:25:48,476	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:25:48] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:25:48,506	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:25:48] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:25:48,896	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:25:48] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:26:33,493	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:26:33] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:26:42,786	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:26:42] "GET /arrangement/12/三/3/12/五/3 HTTP/1.1" 308 -
+2019-08-31 22:26:42,795	ERROR	app	log_exception	Line:1891	Exception on /arrangement/12/三/3/12/五/3/ [GET]
+Traceback (most recent call last):
+  File "/usr/lib64/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib64/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/lib/python3.7/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/lib64/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/lib/python3.7/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/long/newdevelopment/classarrangement/services/apis/arrangementAPI.py", line 37, in get
+    return ArrangementDAO.changearrangement(class1id, week1, section1, class2id, week2, section2)
+  File "/home/long/newdevelopment/classarrangement/services/daos/arrangementDAO.py", line 130, in changearrangement
+    Course.course_id == arr2.course_id
+AttributeError: 'NoneType' object has no attribute 'course_id'
+2019-08-31 22:26:42,796	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:26:42] "GET /arrangement/12/三/3/12/五/3/ HTTP/1.1" 500 -
+2019-08-31 22:26:56,097	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:26:56] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 22:26:56,101	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:26:56] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:26:56,103	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:26:56] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 22:26:56,450	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:26:56] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:27:08,570	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:27:08] "GET /arrangement/remove/12/8 HTTP/1.1" 200 -
+2019-08-31 22:27:09,058	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:27:09] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 22:27:09,061	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:27:09] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:27:09,064	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:27:09] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 22:27:09,410	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:27:09] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:27:39,583	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:27:39] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:27:39,606	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:27:39] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:27:39,995	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:27:39] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:27:54,146	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:27:54] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:27:54,699	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:27:54] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:27:55,028	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:27:55] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:28:10,096	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:28:10] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:28:10,282	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:28:10] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:28:10,641	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:28:10] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:28:16,674	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:28:16] "GET /arrangement/remove/12/4 HTTP/1.1" 200 -
+2019-08-31 22:28:17,146	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:28:17] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:28:17,149	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:28:17] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 22:28:17,157	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:28:17] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 22:28:17,506	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:28:17] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:28:34,306	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:28:34] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:28:34,535	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:28:34] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:28:34,889	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:28:34] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:28:43,897	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:28:43] "OPTIONS /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:28:44,087	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:28:44] "POST /arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:28:44,442	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:28:44] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:33:27,641	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:33:27] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:33:29,099	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:33:29] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 22:33:29,101	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:33:29] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:33:29,105	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:33:29] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 22:33:29,435	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:33:29] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:41:39,325	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:41:39] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:41:48,732	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:41:48] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:42:23,594	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:42:23] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:42:31,101	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:42:31] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:42:32,954	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:42:32] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:42:32,956	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:42:32] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 22:42:32,959	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:42:32] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 22:42:33,294	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:42:33] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
+2019-08-31 22:42:33,986	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:42:33] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:42:35,632	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:42:35] "GET /classroom/ HTTP/1.1" 200 -
+2019-08-31 22:42:35,635	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:42:35] "GET /class/details/ HTTP/1.1" 200 -
+2019-08-31 22:42:35,637	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:42:35] "GET /teacher/ HTTP/1.1" 200 -
+2019-08-31 22:42:35,971	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 22:42:35] "GET /courseplan/details/arrangement/ HTTP/1.1" 200 -
