@@ -13,6 +13,24 @@ from tools.businesstools import checknullvalue, availabletimetodict
 class ArrangementDAO:
 
     @staticmethod
+    def getteacherarrangement(teacherid):
+        temp = gdb.session.query(Arrangement, Class1, Course, Classroom).filter(and_(
+            Arrangement.teacher_id == teacherid,
+            Arrangement.class_id == Class1.class_id,
+            Arrangement.classroom_id == Classroom.classroom_id,
+            Arrangement.course_id == Course.course_id)).all()
+        if temp:
+            templist = []
+            for x in temp:
+                tempdict = {}
+                for y in x:
+                    tempdict.update(y.todict())
+                templist.append(tempdict)
+            return packinfo(infostatus=True, infomsg="查询成功", inforesult=templist)
+        else:
+            return packinfo(infostatus=False, infomsg="没有相关信息")
+
+    @staticmethod
     def checkcoursetime(classid, week, section):
         temp = gdb.session.query(Arrangement).filter(and_(
             Arrangement.class_id == classid,
@@ -142,7 +160,6 @@ class ArrangementDAO:
         except Exception as e:
             return packinfo(infostatus=False, infomsg="数据库错误！调课失败！")
         return packinfo(infostatus=True, infomsg="调课成功")
-
 
     @staticmethod
     def addarrangement(params):

@@ -9,6 +9,19 @@ from tools.businesstools import checknullvalue
 
 class TeacherDAO:
 
+    def getteacherbyname(teachername):
+        """
+        根据教师姓名查询教师
+        """
+        try:
+            tea = gdb.session.query(Teacher).filter(
+                Teacher.teacher_name == teachername).first()
+            tea = tea.todict()
+        except Exception as e:
+            return packinfo(infostatus=False, infomsg="数据库无数据或发生错误！查询失败！")
+        else:
+            return packinfo(infostatus=True, inforesult=tea, infomsg="查询成功！")
+
     def getteacherbyid(teacherid):
         """
         根据教师编号查询教师

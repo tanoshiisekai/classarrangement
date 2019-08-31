@@ -1,0 +1,4 @@
+2019-08-31 23:49:07,770	INFO	main	<module>	Line:11	app started
+2019-08-31 23:49:07,779	WARNING	_internal	_log	Line:122	 * Debugger is active!
+2019-08-31 23:49:07,779	INFO	_internal	_log	Line:122	 * Debugger PIN: 163-876-169
+2019-08-31 23:49:13,813	INFO	_internal	_log	Line:122	 * Detected change in '/home/long/newdevelopment/classarrangement/services/apis/arrangementAPI.py', reloading

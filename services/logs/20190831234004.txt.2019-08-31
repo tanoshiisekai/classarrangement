@@ -1,0 +1,38 @@
+2019-08-31 23:40:04,314	INFO	main	<module>	Line:11	app started
+2019-08-31 23:40:04,323	INFO	_internal	_log	Line:122	 * Running on http://127.0.0.1:9001/ (Press CTRL+C to quit)
+2019-08-31 23:40:04,324	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:40:04,626	INFO	main	<module>	Line:11	app started
+2019-08-31 23:40:04,634	WARNING	_internal	_log	Line:122	 * Debugger is active!
+2019-08-31 23:40:04,634	INFO	_internal	_log	Line:122	 * Debugger PIN: 163-876-169
+2019-08-31 23:40:06,737	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 23:40:06] "GET / HTTP/1.1" 200 -
+2019-08-31 23:40:06,744	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 23:40:06] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+2019-08-31 23:40:06,748	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 23:40:06] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+2019-08-31 23:40:06,756	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 23:40:06] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2019-08-31 23:40:06,773	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 23:40:06] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+2019-08-31 23:40:07,206	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 23:40:07] "GET /swagger.json HTTP/1.1" 200 -
+2019-08-31 23:40:07,331	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 23:40:07] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2019-08-31 23:40:41,431	INFO	_internal	_log	Line:122	127.0.0.1 - - [31/Aug/2019 23:40:41] "GET /teacher/1 HTTP/1.1" 200 -
+2019-08-31 23:43:56,128	INFO	_internal	_log	Line:122	 * Detected change in '/home/long/newdevelopment/classarrangement/services/daos/teacherDAO.py', reloading
+2019-08-31 23:43:56,164	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:44:10,592	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:44:15,982	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:44:19,363	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:44:20,734	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:44:29,149	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:44:30,518	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:44:38,002	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:44:40,394	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:44:44,838	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:44:47,248	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:45:46,058	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:45:47,457	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:46:20,243	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:46:22,654	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:49:07,450	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:49:13,851	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:50:01,658	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:50:50,449	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:51:02,946	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:52:03,022	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:52:05,428	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-08-31 23:52:06,810	INFO	_internal	_log	Line:122	 * Restarting with stat

@@ -5,6 +5,7 @@ from flask_restplus import Resource
 
 ns_teacher = api.namespace("teacher", description="教师管理")
 
+
 @ns_teacher.route("/")
 class Teacher(Resource):
 
@@ -24,12 +25,22 @@ class Teacher(Resource):
 
 @ns_teacher.route("/<int:teacherid>")
 class TeacherFind(Resource):
-    
+
     def get(self, teacherid):
         """
         根据教师编号查询教师
         """
         return TeacherDAO.getteacherbyid(teacherid)
+
+
+@ns_teacher.route("/<string:teachername>")
+class TeacherFindName(Resource):
+
+    def get(self, teachername):
+        """
+        根据教师姓名查询教师
+        """
+        return TeacherDAO.getteacherbyname(teachername)
 
 
 @ns_teacher.route("/remove/<int:teacherid>")
@@ -61,4 +72,3 @@ class TeacherUpdate(Resource):
         根据教师编号更新教师
         """
         return TeacherDAO.updateteacher(teacherid, api.payload)
-

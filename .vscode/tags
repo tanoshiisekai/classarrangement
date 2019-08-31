@@ -1,0 +1,430 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	Development	//
+Api	../services/appbase.py	/^from flask_restplus import Api$/;"	kind:namespace	line:3
+Arrangement	../services/apis/arrangementAPI.py	/^class Arrangement(Resource):$/;"	kind:class	line:10
+Arrangement	../services/daos/arrangementDAO.py	/^from dbmodels.arrangementDBModel import Arrangement$/;"	kind:namespace	line:1
+Arrangement	../services/daos/classDAO.py	/^from dbmodels.arrangementDBModel import Arrangement$/;"	kind:namespace	line:6
+Arrangement	../services/daos/classroomDAO.py	/^from dbmodels.arrangementDBModel import Arrangement$/;"	kind:namespace	line:3
+Arrangement	../services/daos/courseDAO.py	/^from dbmodels.arrangementDBModel import Arrangement$/;"	kind:namespace	line:5
+Arrangement	../services/daos/courseplanDAO.py	/^from dbmodels.arrangementDBModel import Arrangement$/;"	kind:namespace	line:3
+Arrangement	../services/dbmodels/arrangementDBModel.py	/^class Arrangement(gdb.Model):$/;"	kind:class	line:4
+ArrangementDAO	../services/apis/arrangementAPI.py	/^from daos.arrangementDAO import ArrangementDAO$/;"	kind:namespace	line:3
+ArrangementDAO	../services/daos/arrangementDAO.py	/^class ArrangementDAO:$/;"	kind:class	line:13
+ArrangementTeacher	../services/apis/arrangementAPI.py	/^class ArrangementTeacher(Resource):$/;"	kind:class	line:21
+CORS	../services/appbase.py	/^from flask_cors import CORS, cross_origin$/;"	kind:namespace	line:4
+Change	../services/apis/arrangementAPI.py	/^class Change(Resource):$/;"	kind:class	line:41
+Class1	../services/apis/classAPI.py	/^class Class1(Resource):$/;"	kind:class	line:10
+Class1	../services/daos/arrangementDAO.py	/^from dbmodels.classDBModel import Class1$/;"	kind:namespace	line:2
+Class1	../services/daos/classDAO.py	/^from dbmodels.classDBModel import Class1$/;"	kind:namespace	line:1
+Class1	../services/daos/classroomDAO.py	/^from dbmodels.classDBModel import Class1$/;"	kind:namespace	line:2
+Class1	../services/daos/courseDAO.py	/^from dbmodels.classDBModel import Class1$/;"	kind:namespace	line:3
+Class1	../services/daos/courseplanDAO.py	/^from dbmodels.classDBModel import Class1$/;"	kind:namespace	line:5
+Class1	../services/daos/teacherDAO.py	/^from dbmodels.classDBModel import Class1$/;"	kind:namespace	line:2
+Class1	../services/dbmodels/classDBModel.py	/^class Class1(gdb.Model):$/;"	kind:class	line:4
+ClassALLDetails	../services/apis/classAPI.py	/^class ClassALLDetails(Resource):$/;"	kind:class	line:27
+ClassDAO	../services/apis/classAPI.py	/^from daos.classDAO import ClassDAO$/;"	kind:namespace	line:3
+ClassDAO	../services/daos/classDAO.py	/^class ClassDAO:$/;"	kind:class	line:13
+ClassDetails	../services/apis/classAPI.py	/^class ClassDetails(Resource):$/;"	kind:class	line:37
+ClassFind	../services/apis/classAPI.py	/^class ClassFind(Resource):$/;"	kind:class	line:47
+ClassRemove	../services/apis/classAPI.py	/^class ClassRemove(Resource):$/;"	kind:class	line:57
+ClassUpdate	../services/apis/classAPI.py	/^class ClassUpdate(Resource):$/;"	kind:class	line:67
+Classroom	../services/apis/classroomAPI.py	/^class Classroom(Resource):$/;"	kind:class	line:9
+Classroom	../services/daos/arrangementDAO.py	/^from dbmodels.classroomDBModel import Classroom$/;"	kind:namespace	line:4
+Classroom	../services/daos/classDAO.py	/^from dbmodels.classroomDBModel import Classroom$/;"	kind:namespace	line:3
+Classroom	../services/daos/classroomDAO.py	/^from dbmodels.classroomDBModel import Classroom$/;"	kind:namespace	line:1
+Classroom	../services/daos/courseplanDAO.py	/^from dbmodels.classroomDBModel import Classroom$/;"	kind:namespace	line:7
+Classroom	../services/dbmodels/classroomDBModel.py	/^class Classroom(gdb.Model):$/;"	kind:class	line:4
+ClassroomCheck	../services/apis/classroomAPI.py	/^class ClassroomCheck(Resource):$/;"	kind:class	line:46
+ClassroomDAO	../services/apis/classroomAPI.py	/^from daos.classroomDAO import ClassroomDAO$/;"	kind:namespace	line:3
+ClassroomDAO	../services/daos/classroomDAO.py	/^class ClassroomDAO:$/;"	kind:class	line:10
+ClassroomFind	../services/apis/classroomAPI.py	/^class ClassroomFind(Resource):$/;"	kind:class	line:26
+ClassroomRemove	../services/apis/classroomAPI.py	/^class ClassroomRemove(Resource):$/;"	kind:class	line:36
+ClassroomUpdate	../services/apis/classroomAPI.py	/^class ClassroomUpdate(Resource):$/;"	kind:class	line:56
+Course	../services/apis/courseAPI.py	/^class Course(Resource):$/;"	kind:class	line:9
+Course	../services/daos/arrangementDAO.py	/^from dbmodels.courseDBModel import Course$/;"	kind:namespace	line:3
+Course	../services/daos/courseDAO.py	/^from dbmodels.courseDBModel import Course$/;"	kind:namespace	line:1
+Course	../services/daos/courseplanDAO.py	/^from dbmodels.courseDBModel import Course$/;"	kind:namespace	line:2
+Course	../services/dbmodels/courseDBModel.py	/^class Course(gdb.Model):$/;"	kind:class	line:4
+CourseALLDetails	../services/apis/courseAPI.py	/^class CourseALLDetails(Resource):$/;"	kind:class	line:26
+CourseDAO	../services/apis/courseAPI.py	/^from daos.courseDAO import CourseDAO$/;"	kind:namespace	line:3
+CourseDAO	../services/daos/courseDAO.py	/^class CourseDAO:$/;"	kind:class	line:13
+CourseDAO	../services/daos/courseplanDAO.py	/^from daos.courseDAO import CourseDAO$/;"	kind:namespace	line:8
+CourseDetails	../services/apis/courseAPI.py	/^class CourseDetails(Resource):$/;"	kind:class	line:36
+CourseFind	../services/apis/courseAPI.py	/^class CourseFind(Resource):$/;"	kind:class	line:46
+CourseGroup	../services/daos/arrangementDAO.py	/^from dbmodels.coursegroupDBModel import CourseGroup$/;"	kind:namespace	line:6
+CourseGroup	../services/daos/classDAO.py	/^from dbmodels.coursegroupDBModel import CourseGroup$/;"	kind:namespace	line:4
+CourseGroup	../services/daos/courseDAO.py	/^from dbmodels.coursegroupDBModel import CourseGroup$/;"	kind:namespace	line:2
+CourseGroup	../services/daos/courseplanDAO.py	/^from dbmodels.coursegroupDBModel import CourseGroup$/;"	kind:namespace	line:4
+CourseGroup	../services/dbmodels/coursegroupDBModel.py	/^class CourseGroup(gdb.Model):$/;"	kind:class	line:4
+CoursePlan	../services/apis/courseplanAPI.py	/^class CoursePlan(Resource):$/;"	kind:class	line:10
+CoursePlan	../services/daos/arrangementDAO.py	/^from dbmodels.courseplanDBModel import CoursePlan$/;"	kind:namespace	line:5
+CoursePlan	../services/daos/classDAO.py	/^from dbmodels.courseplanDBModel import CoursePlan$/;"	kind:namespace	line:5
+CoursePlan	../services/daos/courseDAO.py	/^from dbmodels.courseplanDBModel import CoursePlan$/;"	kind:namespace	line:4
+CoursePlan	../services/daos/courseplanDAO.py	/^from dbmodels.courseplanDBModel import CoursePlan$/;"	kind:namespace	line:1
+CoursePlan	../services/daos/teacherDAO.py	/^from dbmodels.courseplanDBModel import CoursePlan$/;"	kind:namespace	line:3
+CoursePlan	../services/dbmodels/courseplanDBModel.py	/^class CoursePlan(gdb.Model):$/;"	kind:class	line:4
+CoursePlanArrangement	../services/apis/courseplanAPI.py	/^class CoursePlanArrangement(Resource):$/;"	kind:class	line:78
+CoursePlanDAO	../services/apis/courseplanAPI.py	/^from daos.courseplanDAO import CoursePlanDAO$/;"	kind:namespace	line:3
+CoursePlanDAO	../services/daos/courseplanDAO.py	/^class CoursePlanDAO:$/;"	kind:class	line:16
+CoursePlanDetails	../services/apis/courseplanAPI.py	/^class CoursePlanDetails(Resource):$/;"	kind:class	line:37
+CoursePlanDetails	../services/apis/courseplanAPI.py	/^class CoursePlanDetails(Resource):$/;"	kind:class	line:47
+CoursePlanGet	../services/apis/courseplanAPI.py	/^class CoursePlanGet(Resource):$/;"	kind:class	line:27
+CoursePlanRemove	../services/apis/courseplanAPI.py	/^class CoursePlanRemove(Resource):$/;"	kind:class	line:57
+CoursePlanUpdate	../services/apis/courseplanAPI.py	/^class CoursePlanUpdate(Resource):$/;"	kind:class	line:67
+CourseRemove	../services/apis/courseAPI.py	/^class CourseRemove(Resource):$/;"	kind:class	line:56
+CourseUpdate	../services/apis/courseAPI.py	/^class CourseUpdate(Resource):$/;"	kind:class	line:66
+Flask	../services/appbase.py	/^from flask import Flask$/;"	kind:namespace	line:1
+Info	../services/tools/businesstools.py	/^from tools.info import Info$/;"	kind:namespace	line:1
+Info	../services/tools/info.py	/^class Info:$/;"	kind:class	line:1
+Info	../services/tools/packtools.py	/^from tools.info import Info$/;"	kind:namespace	line:2
+RemoveArrangement	../services/apis/arrangementAPI.py	/^class RemoveArrangement(Resource):$/;"	kind:class	line:31
+Resource	../services/apis/arrangementAPI.py	/^from flask_restplus import Resource$/;"	kind:namespace	line:4
+Resource	../services/apis/classAPI.py	/^from flask_restplus import Resource$/;"	kind:namespace	line:4
+Resource	../services/apis/classroomAPI.py	/^from flask_restplus import Resource$/;"	kind:namespace	line:4
+Resource	../services/apis/courseAPI.py	/^from flask_restplus import Resource$/;"	kind:namespace	line:4
+Resource	../services/apis/courseplanAPI.py	/^from flask_restplus import Resource$/;"	kind:namespace	line:4
+Resource	../services/apis/teacherAPI.py	/^from flask_restplus import Resource$/;"	kind:namespace	line:4
+SQLAlchemy	../services/appbase.py	/^from flask_sqlalchemy import SQLAlchemy$/;"	kind:namespace	line:2
+Teacher	../services/apis/teacherAPI.py	/^class Teacher(Resource):$/;"	kind:class	line:10
+Teacher	../services/daos/classDAO.py	/^from dbmodels.teacherDBModel import Teacher$/;"	kind:namespace	line:2
+Teacher	../services/daos/courseplanDAO.py	/^from dbmodels.teacherDBModel import Teacher$/;"	kind:namespace	line:6
+Teacher	../services/daos/teacherDAO.py	/^from dbmodels.teacherDBModel import Teacher$/;"	kind:namespace	line:1
+Teacher	../services/dbmodels/teacherDBModel.py	/^class Teacher(gdb.Model):$/;"	kind:class	line:4
+TeacherCheck	../services/apis/teacherAPI.py	/^class TeacherCheck(Resource):$/;"	kind:class	line:57
+TeacherDAO	../services/apis/teacherAPI.py	/^from daos.teacherDAO import TeacherDAO$/;"	kind:namespace	line:3
+TeacherDAO	../services/daos/teacherDAO.py	/^class TeacherDAO:$/;"	kind:class	line:10
+TeacherFind	../services/apis/teacherAPI.py	/^class TeacherFind(Resource):$/;"	kind:class	line:27
+TeacherFindName	../services/apis/teacherAPI.py	/^class TeacherFindName(Resource):$/;"	kind:class	line:37
+TeacherRemove	../services/apis/teacherAPI.py	/^class TeacherRemove(Resource):$/;"	kind:class	line:47
+TeacherUpdate	../services/apis/teacherAPI.py	/^class TeacherUpdate(Resource):$/;"	kind:class	line:67
+TimedRotatingFileHandler	../services/tools/log.py	/^from logging.handlers import TimedRotatingFileHandler$/;"	kind:namespace	line:2
+__init__	../services/dbmodels/arrangementDBModel.py	/^    def __init__(self, class_id, course_id, classroom_id, teacher_id, arrangement_week, arrangement_section):$/;"	kind:member	line:14
+__init__	../services/dbmodels/classDBModel.py	/^    def __init__(self, class_name, teacher_id, classroom_id):$/;"	kind:member	line:11
+__init__	../services/dbmodels/classroomDBModel.py	/^    def __init__(self, classroom_name, classroom_position, classroom_available):$/;"	kind:member	line:11
+__init__	../services/dbmodels/courseDBModel.py	/^    def __init__(self, course_name, course_isgroup):$/;"	kind:member	line:10
+__init__	../services/dbmodels/coursegroupDBModel.py	/^    def __init__(self, course_id, class_id):$/;"	kind:member	line:10
+__init__	../services/dbmodels/courseplanDBModel.py	/^    def __init__(self, class_id, course_id, teacher_id, courseplan_count):$/;"	kind:member	line:12
+__init__	../services/dbmodels/teacherDBModel.py	/^    def __init__(self, teacher_name, teacher_mobile, teacher_request):$/;"	kind:member	line:11
+__init__	../services/tools/info.py	/^    def __init__(self, infostatus, infomsg=None, inforesult=None):$/;"	kind:member	line:3
+__init__.py	../services/apimodels/__init__.py	1;"	kind:file	line:1
+__init__.py	../services/apis/__init__.py	1;"	kind:file	line:1
+__init__.py	../services/daos/__init__.py	1;"	kind:file	line:1
+__init__.py	../services/dbmodels/__init__.py	1;"	kind:file	line:1
+__tablename__	../services/dbmodels/arrangementDBModel.py	/^    __tablename__ = 'arrangement'$/;"	kind:variable	line:5
+__tablename__	../services/dbmodels/classDBModel.py	/^    __tablename__ = 'class1'$/;"	kind:variable	line:5
+__tablename__	../services/dbmodels/classroomDBModel.py	/^    __tablename__ = 'classroom'$/;"	kind:variable	line:5
+__tablename__	../services/dbmodels/courseDBModel.py	/^    __tablename__ = 'course'$/;"	kind:variable	line:5
+__tablename__	../services/dbmodels/coursegroupDBModel.py	/^    __tablename__ = 'coursegroup'$/;"	kind:variable	line:5
+__tablename__	../services/dbmodels/courseplanDBModel.py	/^    __tablename__ = 'courseplan'$/;"	kind:variable	line:5
+__tablename__	../services/dbmodels/teacherDBModel.py	/^    __tablename__ = 'teacher'$/;"	kind:variable	line:5
+addarrangement	../services/daos/arrangementDAO.py	/^    def addarrangement(params):$/;"	kind:member	line:165
+addbearranged	../services/daos/courseplanDAO.py	/^    def addbearranged(xdict):$/;"	kind:member	line:19
+addclass	../services/daos/classDAO.py	/^    def addclass(params):$/;"	kind:member	line:76
+addclassroom	../services/daos/classroomDAO.py	/^    def addclassroom(params):$/;"	kind:member	line:39
+addcourse	../services/daos/courseDAO.py	/^    def addcourse(params):$/;"	kind:member	line:91
+addcourseclasslist	../services/daos/courseDAO.py	/^    def addcourseclasslist(xdict):$/;"	kind:member	line:55
+addcourseclasslistdetails	../services/daos/courseDAO.py	/^    def addcourseclasslistdetails(xdict):$/;"	kind:member	line:39
+addcourseplan	../services/daos/courseplanDAO.py	/^    def addcourseplan(param):$/;"	kind:member	line:130
+addteacher	../services/daos/teacherDAO.py	/^    def addteacher(params):$/;"	kind:member	line:52
+analysetimestr	../services/tools/businesstools.py	/^def analysetimestr(astr):$/;"	kind:function	line:13
+and_	../services/daos/arrangementDAO.py	/^from sqlalchemy import and_$/;"	kind:namespace	line:9
+and_	../services/daos/classDAO.py	/^from sqlalchemy import and_$/;"	kind:namespace	line:9
+and_	../services/daos/courseDAO.py	/^from sqlalchemy import and_, or_$/;"	kind:namespace	line:8
+and_	../services/daos/courseplanDAO.py	/^from sqlalchemy import and_$/;"	kind:namespace	line:12
+api	../services/apis/arrangementAPI.py	/^from appbase import global_api as api$/;"	kind:namespace	line:1
+api	../services/apis/classAPI.py	/^from appbase import global_api as api$/;"	kind:namespace	line:1
+api	../services/apis/classroomAPI.py	/^from appbase import global_api as api$/;"	kind:namespace	line:1
+api	../services/apis/courseAPI.py	/^from appbase import global_api as api$/;"	kind:namespace	line:1
+api	../services/apis/courseplanAPI.py	/^from appbase import global_api as api$/;"	kind:namespace	line:1
+api	../services/apis/teacherAPI.py	/^from appbase import global_api as api$/;"	kind:namespace	line:1
+apis	../services/apis/__init__.py	/^import apis.arrangementAPI$/;"	kind:namespace	line:6
+apis	../services/apis/__init__.py	/^import apis.classAPI$/;"	kind:namespace	line:3
+apis	../services/apis/__init__.py	/^import apis.classroomAPI$/;"	kind:namespace	line:1
+apis	../services/apis/__init__.py	/^import apis.courseAPI$/;"	kind:namespace	line:4
+apis	../services/apis/__init__.py	/^import apis.courseplanAPI$/;"	kind:namespace	line:5
+apis	../services/apis/__init__.py	/^import apis.teacherAPI$/;"	kind:namespace	line:2
+apis	../services/main.py	/^import apis$/;"	kind:namespace	line:7
+appbase.py	../services/appbase.py	1;"	kind:file	line:1
+arrangementAPI	../services/apis/__init__.py	/^import apis.arrangementAPI$/;"	kind:namespace	line:6
+arrangementAPI.py	../services/apis/arrangementAPI.py	1;"	kind:file	line:1
+arrangementAPIModel.py	../services/apimodels/arrangementAPIModel.py	1;"	kind:file	line:1
+arrangementDAO.py	../services/daos/arrangementDAO.py	1;"	kind:file	line:1
+arrangementDBModel	../services/dbmodels/__init__.py	/^import dbmodels.arrangementDBModel$/;"	kind:namespace	line:1
+arrangementDBModel.py	../services/dbmodels/arrangementDBModel.py	1;"	kind:file	line:1
+arrangement_id	../services/dbmodels/arrangementDBModel.py	/^    arrangement_id = gdb.Column(gdb.Integer, primary_key=True)$/;"	kind:variable	line:6
+arrangement_section	../services/dbmodels/arrangementDBModel.py	/^    arrangement_section = gdb.Column(gdb.String(5), nullable=False)$/;"	kind:variable	line:12
+arrangement_week	../services/dbmodels/arrangementDBModel.py	/^    arrangement_week = gdb.Column(gdb.String(5), nullable=False)$/;"	kind:variable	line:11
+arrangementmodel	../services/apimodels/arrangementAPIModel.py	/^arrangementmodel = global_api.model("Arrangement", {$/;"	kind:variable	line:5
+arrangementmodel	../services/apis/arrangementAPI.py	/^from apimodels.arrangementAPIModel import arrangementmodel$/;"	kind:namespace	line:2
+availabletimetodict	../services/daos/arrangementDAO.py	/^from tools.businesstools import checknullvalue, availabletimetodict$/;"	kind:namespace	line:10
+availabletimetodict	../services/tools/businesstools.py	/^def availabletimetodict(availablestr):$/;"	kind:function	line:74
+availabletimetolist	../services/tools/businesstools.py	/^def availabletimetolist(availablestr):$/;"	kind:function	line:99
+baseurl	../services/conf.py	/^baseurl = "http:\/\/" + buildhost + ":" + buildport$/;"	kind:variable	line:6
+baseurl	../services/inserttestdata.py	/^from conf import baseurl$/;"	kind:namespace	line:1
+baseurl	../services/main.py	/^from conf import baseurl$/;"	kind:namespace	line:5
+buildhost	../services/conf.py	/^buildhost = "127.0.0.1"$/;"	kind:variable	line:3
+buildhost	../services/main.py	/^from conf import buildhost$/;"	kind:namespace	line:3
+buildport	../services/conf.py	/^buildport = "9001"$/;"	kind:variable	line:4
+buildport	../services/main.py	/^from conf import buildport$/;"	kind:namespace	line:4
+businesstools	../services/test.py	/^from tools import businesstools$/;"	kind:namespace	line:1
+businesstools.py	../services/tools/businesstools.py	1;"	kind:file	line:1
+changearrangement	../services/daos/arrangementDAO.py	/^    def changearrangement(class1id, week1, section1, class2id, week2, section2):$/;"	kind:member	line:123
+checkavailable	../services/daos/classroomDAO.py	/^from tools.businesstools import checkavailable$/;"	kind:namespace	line:6
+checkavailable	../services/daos/teacherDAO.py	/^from tools.businesstools import checkavailable$/;"	kind:namespace	line:6
+checkavailable	../services/tools/businesstools.py	/^def checkavailable(availablestr, week, section):$/;"	kind:function	line:112
+checkavailabletime	../services/daos/classroomDAO.py	/^    def checkavailabletime(classroomid, week, section):$/;"	kind:member	line:89
+checkavailabletime	../services/daos/teacherDAO.py	/^    def checkavailabletime(teacherid, week, section):$/;"	kind:member	line:103
+checkclassroom	../services/daos/arrangementDAO.py	/^    def checkclassroom(classroomid, week, section):$/;"	kind:member	line:70
+checkcoursetime	../services/daos/arrangementDAO.py	/^    def checkcoursetime(classid, week, section):$/;"	kind:member	line:34
+checknullvalue	../services/daos/arrangementDAO.py	/^from tools.businesstools import checknullvalue, availabletimetodict$/;"	kind:namespace	line:10
+checknullvalue	../services/daos/classDAO.py	/^from tools.businesstools import checknullvalue$/;"	kind:namespace	line:10
+checknullvalue	../services/daos/classroomDAO.py	/^from tools.businesstools import checknullvalue$/;"	kind:namespace	line:7
+checknullvalue	../services/daos/courseDAO.py	/^from tools.businesstools import checknullvalue$/;"	kind:namespace	line:10
+checknullvalue	../services/daos/courseplanDAO.py	/^from tools.businesstools import checknullvalue$/;"	kind:namespace	line:11
+checknullvalue	../services/daos/teacherDAO.py	/^from tools.businesstools import checknullvalue$/;"	kind:namespace	line:7
+checknullvalue	../services/tools/businesstools.py	/^def checknullvalue(*itemlist):$/;"	kind:function	line:3
+checkteacher	../services/daos/arrangementDAO.py	/^    def checkteacher(teacherid, week, section):$/;"	kind:member	line:52
+classAPI	../services/apis/__init__.py	/^import apis.classAPI$/;"	kind:namespace	line:3
+classAPI.py	../services/apis/classAPI.py	1;"	kind:file	line:1
+classAPIModel.py	../services/apimodels/classAPIModel.py	1;"	kind:file	line:1
+classDAO.py	../services/daos/classDAO.py	1;"	kind:file	line:1
+classDBModel	../services/dbmodels/__init__.py	/^import dbmodels.classDBModel$/;"	kind:namespace	line:2
+classDBModel.py	../services/dbmodels/classDBModel.py	1;"	kind:file	line:1
+class_id	../services/dbmodels/arrangementDBModel.py	/^    class_id = gdb.Column(gdb.Integer, gdb.ForeignKey("class1.class_id"))$/;"	kind:variable	line:7
+class_id	../services/dbmodels/classDBModel.py	/^    class_id = gdb.Column(gdb.Integer, primary_key=True)$/;"	kind:variable	line:6
+class_id	../services/dbmodels/coursegroupDBModel.py	/^    class_id = gdb.Column(gdb.Integer, gdb.ForeignKey("class1.class_id"))$/;"	kind:variable	line:8
+class_id	../services/dbmodels/courseplanDBModel.py	/^    class_id = gdb.Column(gdb.Integer, gdb.ForeignKey("class1.class_id"))$/;"	kind:variable	line:7
+class_name	../services/dbmodels/classDBModel.py	/^    class_name = gdb.Column(gdb.String(100), nullable=False)$/;"	kind:variable	line:7
+classmodel	../services/apimodels/classAPIModel.py	/^classmodel = global_api.model("Class", {$/;"	kind:variable	line:5
+classmodel	../services/apis/classAPI.py	/^from apimodels.classAPIModel import classmodel$/;"	kind:namespace	line:2
+classroomAPI	../services/apis/__init__.py	/^import apis.classroomAPI$/;"	kind:namespace	line:1
+classroomAPI.py	../services/apis/classroomAPI.py	1;"	kind:file	line:1
+classroomAPIModel.py	../services/apimodels/classroomAPIModel.py	1;"	kind:file	line:1
+classroomDAO.py	../services/daos/classroomDAO.py	1;"	kind:file	line:1
+classroomDBModel	../services/dbmodels/__init__.py	/^import dbmodels.classroomDBModel$/;"	kind:namespace	line:3
+classroomDBModel.py	../services/dbmodels/classroomDBModel.py	1;"	kind:file	line:1
+classroom_available	../services/dbmodels/classroomDBModel.py	/^    classroom_available = gdb.Column(gdb.String(200))$/;"	kind:variable	line:9
+classroom_id	../services/dbmodels/arrangementDBModel.py	/^    classroom_id = gdb.Column(gdb.Integer, gdb.ForeignKey("classroom.classroom_id"))$/;"	kind:variable	line:9
+classroom_id	../services/dbmodels/classDBModel.py	/^    classroom_id = gdb.Column(gdb.Integer, gdb.ForeignKey("classroom.classroom_id"))$/;"	kind:variable	line:9
+classroom_id	../services/dbmodels/classroomDBModel.py	/^    classroom_id = gdb.Column(gdb.Integer, primary_key=True)$/;"	kind:variable	line:6
+classroom_name	../services/dbmodels/classroomDBModel.py	/^    classroom_name = gdb.Column(gdb.String(50), nullable=False)$/;"	kind:variable	line:7
+classroom_position	../services/dbmodels/classroomDBModel.py	/^    classroom_position = gdb.Column(gdb.String(100), nullable=False)$/;"	kind:variable	line:8
+classroommodel	../services/apimodels/classroomAPIModel.py	/^classroommodel = global_api.model("Classroom", {$/;"	kind:variable	line:5
+classroommodel	../services/apis/classroomAPI.py	/^from apimodels.classroomAPIModel import classroommodel$/;"	kind:namespace	line:2
+cleaner	../services/logcleaner.py	/^def cleaner():$/;"	kind:function	line:6
+conf.py	../services/conf.py	1;"	kind:file	line:1
+courseAPI	../services/apis/__init__.py	/^import apis.courseAPI$/;"	kind:namespace	line:4
+courseAPI.py	../services/apis/courseAPI.py	1;"	kind:file	line:1
+courseAPIModel.py	../services/apimodels/courseAPIModel.py	1;"	kind:file	line:1
+courseDAO.py	../services/daos/courseDAO.py	1;"	kind:file	line:1
+courseDBModel	../services/dbmodels/__init__.py	/^import dbmodels.courseDBModel$/;"	kind:namespace	line:5
+courseDBModel.py	../services/dbmodels/courseDBModel.py	1;"	kind:file	line:1
+course_id	../services/dbmodels/arrangementDBModel.py	/^    course_id = gdb.Column(gdb.Integer, gdb.ForeignKey("course.course_id"))$/;"	kind:variable	line:8
+course_id	../services/dbmodels/courseDBModel.py	/^    course_id = gdb.Column(gdb.Integer, primary_key=True)$/;"	kind:variable	line:6
+course_id	../services/dbmodels/coursegroupDBModel.py	/^    course_id = gdb.Column(gdb.Integer, gdb.ForeignKey("course.course_id"))$/;"	kind:variable	line:7
+course_id	../services/dbmodels/courseplanDBModel.py	/^    course_id = gdb.Column(gdb.Integer, gdb.ForeignKey("course.course_id"))$/;"	kind:variable	line:8
+course_isgroup	../services/dbmodels/courseDBModel.py	/^    course_isgroup = gdb.Column(gdb.Integer, nullable=False)$/;"	kind:variable	line:8
+course_name	../services/dbmodels/courseDBModel.py	/^    course_name = gdb.Column(gdb.String(100), nullable=False)$/;"	kind:variable	line:7
+coursegroupDBModel	../services/dbmodels/__init__.py	/^import dbmodels.coursegroupDBModel$/;"	kind:namespace	line:4
+coursegroupDBModel.py	../services/dbmodels/coursegroupDBModel.py	1;"	kind:file	line:1
+coursegroup_id	../services/dbmodels/coursegroupDBModel.py	/^    coursegroup_id = gdb.Column(gdb.Integer, primary_key=True)$/;"	kind:variable	line:6
+coursemodel	../services/apimodels/courseAPIModel.py	/^coursemodel = global_api.model("Course", {$/;"	kind:variable	line:6
+coursemodel	../services/apis/courseAPI.py	/^from apimodels.courseAPIModel import coursemodel$/;"	kind:namespace	line:2
+courseplanAPI	../services/apis/__init__.py	/^import apis.courseplanAPI$/;"	kind:namespace	line:5
+courseplanAPI.py	../services/apis/courseplanAPI.py	1;"	kind:file	line:1
+courseplanAPIModel.py	../services/apimodels/courseplanAPIModel.py	1;"	kind:file	line:1
+courseplanDAO.py	../services/daos/courseplanDAO.py	1;"	kind:file	line:1
+courseplanDBModel	../services/dbmodels/__init__.py	/^import dbmodels.courseplanDBModel$/;"	kind:namespace	line:6
+courseplanDBModel.py	../services/dbmodels/courseplanDBModel.py	1;"	kind:file	line:1
+courseplan_count	../services/dbmodels/courseplanDBModel.py	/^    courseplan_count = gdb.Column(gdb.Integer, nullable=False)$/;"	kind:variable	line:10
+courseplan_id	../services/dbmodels/courseplanDBModel.py	/^    courseplan_id = gdb.Column(gdb.Integer, primary_key=True)$/;"	kind:variable	line:6
+courseplanmodel	../services/apimodels/courseplanAPIModel.py	/^courseplanmodel = global_api.model("CoursePlan", {$/;"	kind:variable	line:5
+courseplanmodel	../services/apis/courseplanAPI.py	/^from apimodels.courseplanAPIModel import courseplanmodel$/;"	kind:namespace	line:2
+create_db	../services/dbbuilder.py	/^def create_db():$/;"	kind:function	line:3
+cross_origin	../services/appbase.py	/^from flask_cors import CORS, cross_origin$/;"	kind:namespace	line:4
+datetime	../services/logcleaner.py	/^from datetime import datetime$/;"	kind:namespace	line:1
+dbbuilder	../services/main.py	/^import dbbuilder$/;"	kind:namespace	line:6
+dbbuilder.py	../services/dbbuilder.py	1;"	kind:file	line:1
+dbconnection	../services/appbase.py	/^from conf import dbconnection$/;"	kind:namespace	line:5
+dbconnection	../services/conf.py	/^dbconnection = 'sqlite:\/\/\/db\/classarrangement.db'$/;"	kind:variable	line:1
+dbmodels	../services/dbmodels/__init__.py	/^import dbmodels.arrangementDBModel$/;"	kind:namespace	line:1
+dbmodels	../services/dbmodels/__init__.py	/^import dbmodels.classDBModel$/;"	kind:namespace	line:2
+dbmodels	../services/dbmodels/__init__.py	/^import dbmodels.classroomDBModel$/;"	kind:namespace	line:3
+dbmodels	../services/dbmodels/__init__.py	/^import dbmodels.courseDBModel$/;"	kind:namespace	line:5
+dbmodels	../services/dbmodels/__init__.py	/^import dbmodels.coursegroupDBModel$/;"	kind:namespace	line:4
+dbmodels	../services/dbmodels/__init__.py	/^import dbmodels.courseplanDBModel$/;"	kind:namespace	line:6
+dbmodels	../services/dbmodels/__init__.py	/^import dbmodels.teacherDBModel$/;"	kind:namespace	line:7
+fields	../services/apimodels/arrangementAPIModel.py	/^from flask_restplus import fields$/;"	kind:namespace	line:2
+fields	../services/apimodels/classAPIModel.py	/^from flask_restplus import fields$/;"	kind:namespace	line:2
+fields	../services/apimodels/classroomAPIModel.py	/^from flask_restplus import fields$/;"	kind:namespace	line:2
+fields	../services/apimodels/courseAPIModel.py	/^from flask_restplus import fields$/;"	kind:namespace	line:2
+fields	../services/apimodels/courseplanAPIModel.py	/^from flask_restplus import fields$/;"	kind:namespace	line:2
+fields	../services/apimodels/teacherAPIModel.py	/^from flask_restplus import fields$/;"	kind:namespace	line:2
+filename	../services/tools/log.py	/^    filename = "logs\/"+starttime+".txt"$/;"	kind:variable	line:12
+fmt	../services/tools/log.py	/^    fmt = logging.Formatter(formatstr)$/;"	kind:variable	line:15
+formatstr	../services/tools/log.py	/^    formatstr = '%(asctime)s\\t%(levelname)s\\t%(module)s\\t%(funcName)s\\tLine:%(lineno)d\\t%(message)s'$/;"	kind:variable	line:13
+gdb	../services/daos/arrangementDAO.py	/^from appbase import global_db as gdb$/;"	kind:namespace	line:7
+gdb	../services/daos/classDAO.py	/^from appbase import global_db as gdb$/;"	kind:namespace	line:7
+gdb	../services/daos/classroomDAO.py	/^from appbase import global_db as gdb$/;"	kind:namespace	line:4
+gdb	../services/daos/courseDAO.py	/^from appbase import global_db as gdb$/;"	kind:namespace	line:6
+gdb	../services/daos/courseplanDAO.py	/^from appbase import global_db as gdb$/;"	kind:namespace	line:9
+gdb	../services/daos/teacherDAO.py	/^from appbase import global_db as gdb$/;"	kind:namespace	line:4
+gdb	../services/dbbuilder.py	/^from appbase import global_db as gdb$/;"	kind:namespace	line:1
+gdb	../services/dbmodels/arrangementDBModel.py	/^from appbase import global_db as gdb$/;"	kind:namespace	line:1
+gdb	../services/dbmodels/classDBModel.py	/^from appbase import global_db as gdb$/;"	kind:namespace	line:1
+gdb	../services/dbmodels/classroomDBModel.py	/^from appbase import global_db as gdb$/;"	kind:namespace	line:1
+gdb	../services/dbmodels/courseDBModel.py	/^from appbase import global_db as gdb$/;"	kind:namespace	line:1
+gdb	../services/dbmodels/coursegroupDBModel.py	/^from appbase import global_db as gdb$/;"	kind:namespace	line:1
+gdb	../services/dbmodels/courseplanDBModel.py	/^from appbase import global_db as gdb$/;"	kind:namespace	line:1
+gdb	../services/dbmodels/teacherDBModel.py	/^from appbase import global_db as gdb$/;"	kind:namespace	line:1
+get	../services/apis/arrangementAPI.py	/^    def get(self, class1id, week1, section1, class2id, week2, section2):$/;"	kind:member	line:43
+get	../services/apis/arrangementAPI.py	/^    def get(self, classid, courseid):$/;"	kind:member	line:33
+get	../services/apis/arrangementAPI.py	/^    def get(self, teacherid):$/;"	kind:member	line:23
+get	../services/apis/classAPI.py	/^    def get(self):$/;"	kind:member	line:12
+get	../services/apis/classAPI.py	/^    def get(self):$/;"	kind:member	line:29
+get	../services/apis/classAPI.py	/^    def get(self, classid):$/;"	kind:member	line:39
+get	../services/apis/classAPI.py	/^    def get(self, classid):$/;"	kind:member	line:49
+get	../services/apis/classAPI.py	/^    def get(self, classid):$/;"	kind:member	line:59
+get	../services/apis/classroomAPI.py	/^    def get(self):$/;"	kind:member	line:11
+get	../services/apis/classroomAPI.py	/^    def get(self, classroomid):$/;"	kind:member	line:28
+get	../services/apis/classroomAPI.py	/^    def get(self, classroomid):$/;"	kind:member	line:38
+get	../services/apis/classroomAPI.py	/^    def get(self, classroomid, week, section):$/;"	kind:member	line:48
+get	../services/apis/courseAPI.py	/^    def get(self):$/;"	kind:member	line:11
+get	../services/apis/courseAPI.py	/^    def get(self):$/;"	kind:member	line:28
+get	../services/apis/courseAPI.py	/^    def get(self, courseid):$/;"	kind:member	line:38
+get	../services/apis/courseAPI.py	/^    def get(self, courseid):$/;"	kind:member	line:48
+get	../services/apis/courseAPI.py	/^    def get(self, courseid):$/;"	kind:member	line:58
+get	../services/apis/courseplanAPI.py	/^    def get(self):$/;"	kind:member	line:12
+get	../services/apis/courseplanAPI.py	/^    def get(self):$/;"	kind:member	line:39
+get	../services/apis/courseplanAPI.py	/^    def get(self):$/;"	kind:member	line:80
+get	../services/apis/courseplanAPI.py	/^    def get(self, courseplanid):$/;"	kind:member	line:29
+get	../services/apis/courseplanAPI.py	/^    def get(self, courseplanid):$/;"	kind:member	line:49
+get	../services/apis/courseplanAPI.py	/^    def get(self, courseplanid):$/;"	kind:member	line:59
+get	../services/apis/teacherAPI.py	/^    def get(self):$/;"	kind:member	line:12
+get	../services/apis/teacherAPI.py	/^    def get(self, teacherid):$/;"	kind:member	line:29
+get	../services/apis/teacherAPI.py	/^    def get(self, teacherid):$/;"	kind:member	line:49
+get	../services/apis/teacherAPI.py	/^    def get(self, teacherid, week, section):$/;"	kind:member	line:59
+get	../services/apis/teacherAPI.py	/^    def get(self, teachername):$/;"	kind:member	line:39
+getallclass	../services/daos/classDAO.py	/^    def getallclass():$/;"	kind:member	line:63
+getallclassdetails	../services/daos/classDAO.py	/^    def getallclassdetails():$/;"	kind:member	line:16
+getallclassroom	../services/daos/classroomDAO.py	/^    def getallclassroom():$/;"	kind:member	line:26
+getallcourse	../services/daos/courseDAO.py	/^    def getallcourse():$/;"	kind:member	line:68
+getallcoursearrangement	../services/daos/courseplanDAO.py	/^    def getallcoursearrangement():$/;"	kind:member	line:46
+getallcoursedetails	../services/daos/courseDAO.py	/^    def getallcoursedetails():$/;"	kind:member	line:16
+getallcourseplan	../services/daos/courseplanDAO.py	/^    def getallcourseplan():$/;"	kind:member	line:102
+getallcourseplandetails	../services/daos/courseplanDAO.py	/^    def getallcourseplandetails():$/;"	kind:member	line:66
+getallcourseplandetailsbyid	../services/daos/courseplanDAO.py	/^    def getallcourseplandetailsbyid(courseplanid):$/;"	kind:member	line:84
+getallteacher	../services/daos/teacherDAO.py	/^    def getallteacher():$/;"	kind:member	line:39
+getclassbyid	../services/daos/classDAO.py	/^    def getclassbyid(classid):$/;"	kind:member	line:49
+getclassdetailsbyid	../services/daos/classDAO.py	/^    def getclassdetailsbyid(classid):$/;"	kind:member	line:32
+getclassroombyid	../services/daos/classroomDAO.py	/^    def getclassroombyid(classroomid):$/;"	kind:member	line:13
+getcoursebyid	../services/daos/courseDAO.py	/^    def getcoursebyid(courseid):$/;"	kind:member	line:79
+getcoursedetailsbyid	../services/daos/courseDAO.py	/^    def getcoursedetailsbyid(courseid):$/;"	kind:member	line:27
+getcourseplanbyid	../services/daos/courseplanDAO.py	/^    def getcourseplanbyid(courseplanid):$/;"	kind:member	line:115
+getteacherarrangement	../services/daos/arrangementDAO.py	/^    def getteacherarrangement(teacherid):$/;"	kind:member	line:16
+getteacherbyid	../services/daos/teacherDAO.py	/^    def getteacherbyid(teacherid):$/;"	kind:member	line:25
+getteacherbyname	../services/daos/teacherDAO.py	/^    def getteacherbyname(teachername):$/;"	kind:member	line:12
+global_api	../services/apimodels/arrangementAPIModel.py	/^from appbase import global_api$/;"	kind:namespace	line:1
+global_api	../services/apimodels/classAPIModel.py	/^from appbase import global_api$/;"	kind:namespace	line:1
+global_api	../services/apimodels/classroomAPIModel.py	/^from appbase import global_api$/;"	kind:namespace	line:1
+global_api	../services/apimodels/courseAPIModel.py	/^from appbase import global_api$/;"	kind:namespace	line:1
+global_api	../services/apimodels/courseplanAPIModel.py	/^from appbase import global_api$/;"	kind:namespace	line:1
+global_api	../services/apimodels/teacherAPIModel.py	/^from appbase import global_api$/;"	kind:namespace	line:1
+global_api	../services/appbase.py	/^global_api = Api(global_app, version="1.0", title="Class Arrangement API", description="排课系统API")$/;"	kind:variable	line:12
+global_app	../services/appbase.py	/^global_app = Flask(__name__)$/;"	kind:variable	line:8
+global_app	../services/main.py	/^from appbase import global_app$/;"	kind:namespace	line:1
+global_db	../services/appbase.py	/^global_db = SQLAlchemy(global_app)$/;"	kind:variable	line:11
+hdlr	../services/tools/log.py	/^    hdlr = TimedRotatingFileHandler(filename, "midnight", 1, 10)$/;"	kind:variable	line:14
+headers	../services/inserttestdata.py	/^headers = {'Content-Type': 'application\/json'}$/;"	kind:variable	line:6
+info.py	../services/tools/info.py	1;"	kind:file	line:1
+insertclass	../services/inserttestdata.py	/^def insertclass():$/;"	kind:function	line:35
+insertclassroom	../services/inserttestdata.py	/^def insertclassroom():$/;"	kind:function	line:9
+insertteacher	../services/inserttestdata.py	/^def insertteacher():$/;"	kind:function	line:22
+inserttestdata.py	../services/inserttestdata.py	1;"	kind:file	line:1
+json	../services/inserttestdata.py	/^import json$/;"	kind:namespace	line:3
+jsonify	../services/tools/packtools.py	/^from flask import jsonify$/;"	kind:namespace	line:1
+level	../services/tools/log.py	/^    level = logging.INFO$/;"	kind:variable	line:8
+log.py	../services/tools/log.py	1;"	kind:file	line:1
+logcleaner.py	../services/logcleaner.py	1;"	kind:file	line:1
+logger	../services/daos/courseDAO.py	/^from tools.log import logger$/;"	kind:namespace	line:9
+logger	../services/main.py	/^from tools.log import logger$/;"	kind:namespace	line:2
+logger	../services/tools/log.py	/^logger = logging.getLogger()$/;"	kind:variable	line:6
+logging	../services/tools/log.py	/^import logging$/;"	kind:namespace	line:1
+main.py	../services/main.py	1;"	kind:file	line:1
+ns_arrangement	../services/apis/arrangementAPI.py	/^ns_arrangement = api.namespace("arrangement", description="排课管理")$/;"	kind:variable	line:6
+ns_class	../services/apis/classAPI.py	/^ns_class = api.namespace("class", description="班级管理")$/;"	kind:variable	line:6
+ns_classroom	../services/apis/classroomAPI.py	/^ns_classroom = api.namespace("classroom", description="教室管理")$/;"	kind:variable	line:6
+ns_course	../services/apis/courseAPI.py	/^ns_course = api.namespace("course", description="课程管理")$/;"	kind:variable	line:6
+ns_courseplan	../services/apis/courseplanAPI.py	/^ns_courseplan = api.namespace("courseplan", description="分课时管理")$/;"	kind:variable	line:6
+ns_teacher	../services/apis/teacherAPI.py	/^ns_teacher = api.namespace("teacher", description="教师管理")$/;"	kind:variable	line:6
+operator	../services/daos/courseplanDAO.py	/^import operator$/;"	kind:namespace	line:13
+or_	../services/daos/courseDAO.py	/^from sqlalchemy import and_, or_$/;"	kind:namespace	line:8
+os	../services/logcleaner.py	/^import os$/;"	kind:namespace	line:3
+os	../services/tools/log.py	/^import os$/;"	kind:namespace	line:3
+packinfo	../services/daos/arrangementDAO.py	/^from tools.packtools import packinfo, packjoinquery$/;"	kind:namespace	line:8
+packinfo	../services/daos/classDAO.py	/^from tools.packtools import packinfo, packjoinquery$/;"	kind:namespace	line:8
+packinfo	../services/daos/classroomDAO.py	/^from tools.packtools import packinfo$/;"	kind:namespace	line:5
+packinfo	../services/daos/courseDAO.py	/^from tools.packtools import packinfo, packjoinquery$/;"	kind:namespace	line:7
+packinfo	../services/daos/courseplanDAO.py	/^from tools.packtools import packinfo, packjoinquery$/;"	kind:namespace	line:10
+packinfo	../services/daos/teacherDAO.py	/^from tools.packtools import packinfo$/;"	kind:namespace	line:5
+packinfo	../services/tools/packtools.py	/^def packinfo(infostatus, infomsg=None, inforesult=None):$/;"	kind:function	line:5
+packjoinquery	../services/daos/arrangementDAO.py	/^from tools.packtools import packinfo, packjoinquery$/;"	kind:namespace	line:8
+packjoinquery	../services/daos/classDAO.py	/^from tools.packtools import packinfo, packjoinquery$/;"	kind:namespace	line:8
+packjoinquery	../services/daos/courseDAO.py	/^from tools.packtools import packinfo, packjoinquery$/;"	kind:namespace	line:7
+packjoinquery	../services/daos/courseplanDAO.py	/^from tools.packtools import packinfo, packjoinquery$/;"	kind:namespace	line:10
+packjoinquery	../services/tools/packtools.py	/^def packjoinquery(resultlist):$/;"	kind:function	line:9
+packtools.py	../services/tools/packtools.py	1;"	kind:file	line:1
+post	../services/apis/arrangementAPI.py	/^    def post(self):$/;"	kind:member	line:13
+post	../services/apis/classAPI.py	/^    def post(self):$/;"	kind:member	line:19
+post	../services/apis/classAPI.py	/^    def post(self, classid):$/;"	kind:member	line:70
+post	../services/apis/classroomAPI.py	/^    def post(self):$/;"	kind:member	line:18
+post	../services/apis/classroomAPI.py	/^    def post(self, classroomid):$/;"	kind:member	line:59
+post	../services/apis/courseAPI.py	/^    def post(self):$/;"	kind:member	line:18
+post	../services/apis/courseAPI.py	/^    def post(self, courseid):$/;"	kind:member	line:69
+post	../services/apis/courseplanAPI.py	/^    def post(self):$/;"	kind:member	line:19
+post	../services/apis/courseplanAPI.py	/^    def post(self, courseplanid):$/;"	kind:member	line:70
+post	../services/apis/teacherAPI.py	/^    def post(self):$/;"	kind:member	line:19
+post	../services/apis/teacherAPI.py	/^    def post(self, teacherid):$/;"	kind:member	line:70
+removearrangement	../services/daos/arrangementDAO.py	/^    def removearrangement(classid, courseid):$/;"	kind:member	line:88
+removeclass	../services/daos/classDAO.py	/^    def removeclass(classid):$/;"	kind:member	line:145
+removeclassroom	../services/daos/classroomDAO.py	/^    def removeclassroom(classroomid):$/;"	kind:member	line:64
+removecourse	../services/daos/courseDAO.py	/^    def removecourse(courseid):$/;"	kind:member	line:142
+removecourseplan	../services/daos/courseplanDAO.py	/^    def removecourseplan(courseplanid):$/;"	kind:member	line:177
+removeteacher	../services/daos/teacherDAO.py	/^    def removeteacher(teacherid):$/;"	kind:member	line:77
+requests	../services/inserttestdata.py	/^import requests$/;"	kind:namespace	line:2
+starttime	../services/tools/log.py	/^    starttime = time.strftime('%Y%m%d%H%M%S',time.localtime(time.time()))$/;"	kind:variable	line:9
+teacherAPI	../services/apis/__init__.py	/^import apis.teacherAPI$/;"	kind:namespace	line:2
+teacherAPI.py	../services/apis/teacherAPI.py	1;"	kind:file	line:1
+teacherAPIModel.py	../services/apimodels/teacherAPIModel.py	1;"	kind:file	line:1
+teacherDAO.py	../services/daos/teacherDAO.py	1;"	kind:file	line:1
+teacherDBModel	../services/dbmodels/__init__.py	/^import dbmodels.teacherDBModel$/;"	kind:namespace	line:7
+teacherDBModel.py	../services/dbmodels/teacherDBModel.py	1;"	kind:file	line:1
+teacher_id	../services/dbmodels/arrangementDBModel.py	/^    teacher_id = gdb.Column(gdb.Integer, gdb.ForeignKey("teacher.teacher_id"))$/;"	kind:variable	line:10
+teacher_id	../services/dbmodels/classDBModel.py	/^    teacher_id = gdb.Column(gdb.Integer, gdb.ForeignKey("teacher.teacher_id"))$/;"	kind:variable	line:8
+teacher_id	../services/dbmodels/courseplanDBModel.py	/^    teacher_id = gdb.Column(gdb.Integer, gdb.ForeignKey("teacher.teacher_id"))$/;"	kind:variable	line:9
+teacher_id	../services/dbmodels/teacherDBModel.py	/^    teacher_id = gdb.Column(gdb.Integer, primary_key=True)$/;"	kind:variable	line:6
+teacher_mobile	../services/dbmodels/teacherDBModel.py	/^    teacher_mobile = gdb.Column(gdb.String(30))$/;"	kind:variable	line:8
+teacher_name	../services/dbmodels/teacherDBModel.py	/^    teacher_name = gdb.Column(gdb.String(30), nullable=False)$/;"	kind:variable	line:7
+teacher_request	../services/dbmodels/teacherDBModel.py	/^    teacher_request = gdb.Column(gdb.String(200))$/;"	kind:variable	line:9
+teachermodel	../services/apimodels/teacherAPIModel.py	/^teachermodel = global_api.model("Teacher", {$/;"	kind:variable	line:5
+teachermodel	../services/apis/teacherAPI.py	/^from apimodels.teacherAPIModel import teachermodel$/;"	kind:namespace	line:2
+test.py	../services/test.py	1;"	kind:file	line:1
+time	../services/tools/log.py	/^import time$/;"	kind:namespace	line:4
+timedelta	../services/logcleaner.py	/^from datetime import timedelta$/;"	kind:namespace	line:2
+todict	../services/dbmodels/arrangementDBModel.py	/^    def todict(self):$/;"	kind:member	line:22
+todict	../services/dbmodels/classDBModel.py	/^    def todict(self):$/;"	kind:member	line:16
+todict	../services/dbmodels/classroomDBModel.py	/^    def todict(self):$/;"	kind:member	line:16
+todict	../services/dbmodels/courseDBModel.py	/^    def todict(self):$/;"	kind:member	line:14
+todict	../services/dbmodels/coursegroupDBModel.py	/^    def todict(self):$/;"	kind:member	line:14
+todict	../services/dbmodels/courseplanDBModel.py	/^    def todict(self):$/;"	kind:member	line:18
+todict	../services/dbmodels/teacherDBModel.py	/^    def todict(self):$/;"	kind:member	line:16
+tojson	../services/tools/info.py	/^    def tojson(self):$/;"	kind:member	line:8
+updateclass	../services/daos/classDAO.py	/^    def updateclass(classid, params):$/;"	kind:member	line:105
+updateclassroom	../services/daos/classroomDAO.py	/^    def updateclassroom(classroomid, params):$/;"	kind:member	line:103
+updatecourse	../services/daos/courseDAO.py	/^    def updatecourse(courseid, params):$/;"	kind:member	line:171
+updatecourseplan	../services/daos/courseplanDAO.py	/^    def updatecourseplan(courseplanid, params):$/;"	kind:member	line:219
+updateteacher	../services/daos/teacherDAO.py	/^    def updateteacher(teacherid, params):$/;"	kind:member	line:118

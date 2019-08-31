@@ -17,6 +17,16 @@ class Arrangement(Resource):
         return ArrangementDAO.addarrangement(api.payload)
 
 
+@ns_arrangement.route("/teacher/<int:teacherid>")
+class ArrangementTeacher(Resource):
+
+    def get(self, teacherid):
+        """
+        返回教师课表
+        """
+        return ArrangementDAO.getteacherarrangement(teacherid)
+
+
 @ns_arrangement.route("/remove/<int:classid>/<int:courseid>")
 class RemoveArrangement(Resource):
 

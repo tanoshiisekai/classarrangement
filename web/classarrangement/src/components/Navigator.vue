@@ -17,6 +17,7 @@
       <el-menu-item index="courseplan">分课时管理</el-menu-item>
       <el-menu-item index="arrangement">排课管理</el-menu-item>
       <el-menu-item index="change">调课管理</el-menu-item>
+      <el-menu-item index="teacherarrangement">教师课表</el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -41,7 +42,9 @@ export default {
       } else if (key === "arrangement") {
         this.$router.push({ name: "arrangement" });
       } else if (key === "change") {
-        this.$router.push({ name: "change"} );
+        this.$router.push({ name: "change" });
+      } else if (key === "teacherarrangement") {
+        this.$router.push({ name: "teacherarrangement" });
       }
     }
   }
@@ -50,7 +53,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#menu{
+#menu {
   width: 100%;
   position: fixed;
   top: 0;
