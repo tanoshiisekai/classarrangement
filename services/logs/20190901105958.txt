@@ -1,0 +1,15 @@
+2019-09-01 10:59:58,111	INFO	main	<module>	Line:11	app started
+2019-09-01 10:59:58,131	INFO	_internal	_log	Line:122	 * Running on http://127.0.0.1:9001/ (Press CTRL+C to quit)
+2019-09-01 10:59:58,132	INFO	_internal	_log	Line:122	 * Restarting with stat
+2019-09-01 10:59:58,651	INFO	main	<module>	Line:11	app started
+2019-09-01 10:59:58,668	WARNING	_internal	_log	Line:122	 * Debugger is active!
+2019-09-01 10:59:58,668	INFO	_internal	_log	Line:122	 * Debugger PIN: 631-086-963
+2019-09-01 11:00:16,904	INFO	_internal	_log	Line:122	127.0.0.1 - - [01/Sep/2019 11:00:16] "GET /classroom/ HTTP/1.1" 200 -
+2019-09-01 11:00:18,737	INFO	_internal	_log	Line:122	127.0.0.1 - - [01/Sep/2019 11:00:18] "GET /teacher/ HTTP/1.1" 200 -
+2019-09-01 11:00:25,329	INFO	_internal	_log	Line:122	127.0.0.1 - - [01/Sep/2019 11:00:25] "GET /arrangement/teacher/6 HTTP/1.1" 200 -
+2019-09-01 11:00:30,901	INFO	_internal	_log	Line:122	127.0.0.1 - - [01/Sep/2019 11:00:30] "GET /arrangement/teacher/3 HTTP/1.1" 200 -
+2019-09-01 11:00:54,499	INFO	_internal	_log	Line:122	127.0.0.1 - - [01/Sep/2019 11:00:54] "GET /teacher/ HTTP/1.1" 200 -
+2019-09-01 11:00:58,951	INFO	_internal	_log	Line:122	127.0.0.1 - - [01/Sep/2019 11:00:58] "GET /arrangement/teacher/3 HTTP/1.1" 200 -
+2019-09-01 11:01:04,922	INFO	_internal	_log	Line:122	127.0.0.1 - - [01/Sep/2019 11:01:04] "GET /arrangement/teacher/6 HTTP/1.1" 200 -
+2019-09-01 11:01:08,757	INFO	_internal	_log	Line:122	127.0.0.1 - - [01/Sep/2019 11:01:08] "GET /arrangement/teacher/8 HTTP/1.1" 200 -
+2019-09-01 11:01:26,231	INFO	_internal	_log	Line:122	127.0.0.1 - - [01/Sep/2019 11:01:26] "GET /arrangement/teacher/3 HTTP/1.1" 200 -

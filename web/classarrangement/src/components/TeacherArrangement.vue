@@ -258,33 +258,36 @@ export default {
       var teacherid = this.teacherid;
       this.axios.get("/arrangement/teacher/" + teacherid).then(response => {
         var resp = response.data;
+        this.keshi = 0;
         if (resp["infostatus"]) {
           var result = resp["inforesult"];
-          this.keshi = result.length;
           for (var i in result) {
-            console.log(result[i]);
-            var weekname = "";
-            var wname = result[i]["arrangement_week"];
-            if (wname == "一") {
-              weekname = "monday";
-            } else if (wname == "二") {
-              weekname = "tuesday";
-            } else if (wname == "三") {
-              weekname = "wednesday";
-            } else if (wname == "四") {
-              weekname = "thirsday";
-            } else if (wname == "五") {
-              weekname = "friday";
-            } else if (wname == "六") {
-              weekname = "saturday";
-            } else if (wname == "日") {
-              weekname = "sunday";
+            if (result[i]["course_name"] != "自习") {
+              this.keshi = this.keshi + 1;
+              console.log(result[i]);
+              var weekname = "";
+              var wname = result[i]["arrangement_week"];
+              if (wname == "一") {
+                weekname = "monday";
+              } else if (wname == "二") {
+                weekname = "tuesday";
+              } else if (wname == "三") {
+                weekname = "wednesday";
+              } else if (wname == "四") {
+                weekname = "thirsday";
+              } else if (wname == "五") {
+                weekname = "friday";
+              } else if (wname == "六") {
+                weekname = "saturday";
+              } else if (wname == "日") {
+                weekname = "sunday";
+              }
+              var sectionname = parseInt(result[i]["arrangement_section"]) - 1;
+              var classname = result[i]["class_name"];
+              var coursename = result[i]["course_name"];
+              this.tabledatalist[sectionname][weekname] =
+                coursename + " - -【" + classname + "】";
             }
-            var sectionname = parseInt(result[i]["arrangement_section"]) - 1;
-            var classname = result[i]["class_name"];
-            var coursename = result[i]["course_name"];
-            this.tabledatalist[sectionname][weekname] =
-              coursename + " - -【" + classname + "】";
           }
         } else {
           this.$message({
