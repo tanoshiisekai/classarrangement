@@ -17,6 +17,9 @@
         style="width:150px;margin-left:20px;"
       >查询</el-button>
     </el-row>
+    <el-row style="margin-top:20px;">
+      <span style="font-size: 36px;">总课时数（不考虑合班）：{{keshi}}节</span>
+    </el-row>
     <el-row style="margin-top:50px;">
       <vxe-table :data.sync="tabledatalist" border resizable stripe>
         <vxe-table-column type="index" width="100"></vxe-table-column>
@@ -138,6 +141,7 @@ export default {
       ],
       teacherid: "",
       teacherlist: [],
+      keshi: 0,
       weeklist: ["一", "二", "三", "四", "五", "六", "日"],
       sectionlist: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     };
@@ -256,6 +260,7 @@ export default {
         var resp = response.data;
         if (resp["infostatus"]) {
           var result = resp["inforesult"];
+          this.keshi = result.length;
           for (var i in result) {
             console.log(result[i]);
             var weekname = "";
